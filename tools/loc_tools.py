@@ -21,7 +21,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 ROOT = pathlib.Path(__file__).resolve().parents[1] / "mod"
-CAMP = ROOT / "campaigns" / "SF_Klyuchevskaya_88"
+CAMP = next(d for d in sorted((ROOT / "campaigns").iterdir()) if d.is_dir())
 MISSIONS = CAMP / "missions"
 LANGS = ["cn", "de", "es", "fr", "ja", "ko", "ru", "vn"]
 SUFFIX = re.compile(r"^([A-Za-z0-9_]+?)_(cn|de|en|es|fr|ja|ko|ru|vn)=")

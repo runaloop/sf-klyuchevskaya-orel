@@ -10,7 +10,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1] / "mod"
-CAMP = ROOT / "campaigns" / "SF_Klyuchevskaya_88"
+CAMP = next(d for d in sorted((ROOT / "campaigns").iterdir()) if d.is_dir())
 MISSIONS = CAMP / "missions"
 
 OLD_SHIP = "wp_takr_kiev"

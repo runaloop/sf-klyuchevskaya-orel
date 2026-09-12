@@ -7,8 +7,9 @@ original mod is the root commit of this repository.
 
 - `mod/_info.ini`, `campaign.ini`: display names changed to
   "SF Klyuchevskaya '88: Orel Edition", mod description rewritten. The campaign
-  folder id is still `SF_Klyuchevskaya_88`; it will be renamed right before
-  publication so the edition can coexist with the original.
+  folder is `campaigns/SF_Klyuchevskaya_88_Orel`, renamed from the original id by
+  `tools/rename_campaign.sh` so this edition can sit next to the original mod
+  without either one shadowing the other.
 
 ## Flagship: TAVKR Minsk replaced by TAVKR Tbilisi (Project 1160 Orel)
 

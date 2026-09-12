@@ -98,10 +98,8 @@ second Tbilisi shot that would not duplicate the cover.
 1. [ ] Play a new campaign through the first few missions. The current balance
        has never been played: a save started before it cannot show the new
        starting budget or the trimmed air wing.
-2. [ ] `tools/rename_campaign.sh SF_Klyuchevskaya_88_Orel`. Run it immediately
-       before upload and not earlier: it renames the campaign folder and 180
-       files with it, which is what lets this edition sit next to the original,
-       but it also drowns any review diff taken afterwards.
+2. [x] `tools/rename_campaign.sh SF_Klyuchevskaya_88_Orel` — done, the campaign
+       folder is `SF_Klyuchevskaya_88_Orel` and nothing references the old id.
 3. [ ] Push to GitHub and put the repository link in the description where it
        says "see the GitHub link on this page".
 4. [ ] Upload: Mod Manager → Create Mod → pick the mod folder, title and
