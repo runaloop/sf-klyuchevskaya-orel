@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="25 FEB 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="The Second Pacific Squadron" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Back in January 1988, SF Narod departed its Northern Fleet base for a round-the-world cruise. When the war began, the task force found itself in the Gulf of Aden, enroute for Mumbai, India. With NATO unwilling to take part in the conflict, Moscow decided this powerful task force was best used in the Pacific. 
+        <LineBreak/><LineBreak/>
+		Centered on the Large Missile Cruiser KIROV, SF Narod is escorted by several powerful ASW and ASuW ships. In the interests of advancing Socialist unity, a V/STOL light carrier was attached to convince Soviet-aligned nations to buy Yak-38 FORGERs for their air forces. 
+        <LineBreak/><LineBreak/>
+        Now that war has broken out, SF Narod has spent Febuary attempting to dodge USN assets in the Indian Ocean. With limited fuel stocks remaining, Red Banner Northern Fleet has ordered SF Narod to run the Malacca Straits and resupply at Cam Ranh Bay. 
+        <LineBreak/><LineBreak/>
+        It is now 25 Febuary 1988 and SF Narod finds its morning interrupted by the distinct EM emissions of an E-2 Hawkeye. 
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

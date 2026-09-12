@@ -1,0 +1,27 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="08 FEBUARY 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="A Private Conversation" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        After you read your new orders, you get a knock on your door. Its the Comrade Political Commissar. 
+        <LineBreak/><LineBreak/>
+		"Comrade Commander" he begins, "The KGB have passed additional orders for your eyes only. The KGB is deeply interested in acquring 'subjects' for HUMINT exploitation. For every FOUR survivors you save, the KGB will reward you ONE mission point. Don't worry Comrade, it isn't 1938 anymore, Glasnost means even the KGB isn't immune to internal investigations. " 
+        <LineBreak/><LineBreak/>
+        You think to yourself, FOUR survivors for ONE point? Its a good deal, and if you pretend to believe the Commissar, those POWs might not be harmed. Besides, good mariners don't leave stranded sailors to die do they?
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

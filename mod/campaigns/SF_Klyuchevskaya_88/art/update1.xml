@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="January 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Prelude to War" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Jan, 1988 The Soviet Union is increasingly concerned with American and Japanese presence near the Sea of Okhtosk. 
+        <LineBreak/><LineBreak/>
+		Japan is rapidly improving its "self-defense" forces, and the Kremlin suspects Japan has rekindled its territorial ambitions. Meanwhile, the Iran-Iraq War's recent conclusion has allowed much of US 7th Fleet's Indian Ocean squadrons to return to the Western Pacific. A resurgent Japan and the surge of US forces has convinced Moscow to send a bold message.
+        <LineBreak/><LineBreak/>
+        SF Klyuchevskaya is ordered to patrol the Kuril Islands and demonstrate Soviet resolve. Centered on TAKVR MINSK, it is a powerful task force that will reassert the will of the Soviet people. 
+        <LineBreak/><LineBreak/>
+        Build your task group, protect MINSK and defend the Motherland.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>
