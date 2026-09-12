@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988년 2월 25일" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="제2 태평양 전대" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        1988년 1월, 나로드 기동부대는 세계 일주 항해를 위해 북방 함대 기지를 출항했다. 전쟁이 시작되었을 때, 이 기동부대는 인도 뭄바이로 향하던 중 아덴만에 있었다. NATO가 분쟁에 참여하지 않으려 하자, 모스크바는 이 강력한 기동부대를 태평양에 투입하는 것이 최선이라고 판단했다.
+        <LineBreak/><LineBreak/>
+		대형 미사일 순양함 키로프를 중심으로 편성된 나로드 기동부대는 강력한 대잠 및 대함 전투함들의 호위를 받고 있다. 사회주의 연대 강화를 위해, 소련 우호국들에게 Yak-38 포저를 공군용으로 판매하도록 설득할 목적으로 V/STOL 경항모 한 척도 배속되었다.
+        <LineBreak/><LineBreak/>
+        전쟁이 발발한 이후, 나로드 기동부대는 2월 한 달 동안 인도양에서 미 해군 전력을 피해 다녔다. 남은 연료가 얼마 없는 상황에서, 적기 북방 함대는 나로드 기동부대에 말라카 해협을 통과하여 캄란 만에서 재보급하라는 명령을 내렸다.
+        <LineBreak/><LineBreak/>
+        이제 1988년 2월 25일, 나로드 기동부대는 E-2 호크아이의 독특한 전자파 방사에 아침이 흐트러진다.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

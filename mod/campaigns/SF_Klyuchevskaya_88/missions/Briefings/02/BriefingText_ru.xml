@@ -1,0 +1,74 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		СРОЧНОЕ СООБЩЕНИЕ
+		<LineBreak/>
+		O 08 2330Z ФЕВ 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="От кого:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="КРАСНОЗНАМЁННЫЙ ТИХООКЕАНСКИЙ ФЛОТ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Кому:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Командир КУГ «Ключевская»"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Копия:"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10-я оперативная эскадра
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Тема:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Предварительное распоряжение — переход"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		СОВЕРШЕННО СЕКРЕТНО — ТОЛЬКО ДЛЯ КОМАНДИРА КУГ «Ключевская»
+		<LineBreak/>
+		<LineBreak/>
+		1. (С) КУГ «Ключевская» совершит переход через пролив Лаперуза согласно первоначальному плану перехода.
+		<LineBreak/>
+		<LineBreak/>
+		2. (СС) Приказ «Восхождение на Ключевскую» будет исполнен в 09:00 по местному времени. Быть готовым к проведению наступательных действий против любых американских или японских сил.
+		<LineBreak/>
+		<LineBreak/>
+		3. (СС) Корабельная поисково-ударная группа Морских сил самообороны Японии уже 12 часов следит за вашим соединением. Уничтожить её по исполнении приказа «Восхождение на Ключевскую».
+		<LineBreak/>
+		<LineBreak/>
+		4a. (С) Авиабаза ВВС США Мисава и японская авиабаза Хатинохэ находятся в 300 морских милях к югу от вас. Ожидайте вылетов F-4 и P-3 с этого направления.
+		<LineBreak/>
+		<LineBreak/>
+		4b. (СС) КУГ «Ключевская» не должно атаковать эти авиабазы — их нейтрализуют другие силы согласно приказу «Восхождение на Ключевскую».
+		<LineBreak/>
+		<LineBreak/>
+		5. (С) По данным радиотехнической разведки, к западу от пролива Лаперуза возможно присутствие японской неатомной подводной лодки.
+		<LineBreak/>
+		<LineBreak/>
+		6. (С) Сохраните оперативное соединение и обеспечьте выход в Охотское море. Удачи, товарищ.
+		<LineBreak/>
+		<LineBreak/>
+		ПОДПИСАЛ: Хватов
+		<LineBreak/>
+		КТОФ
+		<LineBreak/>
+		<LineBreak/>
+		СОВЕРШЕННО СЕКРЕТНО — ТОЛЬКО ДЛЯ КОМАНДИРА КУГ «Ключевская»
+		<LineBreak/>
+		КОНЕЦ СООБЩЕНИЯ
+	  </TextBlock>
+</Grid>

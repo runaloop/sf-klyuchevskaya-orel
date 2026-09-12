@@ -1,0 +1,71 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		СРОЧНОЕ СООБЩЕНИЕ
+		<LineBreak/>
+		O 11 1900Z ФЕВ 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="От кого:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="КРАСНОЗНАМЁННЫЙ ТИХООКЕАНСКИЙ ФЛОТ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Кому:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Командир КУГ «Ключевская»"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Копия:"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10-я оперативная эскадра
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Тема:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Боевой приказ"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		СЕКРЕТНО
+		<LineBreak/>
+		<LineBreak/>
+		1. (С) КУГ «Ключевская» надлежит перехватывать вражеские конвои в северной части Тихого океана.
+		<LineBreak/>
+		<LineBreak/>
+		2. (С) Подводные силы противника сосредоточены у японского побережья и не ожидаются в этом районе действий. Дружественные истребители из Петропавловска-Камчатского обеспечивают отсутствие вражеского воздушного прикрытия в этом районе.
+		<LineBreak/>
+		<LineBreak/>
+		3a. (С) По данным национальных технических средств разведки, к востоку от вашей позиции — один крупный конвой, к югу — один малый конвой. Предполагаемый курс и местоположение конвоев отмечены на карте.
+		<LineBreak/>
+		<LineBreak/>3b. (С) Южный конвой возможно включает 1 эсминец типа «Спрюэнс» и дополнительные противолодочные корабли охранения.
+		<LineBreak/>
+		<LineBreak/>3c. (С) Восточный конвой возможно включает 1 крейсер, 1-2 эсминца УРО и дополнительные противолодочные корабли охранения.
+		<LineBreak/>
+		<LineBreak/>
+		4. (С) Нейтральное судоходство ожидается незначительным, возможно движение группами. Вражеское торговое судоходство в судоходных полосах не ожидается — все одиночные вражеские суда уже потоплены либо отведены в районы сбора конвоев.
+		<LineBreak/>
+		<LineBreak/>5. (С) КУГ «Ключевская» после выполнения задачи следует в Петропавловск-Камчатский для отдыха и пополнения запасов. Удачной охоты, товарищ.
+		<LineBreak/>
+		<LineBreak/>
+		ПОДПИСАЛ: Хватов
+		<LineBreak/>
+		КТОФ
+		<LineBreak/>
+		<LineBreak/>
+		СЕКРЕТНО
+		<LineBreak/>
+		КОНЕЦ СООБЩЕНИЯ
+	  </TextBlock>
+</Grid>

@@ -1,0 +1,158 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MENSAJE NAVAL" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T O*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="DEPARTAMENTO DE MARINA" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					INMEDIATO
+					<LineBreak/>
+					O 26 0200Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="DE"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="FLOTA DEL PACÍFICO DE LA BANDERA ROJA"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="PARA"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="COMANDANTE"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFORMACIÓN"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10.ª ESCUADRA OPERATIVA"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="55.ª DIVISIÓN DE INFANTERÍA NAVAL"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14.ª BRIGADA DE BUQUES DE DESEMBARCO"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="ASUNTO"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="PARTE DIARIO"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					SECRETO
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) RESUMEN: SF Narod transitó el Estrecho de Malaca sin ser molestado, en ruta hacia la Bahía de Cam Ranh, ETA 28 FEB 88. SF Narod pasará al mando de KTOF una vez atracado en Cam Ranh.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) SITUACIÓN ENEMIGA:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- La bolsa de Kushiro fue empujada hasta 10 km del centro de la ciudad. Pérdidas graves del lado japonés; se espera la rendición de la bolsa en los próximos 7 días.
+					<LineBreak/>
+					- CONSTELLATION localizado 200nm al este de Pearl Harbor a las 26 2301Z FEB 88, se espera que transite hacia Pearl Harbor, probable reabastecimiento.
+					<LineBreak/>
+					- NIMITZ, localizado 300nm al noreste de Iwo Jima a las 26 2228Z FEB 88, parece mantener posición.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) SITUACIÓN PROPIA:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya se reunirá con la fuerza de reabastecimiento de Petropávlovsk no más tarde de las 01 0100Z MAR 88. La fuerza de reabastecimiento se retrasó por una desviación al norte para evitar un submarino conocido de la Armada estadounidense.
+					<LineBreak/>
+					- La 14.ª Brigada de Buques de Desembarco desembarcará a la 55.ª División de Infantería Naval en Sendai para cortar a las fuerzas terrestres japonesas en Morioka.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) SITUACIÓN ALIADA / REGIONAL: El desembarco del Ejército en las islas principales japonesas continúa logrando avances significativos; las fuerzas terrestres japonesas han sido empujadas a la línea este-oeste Akita-Morioka. El Ejército informa baja moral y resistencia limitada entre las fuerzas japonesas.
+					<LineBreak/>
+					Con el inminente colapso de la bolsa de Kushiro, el Ejército reubica fuerzas para el avance hacia Tokio.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) COMENTARIOS DEL COMANDANTE: La inminente llegada de SF Narod al Teatro del Pacífico aumentará significativamente nuestra potencia de fuego antibuque. Además, el Ejército está despejando múltiples aeródromos capturados en Japón; esperen mayor presencia de aviación táctica propia en las próximas semanas. KTOF saluda.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					FIRMADO: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					SECRETO DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

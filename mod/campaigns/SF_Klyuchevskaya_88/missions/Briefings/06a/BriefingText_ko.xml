@@ -1,0 +1,72 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 25 0000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 북방 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="나로드 기동부대"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		제7작전전대<LineBreak/>제169혼성항공연대<LineBreak/>제17작전전대
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="작전명령"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) 나로드 기동부대는 말라카 해협을 통과하는 미 해군의 저지를 막기 위해 미 항모전투단을 격멸하라.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 미 항모전투단은 엔터프라이즈 CVN-65를 중심으로 편성되었을 가능성이 높다. 호위세력은 전함 1척, 순양함 2척, 구축함 2척 이상, 미사일호위함 2척 이상으로 예상된다. 또한 귀 부대 북쪽에서 미확인 미 해군 수상타격단이 탐지되었다.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 미 해군의 통상적인 항모 전개 관행에 따라 이 구역에 미 해군 공격원잠이 있을 가능성이 있다.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) 적 항공위협은 높다. 나로드 기동부대가 식별될 경우 집중적인 적 공습을 예상하라.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 캄란 기지에서 Tu-95RT와 Tu-16K 다수 편대가 출격했다. 우군 항공대는 생존성을 높이기 위해 광범위하게 분산 배치되었다. 이들의 임무는 F-14 전투초계기를 나로드 기동부대로부터 유인하는 것이다. 폭격기 손실이 예상된다.
+		<LineBreak/>
+		<LineBreak/>6. (S) 키로프와 급유함 겐리흐 가사노프는 반드시 생존해야 한다. 그 외 모든 우군 함정은 소모 가능하나 불필요하게 낭비하지 말라.
+		<LineBreak/>
+		<LineBreak/>7. (S) 나로드 기동부대는 이번 임무 종료 후 휴식 및 재보급을 위해 캄란만으로 계속 이동하라. 엔터프라이즈만이 귀 부대와 우군 해역 사이를 가로막고 있다. 동지, 무운을 빈다.
+		<LineBreak/>
+		<LineBreak/>
+		서명: 흐바토프
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

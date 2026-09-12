@@ -1,0 +1,161 @@
+<!-- Modèle d'événement de campagne pour un message d'intentions quotidiennes (DIM) de style USN - mise en forme reprise d'exemples réels. -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MESSAGE NAVAL" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="DÉPARTEMENT DE LA MARINE" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					IMMÉDIAT
+					<LineBreak/>
+					O 09 0200Z FÉV 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="DE"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="À"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="COMMANDANT"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10e ESCADRE OPÉRATIONNELLE"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="143e DIVISION D'AVIATION MARITIME DE MISSILES"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="10e DIVISION SOUS-MARINE"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="OBJET"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="SITREP QUOTIDIEN"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					SECRET
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) RÉSUMÉ : Les opérations navales d'aujourd'hui ont été très efficaces, les moyens de surface ennemis ayant été repoussés hors de la mer du Japon et de la mer d'Okhotsk. Les frappes de la VVS contre les infrastructures japonaises ont eu un succès modéré. L'armée de terre a établi une tête de pont à Sapporo.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) SITUATION ENNEMIE :
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- CONSTELLATION, KITTY HAWK et leurs escortes touchés lors d'une attaque combinée aérienne et sous-marine. Aucune évaluation des dégâts pour l'instant. Des éléments de cette force ont été observés se retirant vers le sud par le détroit de Tsushima.
+					<LineBreak/>
+					- RANGER, MIDWAY et leurs escortes tombés dans une embuscade lors d'une frappe multi-axes de TU-22. RANGER confirmé coulé, MIDWAY confirmé lourdement endommagé et se repliant vers Pearl Harbor à 5 nœuds.
+					<LineBreak/>
+					- NIMITZ a appareillé le 08 1200Z FÉV 88, faisant route au sud vers Okinawa.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) SITUATION AMIE :
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya poursuit son transit vers le Pacifique Nord via les îles Kouriles et se prépare aux opérations de guerre au commerce.
+					<LineBreak/>
+					- La 143e Division d'aviation maritime de missiles réduit ses opérations et maintient sa disponibilité pour les cibles d'opportunité.
+					<LineBreak/>
+					- La 10e Division sous-marine positionnera des SNA en mer de Chine orientale et dans le Pacifique occidental pour des missions d'interdiction commerciale.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) SITUATION ALLIÉE / RÉGIONALE : Le débarquement amphibie de l'armée de terre à Sapporo a réussi, la tête de pont étant sécurisée et les forces de suite en cours de débarquement. L'armée signale une résistance japonaise acharnée dans les faubourgs urbains.
+					<LineBreak/>
+					<LineBreak/>
+					Les frappes de l'aviation à long rayon d'action contre les bases aériennes japonaises ont partiellement réussi. Les bases de Misawa, Hachinohe et Atsugi ont été touchées, mais avec des pertes minimes pour les appareils ennemis au sol.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) COMMENTAIRES DU COMMANDANT : La situation actuelle nous est favorable. Il est essentiel que les renforts américains ne parviennent pas jusqu'au Japon. En attente des informations de ciblage des convois. KTOF, terminé.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					SIGNÉ : Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					SECRET DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

@@ -1,0 +1,72 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 03 0100Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="红旗太平洋舰队"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指挥官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第10潜艇支队
+		<LineBreak/>
+		第11潜艇支队
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作战命令"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) K-242将击沉尼米兹号及高价值巡洋舰护航舰。
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 依照美方战前程序判断，该区域预计至少有1艘美国海军核潜艇。
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 敌方空中威胁很高。预计尼米兹号将动用其自身反潜力量——包括S-3"海盗"和SH-3"海王"——对该区域进行清扫。
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) K-525，一艘奥斯卡I级潜艇，已奉命支援你部任务。K-525满载24枚SS-N-19"海难"反舰导弹，目前位于你部东北方向200海里处。
+		<LineBreak/>
+		<LineBreak/>
+		4b. (S) 视后勤保障情况，可能会有额外潜艇加入你部任务。
+		<LineBreak/>
+		<LineBreak/>5. (S) 任务结束后，K-242和K-525将转移至彼得罗巴甫洛夫斯克补给。祝你好运，同志。
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: 赫瓦托夫
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

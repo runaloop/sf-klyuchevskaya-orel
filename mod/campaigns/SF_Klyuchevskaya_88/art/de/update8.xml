@@ -1,0 +1,162 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MARINEMELDUNG" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******G E H E I M*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="MARINEMINISTERIUM" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					SOFORT
+					<LineBreak/>
+					O 24 0200Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="VON"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="ROTBANNER-PAZIFIKFLOTTE"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="AN"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="KOMMANDANT"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10. OPERATIVE STAFFEL"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="55. MARINEINFANTERIEDIVISION"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14. LANDUNGSSCHIFF-BRIGADE"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="BETR"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="TAGESLAGEBERICHT"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					GEHEIM
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) ZUSAMMENFASSUNG: Amphibische Landung erfolgreich, japanische Kräfte in doppelter Einkesselung westlich von Sapporo vernichtet. Verbleibende japanische Kräfte ziehen sich in Auflösung nach Kushiro zurück. Die Armee beginnt die Invasion der japanischen Hauptinseln.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) FEINDLAGE:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Der Großteil der japanischen Panzer- und Artillerieeinheiten wurde vor der Landungsoperation bei Hakodate nach Hokkaido verlegt. Die japanischen Hauptinseln verfügen nun über sehr wenige Panzer- oder mechanisierte Kräfte.
+					<LineBreak/>
+					- CONSTELLATION seit 22 0600Z FEB 88 nicht geortet, zuletzt 200 sm östlich von Yokosuka gemeldet.
+					<LineBreak/>
+					- NIMITZ am 23 2231Z FEB 88 150 sm nördlich von Iwo Jima geortet, scheint auf Position zu verharren.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) EIGENE LAGE:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya setzt den Übergang zum Treffpunkt mit dem Nachschubverband von Petropawlowsk fort.
+					<LineBreak/>
+					- Die 55. Marineinfanteriedivision schifft sich nach Abschluss der Aufräumoperationen wieder auf Landungsschiffe ein.
+					<LineBreak/>
+					- Die 14. Landungsschiff-Brigade bleibt in Hakodate für eine künftige Landungsoperation über die Straße.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) LAGE VERBÜNDETER / REGIONALE LAGE: Der Armee gelangen in den letzten 72 Stunden bedeutende Erfolge. Der Kessel Hakodate-Sapporo ist nun vernichtet, die verbleibenden japanischen Kräfte sind auf einen 50 km tiefen Kessel um Kushiro reduziert.
+					<LineBreak/>
+					Vor 20 Stunden nutzte die Armee die Lage, um einen 50 km tiefen Landekopf am Südufer der Tsugaru-Straße zu erobern. Die UdSSR ist nun in der Lage, die japanischen Hauptinseln zu invadieren.
+					<LineBreak/>
+					Der Angriff der VVS gegen die CONSTELLATION-Kampfgruppe am 22. FEB 88 schlug fehl, der Angriffsverband wurde von F-14 und F-15 hart getroffen. Die Fähigkeiten der Langstreckenfliegerkräfte der VVS sind erheblich verringert, bis Verstärkungen von der Rotbanner-Nordflotte verlegt werden.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) ANMERKUNGEN DES KOMMANDEURS: Endlich läuft alles nach Plan. Mit der jüngsten Landung der Armee über die Straße und der unmittelbar bevorstehenden Vernichtung des Kessels von Kushiro werden wir bald in der Lage sein, den Amerikanern Friedensbedingungen zu diktieren. Die Rückkehr amerikanischer Trägerverbände in die Region ist besorgniserregend, doch die Rotbanner-Pazifikflotte wird nicht versagen. KTOF sendet.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					GEZEICHNET: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					GEHEIM DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

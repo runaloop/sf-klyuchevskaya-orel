@@ -1,0 +1,160 @@
+<!-- Modèle d'événement de campagne pour un message d'intentions quotidiennes (DIM) de style USN - mise en forme reprise d'exemples réels. -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MESSAGE NAVAL" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="DÉPARTEMENT DE LA MARINE" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					IMMÉDIAT
+					<LineBreak/>
+					O 28 0200Z FÉV 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="DE"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="À"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="COMMANDANT"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10e ESCADRE OPÉRATIONNELLE"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="55e DIVISION D'INFANTERIE NAVALE"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14e BRIGADE DE NAVIRES DE DÉBARQUEMENT"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="OBJET"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="SITREP QUOTIDIEN"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					SECRET
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) RÉSUMÉ : L'armée de terre se trouve désormais aux abords de Tokyo ; elle a détaché la moitié de ses forces pour foncer vers Kitakyushu et empêcher toute fuite des forces japonaises hors de Tokyo.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) SITUATION ENNEMIE :
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- La poche de Kushiro s'est rendue il y a 3 heures ; Hokkaido appartient désormais entièrement à l'URSS et la transition vers un gouvernement socialiste est achevée.
+					<LineBreak/>
+					- CONSTELLATION localisé à quai à Pearl Harbor le 27 2345Z FÉV 88. Les moyens techniques nationaux indiquent qu'il se ravitaille avec ses escortes, probablement pour reprendre la mer dans les 48 heures.
+					<LineBreak/>
+					- NIMITZ localisé à 500 nq au nord-est d'Iwo Jima le 24 2228Z FÉV 88, semble tenir sa position.
+					<LineBreak/>
+					- Un important convoi a quitté Pearl Harbor vers le 27 1800Z FÉV 88. Ce groupe semble être sur une trajectoire d'interception avec le groupe aéronaval NIMITZ, ETA estimée au 02 MARS 88. Le SIGINT évalue ce groupe comme force de ravitaillement pour le groupe aéronaval NIMITZ.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) SITUATION AMIE :
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya en ZONE OP BOGOTYR, effectuera l'interception de la force de ravitaillement du NIMITZ avant qu'elle n'entre dans la couverture aérienne du groupe aéronaval NIMITZ.
+					<LineBreak/>
+					- La 55e Division d'infanterie navale rejoint désormais la poussée sur Tokyo.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) SITUATION ALLIÉE / RÉGIONALE : Un détachement de l'armée de terre approche des abords de Nagoya ; Tokyo sera probablement encerclée dans les 48 heures. L'armée signale une résistance japonaise limitée dans les zones rurales, mais acharnée aux abords de Tokyo.
+					<LineBreak/>
+					Des éléments de la 11e Division sous-marine de la Flotte du Nord de la Bannière Rouge ont achevé leur transit du cercle polaire arctique et sont désormais sous commandement du KTOF.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) COMMENTAIRES DU COMMANDANT : Le KGB rapporte que ses détachements de sécurité ont liquidé les partisans à Hokkaido et sur les îles principales japonaises. Ils affirment que la résistance locale est largement réprimée ; il semble que ce ne sera pas un second Afghanistan. La question désormais est de savoir si nous pouvons acculer et détruire les groupes aéronavals restants de l'USN. KTOF, terminé.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					SIGNÉ : Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					SECRET DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

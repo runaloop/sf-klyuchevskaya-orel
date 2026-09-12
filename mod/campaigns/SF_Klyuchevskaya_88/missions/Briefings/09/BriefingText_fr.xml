@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 04 2200Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10e ESCADRE OPÉRATIONNELLE
+		<LineBreak/>
+		10e DIVISION SOUS-MARINE
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ORDRE D'OPÉRATION"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} doit détruire le convoi de repli japonais dans la baie de Tokyo.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) La menace sous-marine dans la zone est limitée. La destruction de la meute de sous-marins le 26 FEB 88 a considérablement réduit l'activité sous-marine ennemie. 
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) La menace aérienne ennemie est moyenne ; attendez-vous à des frappes aériennes d'appareils américains à long rayon d'action venant de Guam. La base aérienne japonaise d'Atsugi est toujours opérationnelle, avec quelques chasseurs-bombardiers F-1 et F-4 disponibles. 
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) La menace de surface ennemie est élevée. Les moyens techniques nationaux indiquent qu'une importante force de surface de l'USN, centrée sur le NEW JERSEY BB-62 et le LONG BEACH CGN-9, a appareillé de Guam il y a 48 heures, en route au nord-ouest. Les navires de guerre japonais restants sont également présents dans la baie de Tokyo, probablement en tant qu'escorte de convoi. 
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) L'ancien aérodrome japonais de Hamamatsu est disponible pour l'aviation amie. 
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) {TaskForceName} doit transiter vers le sud jusqu'à la zone OPBOX Borodino une fois la mission terminée. Bonne chance, camarade.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNÉ : Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

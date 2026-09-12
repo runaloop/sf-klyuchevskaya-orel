@@ -1,0 +1,27 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="08. FEBRUAR 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Ein Gespräch unter vier Augen" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Nachdem Sie Ihre neuen Befehle gelesen haben, klopft es an Ihrer Tür. Es ist der Genosse Politkommissar.
+        <LineBreak/><LineBreak/>
+		"Genosse Kommandant", beginnt er, "der KGB hat zusätzliche Befehle übermittelt, nur für Ihre Augen. Der KGB ist sehr daran interessiert, 'Subjekte' zur nachrichtendienstlichen Auswertung zu gewinnen. Für je VIER gerettete Überlebende belohnt Sie der KGB mit EINEM Missionspunkt. Keine Sorge, Genosse, es ist nicht mehr 1938, Glasnost bedeutet, dass selbst der KGB nicht gegen interne Ermittlungen immun ist."
+        <LineBreak/><LineBreak/>
+        Sie denken bei sich: VIER Überlebende für EINEN Punkt? Ein guter Handel, und wenn Sie dem Kommissar glauben lassen, dass Sie ihm vertrauen, kommen diesen Kriegsgefangenen vielleicht nicht zu Schaden. Außerdem, gute Seeleute lassen gestrandete Matrosen doch nicht sterben, oder?
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		即時（IMMEDIATE）
+		<LineBreak/>
+		O 09 2000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="発"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="赤旗太平洋艦隊"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="宛"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指揮官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="報"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第10作戦戦隊
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="件名"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="警告命令――通過"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密（SECRET）
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}は、後続の船団襲撃作戦のため千島列島を通過する。
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 信号情報（SIGINT）によれば、敵の通常型潜水艦（SSK）2隻以上が貴部隊の通過を阻止しようとする可能性がある。
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 八戸基地への当初の攻撃は不成功であった。南西方向より護衛のない敵哨戒機を予期せよ。
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) 複数の敵商船が依然として航路上に存在する。米国籍および日本籍のすべての商船は敵性とみなす。機会があれば撃沈せよ。
+		<LineBreak/>
+		<LineBreak/>4b. (S) 国家技術情報源によれば、米海軍の高速船団が西行航路を通過中である。当船団はRGM-109B TASMおよびRIM-66Dの米第7艦隊向け重要補給物資を輸送していると見込まれる。
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 注記1：作戦日程が厳しいため、任務終了後の修理・補給施設の利用は見込めない。弾薬は賢く使用せよ。健闘を祈る、同志。
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) 注記2：航路上には中立国船舶も存在する。中立国商船を撃沈してはならない。NATOは本紛争において中立を保っており、モスクワはこの時点で第二正面を負担する余裕はない。密集した商船交通の中でSS-N-12「サンドボックス」を発射することは推奨しない。当該ミサイル複合体は、発射初期位置から20海里以内のすべての接触目標に対して斉射を分散させるためである。
+		<LineBreak/>
+		<LineBreak/>
+		署名：フヴァトフ
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		機密（SECRET）
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

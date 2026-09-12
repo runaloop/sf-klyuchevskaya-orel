@@ -1,0 +1,68 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 16 1100Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO K-242"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10th SUBMARINE DIV
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATIONAL ORDER"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) K-242 sẽ tiêu diệt Lực lượng Hộ tống Hạm đội 2 của JMSDF.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) HARUNA DDH-141 và KURAMA DDH-144 là các mục tiêu ưu tiên và được cho là ở trung tâm biên đội. Các tàu hộ tống có thể bao gồm 1 tàu khu trục có tên lửa dẫn đường (DDG) và 2 tàu khu trục (DD) hoặc nhiều hơn.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) Hãy dự đoán sự hiện diện dày đặc của không quân đối phương. Lực lượng Hộ tống Hạm đội 2 tự mang theo 6 trực thăng chống ngầm HSS-2B. Các tàu khu trục của JMSDF cũng hỗ trợ máy bay không người lái chống ngầm tầm xa. Máy bay tuần tra biển (MPA) của đối phương xuất phát từ Căn cứ Không quân Atsugi có thể đang hoạt động trong khu vực.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) Hiện chưa rõ về sự hiện diện của tàu ngầm đối phương.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) Lưu ý, tàu ngầm mang tên lửa hành trình (SSGN) K-175 của quân bạn đang thực hiện một nhiệm vụ riêng ở phía Đông Nam của bạn. Chúc may mắn, Đồng chí.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

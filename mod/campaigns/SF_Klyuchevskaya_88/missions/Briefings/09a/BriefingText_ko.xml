@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 06 0600Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 태평양 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="사령관 {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		제10작전전대
+		<LineBreak/>
+		제11작전전대
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="작전명령"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}는 나로드 기동부대를 이탈구역까지 호위하라. 적은 이미 우리의 접근을 알고 있으므로 무선통제(EMCON)는 필요하지 않다.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 이 구역의 잠수함 위협은 불명확하다. 미 해군 공격원잠은 여전히 종적을 파악하기 어렵다. 또한 다수의 일본 재래식 잠수함이 항복명령을 무시하고 아직 귀환하지 않았다.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 적 항공위협은 중간 수준이며 오키나와에서 출격하는 일본 공습이 예상된다. 괌 소재 미 공군 자산이 호위 편대와 함께 B-52 편대로 저지를 시도할 가능성이 높다.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) 적 수상위협은 중간 수준이며 나하에는 미사일구축함 2척 이상으로 이루어진 소규모 수비대가 있다.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 구 일본 뉴타바루 비행장을 우군 항공기가 이용할 수 있다.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) {TaskForceName}는 임무 종료 후 사세보에서 재보급하라. 이번 임무가 끝나면 나로드 기동부대의 일부 병력이 귀 부대에 합류한다. 동지, 무운을 빈다.
+		<LineBreak/>
+		<LineBreak/>
+		서명: 흐바토프
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

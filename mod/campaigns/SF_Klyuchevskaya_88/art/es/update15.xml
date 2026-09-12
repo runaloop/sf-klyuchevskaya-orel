@@ -1,0 +1,160 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MENSAJE NAVAL" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T O*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="DEPARTAMENTO DE MARINA" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					INMEDIATO
+					<LineBreak/>
+					O 06 0200Z MAR 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="DE"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="FLOTA DEL PACÍFICO DE LA BANDERA ROJA"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="PARA"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="COMANDANTE"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFORMACIÓN"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10.ª ESCUADRA OPERATIVA"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="11.ª ESCUADRA OPERATIVA"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="10.ª DIVISIÓN DE SUBMARINOS"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="ASUNTO"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="PARTE DIARIO"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					SECRETO
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) RESUMEN: Tokio presentó la rendición incondicional el 05 mar 0000Z, poniendo fin a las hostilidades en las islas principales japonesas. Sin embargo, las fuerzas estadounidenses permanecen hostiles, así como en las islas japonesas con presencia estadounidense, en particular Okinawa e Iwo Jima.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) SITUACIÓN ENEMIGA:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Okinawa e Iwo Jima reforzadas con aviones adicionales de la USAF procedentes de Europa Occidental. Inteligencia humana en Alemania y en la costa oeste de EE. UU. confirma al menos 2 escuadrones de F-15C redistribuidos al Pacífico Occidental.
+					<LineBreak/>
+					- CONSTELLATION ausente en las imágenes; se espera que haya partido de Pearl Harbor en las últimas 72 horas. Su grupo de escolta incluye al menos 2 CG, 2 DD, y 2 o más de la nueva variante de casco largo de la clase Oliver Hazard Perry.
+					<LineBreak/>
+					- KITTY HAWK ausente en las imágenes; se espera que haya partido de Pearl Harbor en las últimas 24 horas. Los medios técnicos nacionales evalúan que este portaaviones es poco probable que esté en plena capacidad operativa debido a los graves daños sufridos por nuestra Aviación de Largo Alcance.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) SITUACIÓN PROPIA:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya en la ZONA DE OPERACIONES BORODINO, se reunirá con SF Narod 150nm al este de las Islas Senkaku y la escoltará hasta la Bahía de Tokio.
+					<LineBreak/>
+					- SF Narod 150nm al oeste de Taiwán, en tránsito hacia Yokosuka para descanso y reacondicionamiento, ETA 08 2000Z mar 26.
+					<LineBreak/>
+					- La 143.ª División de Aviación Naval de Misiles en alerta máxima en previsión de una incursión de portaaviones enemiga contra Petropávlovsk o el norte de Japón.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) SITUACIÓN ALIADA / REGIONAL: El Ejército pasa a misiones de seguridad de posguerra en Japón. El Alto Mando del Ejército prepara opciones de contingencia para desembarcar fuerzas en Okinawa o Iwo Jima si Estados Unidos no cesa las hostilidades.
+					<LineBreak/>
+					La Aviación de Largo Alcance de las VVS también está en alerta máxima, en previsión de incursiones de portaaviones estadounidenses contra la patria soviética.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) COMENTARIOS DEL COMANDANTE: Las islas principales japonesas están ahora totalmente bajo control soviético. Si el KGB cumple su parte del trato, se establecerá una nueva república socialista en el Pacífico Occidental para el año nuevo. La cuestión ahora es qué harán los portaaviones estadounidenses restantes. Mantengan vigilancia ante la acción aérea enemiga. KTOF saluda.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					FIRMADO: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					SECRETO DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

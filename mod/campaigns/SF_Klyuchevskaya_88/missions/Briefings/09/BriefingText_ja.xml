@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		即時（IMMEDIATE）
+		<LineBreak/>
+		O 04 2200Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="発"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="赤旗太平洋艦隊"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="宛"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指揮官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="報"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第10作戦戦隊
+		<LineBreak/>
+		第10潜水艦師団
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="件名"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作戦命令"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密（SECRET）
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}は、東京湾内の日本撤退船団を撃滅せよ。
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 当該海域における潜水艦の脅威は限定的である。2月26日に実施した潜水艦「群狼」の撃滅により、敵の潜水艦活動は著しく低下している。
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 敵の航空脅威は中程度である。グアムからの米長距離機による空襲を予期せよ。日本の厚木基地は依然機能しており、F-1およびF-4戦闘爆撃機を若干数保有している。
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) 敵の水上脅威は高い。国家技術情報源によれば、ニュージャージー BB-62およびロングビーチ CGN-9を中心とする米海軍の大規模水上部隊が48時間前にグアムより出撃し、北西方向へ進んでいる。残存する日本艦艇も東京湾内に存在し、船団護衛を担っているとみられる。
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 浜松にある旧日本軍飛行場が友軍機に使用可能である。
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) {TaskForceName}は任務終了後、南方へ移動し作戦区域「ボロジノ」へ向かえ。健闘を祈る、同志。
+		<LineBreak/>
+		<LineBreak/>
+		署名：フヴァトフ
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		機密（SECRET）
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

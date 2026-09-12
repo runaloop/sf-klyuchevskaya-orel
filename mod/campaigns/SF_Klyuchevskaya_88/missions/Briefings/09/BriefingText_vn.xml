@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 04 2200Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10th OPERATIONAL SQN
+		<LineBreak/>
+		10th SUBMARINE DIV
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION ORDER"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} sẽ tiêu diệt đoàn tàu vận tải rút quân của Nhật Bản trong Vịnh Tokyo.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) Mối đe dọa tàu ngầm trong khu vực này hạn chế. Việc tiêu diệt bầy tàu ngầm ("sói biển") vào ngày 26 tháng 2 năm 1988 đã làm giảm đáng kể hoạt động tàu ngầm của đối phương.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) Mối đe dọa từ không quân đối phương trung bình, hãy dự đoán các đợt không kích bằng máy bay tầm xa của Mỹ từ Guam. Căn cứ Không quân Atsugi của Nhật Bản vẫn còn hoạt động, với một số tiêm kích-bom F-1 và F-4 sẵn có.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) Mối đe dọa mặt nước của đối phương cao. Các phương tiện kỹ thuật quốc gia cho thấy một lực lượng mặt nước lớn của Hải quân Mỹ lấy NEW JERSEY BB-62 và LONG BEACH CGN-9 làm trung tâm đã xuất phát từ Guam 48 giờ trước, hướng Tây Bắc. Các tàu chiến Nhật Bản còn lại cũng đang ở trong Vịnh Tokyo, có khả năng đóng vai trò hộ tống đoàn tàu vận tải.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) Sân bay cũ của Nhật Bản tại Hamamatsu hiện đã sẵn sàng cho máy bay của quân bạn.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) {TaskForceName} sẽ di chuyển về phía Nam đến OPBOX Borodino sau khi hoàn thành nhiệm vụ. Chúc may mắn, Đồng chí.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

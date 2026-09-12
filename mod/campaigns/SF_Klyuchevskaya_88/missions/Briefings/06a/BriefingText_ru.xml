@@ -1,0 +1,72 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		СРОЧНОЕ СООБЩЕНИЕ
+		<LineBreak/>
+		O 25 0000Z ФЕВ 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="От кого:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="КРАСНОЗНАМЁННЫЙ СЕВЕРНЫЙ ФЛОТ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Кому:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="КУГ «Народ»"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Копия:"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		7-я оперативная эскадра<LineBreak/>169-й смешанный авиационный полк<LineBreak/>17-я оперативная эскадра
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Тема:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Боевой приказ"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		СЕКРЕТНО
+		<LineBreak/>
+		<LineBreak/>
+		1. (С) КУГ «Народ» надлежит уничтожить американскую авианосную группу, чтобы предотвратить действия ВМС США по перехвату при её переходе через Малаккский пролив.
+		<LineBreak/>
+		<LineBreak/>
+		2. (С) Американская авианосная группа вероятно построена вокруг авианосца ЭНТЕРПРАЙЗ CVN-65. В охранении ожидаются 1 линкор, 2 крейсера, 2+ эсминца и 2+ фрегата УРО. Кроме того, к северу от вашей позиции обнаружена неустановленная корабельная поисково-ударная группа ВМС США.
+		<LineBreak/>
+		<LineBreak/>
+		3. (С) В районе вероятна атомная подводная лодка ВМС США — это соответствует обычной практике развёртывания американских авианосных сил.
+		<LineBreak/>
+		<LineBreak/>
+		4. (С) Вражеская воздушная угроза высока; при обнаружении КУГ «Народ» ожидайте сосредоточенный авиационный удар противника.
+		<LineBreak/>
+		<LineBreak/>
+		5. (С) С базы Камрань поднято несколько групп Ту-95РЦ и Ту-16К. Дружественная авиация широко рассредоточена для повышения живучести. Их задача — отвлечь истребительное патрулирование F-14 от КУГ «Народ». Ожидаются потери среди бомбардировщиков.
+		<LineBreak/>
+		<LineBreak/>6. (С) КИРОВ и танкер комплексного снабжения ГЕНРИХ ГАСАНОВ должны быть сохранены. Все прочие дружественные силы считаются расходуемыми, но не расходуйте их без необходимости.
+		<LineBreak/>
+		<LineBreak/>7. (С) КУГ «Народ» после выполнения этой задачи продолжает переход в Камрань для отдыха и пополнения запасов. ЭНТЕРПРАЙЗ — это единственное, что стоит между вами и дружественными водами. Удачи, товарищ.
+		<LineBreak/>
+		<LineBreak/>
+		ПОДПИСАЛ: Хватов
+		<LineBreak/>
+		КТОФ
+		<LineBreak/>
+		<LineBreak/>
+		СЕКРЕТНО
+		<LineBreak/>
+		КОНЕЦ СООБЩЕНИЯ
+	  </TextBlock>
+</Grid>

@@ -1,0 +1,83 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="#F3E8CF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="920" Height="1270" Padding="44"
+            TextElement.FontFamily="Times New Roman" TextElement.Foreground="#111111" TextElement.FontSize="17">
+      <Border.Effect>
+        <DropShadowEffect BlurRadius="16" ShadowDepth="6" Opacity="0.45"/>
+      </Border.Effect>
+      <StackPanel Orientation="Vertical">
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+        <TextBlock Text="20. MÄRZ 1988 | ASIA OBSERVER | 30 Cent" Margin="0,14,0,14" FontSize="23" TextAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <Grid Margin="0,8,0,12">
+          <Rectangle Fill="#9B1C1C" Height="16" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
+          <TextBlock Text="EILMELDUNG" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <TextBlock Text="FRIEDENSGESPRÄCHE IN DER SCHWEIZ ABGESCHLOSSEN"
+                   FontWeight="Bold" FontSize="36" TextWrapping="Wrap" TextAlignment="Center" Margin="0,18,0,12"/>
+        <TextBlock Text="Sowjetische und amerikanische Diplomaten unterzeichnen unverbindlichen Friedensvertrag."
+                   FontSize="24" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,18"/>
+
+        <Border BorderBrush="#111111" BorderThickness="3" Background="#FFF7DD" Padding="14" Margin="0,0,0,18">
+          <TextBlock Text="Angespannter, aber friedlicher Rückzug, während sowjetische und amerikanische Kräfte zu Friedenszeitbetrieb zurückkehren."
+                     FontSize="28" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Border>
+
+        <Grid Margin="0,0,0,16">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="3*"/>
+          </Grid.ColumnDefinitions>
+
+          <StackPanel Grid.Column="0">
+            <TextBlock Text="ZÜRICH" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Die sowjetischen und amerikanischen Außenminister unterzeichneten heute einen unverbindlichen Friedensvertrag. Dieser Vertrag teilt die ehemalige Nation Japan in einen sozialistischen und einen demokratischen Block.
+              <LineBreak/><LineBreak/>
+              Das sowjetisch besetzte Hokkaido und die japanischen Hauptinseln werden an eine neue "Volksrepublik Japan" abgegeben, Okinawa und Iwo Jima verbleiben unter demokratischer japanischer Kontrolle.
+              <LineBreak/><LineBreak/>
+              Ausländische Beobachter bemerken das Fehlen einer japanischen Delegation während des gesamten Vertragsprozesses.
+            </TextBlock>
+          </StackPanel>
+
+          <StackPanel Grid.Column="2">
+            <TextBlock Text="WASHINGTON" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Empörung und Trauer heute in den ganzen USA, als das volle Ausmaß der amerikanischen Verluste bekannt wird.
+              <LineBreak/><LineBreak/>
+              Amerikanische Amtsträger stehen wegen der schwachen Leistung im Westpazifik unter scharfer Kritik.
+              <LineBreak/><LineBreak/>
+              Die sowjetische Botschaft in Washington verspricht die rasche Rückführung gefangener amerikanischer Soldaten.
+            </TextBlock>
+          </StackPanel>
+        </Grid>
+
+        <Border BorderBrush="#111111" BorderThickness="2" Padding="12" Margin="0,0,0,16">
+          <StackPanel>
+            <TextBlock Text="SPANNUNGEN IN DER NATO WACHSEN" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="23">
+              Der US-Präsident stellte heute die Kampfbereitschaft Westeuropas in Frage und behauptete, es sei kommunistischer politischer Einflussnahme zum Opfer gefallen.
+			  <LineBreak/><LineBreak/>
+			  Analysten warnen vor der Bereitschaft Europas, sowjetisches Öl und Gas anzunehmen, und vor den Gefahren, westliche Wirtschaften an einen "expansionistischen" und "autoritären" sowjetischen Staat zu binden.
+            </TextBlock>
+          </StackPanel>
+        </Border>
+
+        <Rectangle HorizontalAlignment="Stretch" Height="3" Fill="#111111"/>
+        <TextBlock Text="Im Innern: Wahlen im sowjetischen Japan nächste Woche | Analyse: 32 Jahre US-japanischer Sicherheitsvertrag | Vereinigte Stabschefs der USA treten aus Protest gegen das Friedensabkommen zurück" TextWrapping="Wrap" FontSize="17" Margin="0,12,0,10" TextAlignment="Center"/>
+        <TextBlock Text="-1-" TextAlignment="Center" FontSize="16"/>
+      </StackPanel>
+    </Border>
+  </Viewbox>
+</Page>

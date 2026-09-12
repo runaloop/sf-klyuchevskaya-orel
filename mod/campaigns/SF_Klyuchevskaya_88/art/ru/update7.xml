@@ -1,0 +1,105 @@
+<!-- Pacific Strike CIA memorandum event, adapted from Strike Group Molniya U.S.-voice interstitial format. -->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="864" Height="1120" Padding="45"
+            TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+      <Border.Effect>
+        <DropShadowEffect />
+      </Border.Effect>
+
+      <Border BorderThickness="0,10,10,10" BorderBrush="#FF000000">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <TextBlock Text="C05084534" Background="#FFFFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,-15,0,0" Padding="5,0,5,0" />
+          <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="10"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="СОВЕРШЕННО СЕКРЕТНО" TextAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
+              Главное разведывательное управление
+              <LineBreak/>
+              <LineBreak/>
+              <Run FontSize="12">Москва, 62665</Run>
+            </TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="3" Text="17 февраля 1988"/>
+            <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="МЕМОРАНДУМ ДЛЯ:   "/>
+            <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
+              ВЫСШЕЕ КОМАНДОВАНИЕ ВМФ
+              <LineBreak/>
+              КРАСНОЗНАМЁННЫЙ ТИХООКЕАНСКИЙ ФЛОТ
+              <LineBreak/>
+              10-Я ОПЕРАТИВНАЯ ЭСКАДРА//J2//
+              <LineBreak/>
+              55-Я ДИВИЗИЯ МОРСКОЙ ПЕХОТЫ//J2//
+            </TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="3" TextWrapping="Wrap">
+              EO 13526 3.3(b)(1)&gt;25Yrs
+              <LineBreak/>
+              EO 13526 3.5(c)
+            </TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="ТЕМА:   "/>
+            <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Text="Японский трафик связи после удара по Мисаве"/>
+          </Grid>
+          <TextBlock Grid.Row="2" TextWrapping="Wrap">
+            1. Станция радиоперехвата «ВАРЯГ» передала переговоры японского командования, сообщающие о нейтрализации авиабазы Мисава. В переговорах отражена острая обеспокоенность тем, что Хоккайдо теперь лишён истребительного прикрытия и непосредственной авиационной поддержки.
+            <LineBreak/>
+            <LineBreak/>
+            2. По каналам Морских сил самообороны Японии и Сухопутных сил самообороны командирам на Хоккайдо приказано удерживать остров любой ценой. Запрашиваются дополнительные подвижные ЗРК, боекомплект ракет и артиллерийские снаряды. Для дополнительного авиационного прикрытия и поддержки наземных сил запрашивается авианосная авиация ВМС США.
+            <LineBreak/>
+            <LineBreak/>
+            3. Следует ожидать, что противник компенсирует это перебросом авианосцев севернее, невзирая на угрозу с воздуха или на дополнительные батареи ЗРК, развёрнутые в районах ожидаемой высадки.
+            <LineBreak/>
+            <LineBreak/>
+			4. Японское и американское командование, по всей видимости, понимает, что Хоккайдо и северная Япония теперь открыты для удара. С учётом этого мы оцениваем обстановку как благоприятную для немедленного проведения запланированной десантной операции.
+            <LineBreak/>
+            <LineBreak/>
+          </TextBlock>
+          <TextBlock TextAlignment="Right" Text="Владлен Михайлов, начальник" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
+          <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
+            <Run TextDecorations="Underline">Разослано через ER/21 февраля 1988 с приложением</Run>
+            <LineBreak/>
+            <LineBreak/>
+            Оригинал - каждому адресату
+            <LineBreak/>
+               1 - 2-е управление ГРУ
+            <LineBreak/>
+               1 - 6-е управление ГРУ
+            <LineBreak/>
+               1 - 12-е управление ГРУ
+          </TextBlock>
+          <TextBlock Grid.Row="4" Text="СОВЕРШЕННО СЕКРЕТНО" TextAlignment="Center"/>
+        </Grid>
+      </Border>
+    </Border>
+  </Viewbox>
+</Page>

@@ -1,0 +1,165 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="해군 통신문" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******T O P S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="해군성" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					IMMEDIATE
+					<LineBreak/>
+					O 08 0800Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="적기 태평양 함대"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="지휘관"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="포키노, 프리모르스키 변경주"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="제10작전전대"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="제143해군미사일항공사단"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="제10잠수함사단"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="계획명령 오렌지 1-4"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					TOP SECRET - EYES ONLY
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (TS) 요약: 최근 소련 영토에 대한 침입 행위로 볼 때 일본과 미국의 극동 침공이 임박한 것으로 판단됨. 붉은 함대 최고사령부는 계획명령 오렌지 1-4의 즉각 시행을 명령함. 가용한 모든 소련 부대는 일본 및 미 제7함대에 대한 전면 전투 작전을 준비할 것.
+					<LineBreak/>
+					<LineBreak/>
+					전투 작전은 09 0000Z FEB 88, "클류쳅스카야산 등정" 명령과 함께 시작됨.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (TS) 적 상황:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 컨스텔레이션, 키티 호크 및 소속 호위 전력이 일본해에서 일본 제1함대 호위전대와 합동 작전을 수행 중.
+					<LineBreak/>
+					- 레인저, 미드웨이 및 소속 호위 전력이 페트로파블롭스크 남방 200해리 지점에서 상륙함들과 작전을 수행 중.
+					<LineBreak/>
+					- 니미츠는 일본 요코스카에 정박 중.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (TS) 우군 상황:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 소야 해협으로 향하는 클류쳅스카야 기동부대는 현재 항로를 유지하며 북태평양으로 진입, 적 통상로를 차단할 것.
+					<LineBreak/>
+					- 제143해군미사일항공사단은 레인저-미드웨이 그룹에 대한 집중 타격을 준비할 것.
+					<LineBreak/>
+					- 제10잠수함사단은 SSN 및 SSGN을 서태평양과 일본해로 증파할 준비를 할 것.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (TS) 동맹/지역 상황: VVS와 육군 부대가 일본 삿포로에 대한 상륙 및 공중강습을 준비 중. 홋카이도를 관통하여 압도적인 기갑 및 기계화 전력으로 일본군을 각개 격파할 계획. 홋카이도 점령 후에는 추가 상륙 및 공중강습으로 본토에 대한 신속한 전과 확대를 도모함.
+					<LineBreak/>
+					<LineBreak/>
+					또한 VVS는 지역 내 일본 공군기지에 장거리 항공대를 투입할 예정. 적 공군기지의 무력화는 우군 수상 및 잠수함 전력에 대한 위협을 크게 줄일 것임.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (TS) 지휘관의 의도: 작전 목표는 역내 일본 및 미국 해군 전력의 신속한 격파이며, 이를 통해 수상 및 잠수함 전력이 통상 파괴를 통해 일본을 봉쇄할 수 있게 하는 것임. 고립된 일본은 우군 지상군이 적 방어선을 압도하고 전 섬을 장악할 수 있게 할 것임. 중립국을 교전에 끌어들이지 않도록 주의할 것. 이는 NATO 및 기타 서방 동맹국을 포함하지 않는 지역 전쟁이 될 것임. KTOF 발신.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					서명: 흐바토프
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					TOP SECRET - EYES ONLY DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

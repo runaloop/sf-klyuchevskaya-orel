@@ -1,0 +1,72 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		即時（IMMEDIATE）
+		<LineBreak/>
+		O 03 0100Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="発"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="赤旗太平洋艦隊"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="宛"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指揮官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="報"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第10潜水艦師団
+		<LineBreak/>
+		第11潜水艦師団
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="件名"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作戦命令"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密（SECRET）
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) K-242は、ニミッツおよび高価値の巡洋艦護衛艦を撃沈せよ。
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 米国の戦前手順に従い、少なくとも1隻の米海軍SSNが当該海域に存在すると見込まれる。
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 敵の航空脅威は高い。ニミッツはS-3「バイキング」およびSH-3「シーキング」を含む自前の対潜戦力を用いて海域を掃討すると見込まれる。
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) オスカーI型潜水艦K-525が、貴任務の支援を命じられている。K-525はSS-N-19「シップレック」対艦ミサイル24発を満載している。貴官の北東方200海里に位置する。
+		<LineBreak/>
+		<LineBreak/>
+		4b. (S) 後方支援の状況に応じ、追加の潜水艦が配属される可能性がある。
+		<LineBreak/>
+		<LineBreak/>5. (S) K-242およびK-525は任務終了後、補給のためペトロパブロフスクへ移動せよ。健闘を祈る、同志。
+		<LineBreak/>
+		<LineBreak/>
+		署名：フヴァトフ
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		機密（SECRET）
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

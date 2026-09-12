@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988年2月25日" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="第二太平洋艦隊" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        1988年1月、SFナロードは世界周航のため北方艦隊基地を出発した。開戦時、当任務部隊はインドのムンバイへ向かう途上、アデン湾に位置していた。NATOが本紛争への参加を望まなかったため、モスクワはこの強力な任務部隊を太平洋方面で活用するのが最善であると判断した。
+        <LineBreak/><LineBreak/>
+		大型ミサイル巡洋艦キーロフを中心に、SFナロードは強力な対潜・対水上戦闘艦数隻に護衛されている。社会主義の連帯を促進する目的から、ソ連陣営諸国にYak-38「フォージャー」の採用を働きかけるため、垂直/短距離離着陸（V/STOL）軽空母1隻が配属されている。
+        <LineBreak/><LineBreak/>
+        開戦以来、SFナロードは2月を通じてインド洋における米海軍戦力の回避に努めてきた。残存燃料が限られる中、赤旗北方艦隊はSFナロードに対し、マラッカ海峡を突破しカムラン湾にて補給を受けるよう命じた。
+        <LineBreak/><LineBreak/>
+        1988年2月25日、SFナロードの朝は、E-2「ホークアイ」特有の電磁波放射によって中断される。
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

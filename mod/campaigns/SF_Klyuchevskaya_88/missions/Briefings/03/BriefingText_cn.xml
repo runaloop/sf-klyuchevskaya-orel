@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 09 2000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="红旗太平洋舰队"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指挥官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第10作战支队
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="警告令——通过"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}将通过千岛群岛，为后续袭击船队行动做准备。
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 信号情报显示，2艘以上敌方常规潜艇企图阻挠你部通过。
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 对八户空军基地的首轮打击未能奏效。预计西南方向会有未受护航的敌方海上巡逻机。
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) 航道上仍有多艘敌方商船。所有悬挂美国和日本旗的商船均视为敌对目标，如有机会应予摧毁。
+		<LineBreak/>
+		<LineBreak/>4b. (S) 国家技术侦察手段显示，一支美国海军高速船队正通过西行商船航道。该船队预计运载着为美国第七舰队补充的重要物资——RGM-109B陆攻战术空射导弹和RIM-66D标准导弹。
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 注意事项1：由于行动日程紧张，预计任务结束后没有维修或补给设施可用。请谨慎使用弹药。祝你好运，同志。
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) 注意事项2：航道上有中立方船只往来。切勿击沉中立商船；北约在本次冲突中保持中立，莫斯科目前无力应付第二条战线。不建议向密集的商船群发射SS-N-12"沙盒"导弹；该导弹系统会将齐射弹药分配至初始点周边20海里内的所有目标。
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: 赫瓦托夫
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

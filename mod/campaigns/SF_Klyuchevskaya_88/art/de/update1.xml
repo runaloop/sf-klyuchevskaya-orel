@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="Januar 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Auftakt zum Krieg" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Jan. 1988 Die Sowjetunion sieht die amerikanische und japanische Präsenz nahe dem Ochotskischen Meer mit wachsender Sorge.
+        <LineBreak/><LineBreak/>
+		Japan baut seine "Selbstverteidigungsstreitkräfte" rasch aus, und der Kreml vermutet, dass Japan seine territorialen Ambitionen wiederbelebt hat. Zugleich hat das jüngste Ende des Iran-Irak-Kriegs es einem Großteil der Indischer-Ozean-Geschwader der 7. US-Flotte ermöglicht, in den Westpazifik zurückzukehren. Ein wiederauflebendes Japan und der Zustrom amerikanischer Kräfte haben Moskau überzeugt, ein deutliches Zeichen zu setzen.
+        <LineBreak/><LineBreak/>
+        SF Klyuchevskaya erhält den Befehl, die Kurilen zu patrouillieren und sowjetische Entschlossenheit zu demonstrieren. Zentriert um den TAVKR TBILISI, den neuesten Träger des Projekts 1160 der Pazifikflotte, ist dies eine mächtige Task Force, die den Willen des sowjetischen Volkes erneut bekräftigen wird.
+        <LineBreak/><LineBreak/>
+        Bauen Sie Ihre Kampfgruppe auf, schützen Sie die TBILISI und verteidigen Sie das Vaterland.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

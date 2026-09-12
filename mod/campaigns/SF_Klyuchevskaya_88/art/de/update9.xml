@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="25. FEB 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Das Zweite Pazifikgeschwader" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Bereits im Januar 1988 lief SF Narod von seinem Stützpunkt der Nordflotte zu einer Weltumsegelung aus. Als der Krieg begann, befand sich die Task Force im Golf von Aden, auf dem Weg nach Mumbai, Indien. Da die NATO nicht bereit war, sich am Konflikt zu beteiligen, entschied Moskau, dass diese mächtige Task Force am besten im Pazifik eingesetzt würde.
+        <LineBreak/><LineBreak/>
+		Zentriert um den Großen Raketenkreuzer KIROV, wird SF Narod von mehreren leistungsfähigen U-Jagd- und Seezielangriffsschiffen eskortiert. Im Interesse der sozialistischen Einheit wurde ein leichter V/STOL-Träger beigestellt, um sowjetisch orientierte Staaten zum Kauf von Yak-38 Forger für ihre Luftstreitkräfte zu bewegen.
+        <LineBreak/><LineBreak/>
+        Nun, da der Krieg ausgebrochen ist, hat SF Narod den Februar damit verbracht, den Einheiten der USN im Indischen Ozean auszuweichen. Mit stark begrenzten Treibstoffvorräten hat die Rotbanner-Nordflotte SF Narod befohlen, die Straße von Malakka zu durchlaufen und in Cam Ranh Bay Nachschub zu fassen.
+        <LineBreak/><LineBreak/>
+        Es ist nun der 25. Februar 1988, und SF Narod wird an diesem Morgen von den unverkennbaren elektromagnetischen Ausstrahlungen eines E-2 Hawkeye gestört.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

@@ -1,0 +1,105 @@
+<!-- Pacific Strike CIA memorandum event, adapted from Strike Group Molniya U.S.-voice interstitial format. -->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="864" Height="1120" Padding="45"
+            TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+      <Border.Effect>
+        <DropShadowEffect />
+      </Border.Effect>
+
+      <Border BorderThickness="0,10,10,10" BorderBrush="#FF000000">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <TextBlock Text="C05084534" Background="#FFFFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,-15,0,0" Padding="5,0,5,0" />
+          <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="10"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TOP SECRET" TextAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
+              정보총국(GRU)
+              <LineBreak/>
+              <LineBreak/>
+              <Run FontSize="12">모스크바, 62665</Run>
+            </TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="3" Text="1988년 2월 17일"/>
+            <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="수신:   "/>
+            <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
+              소련 해군 총사령부
+              <LineBreak/>
+              적기 태평양 함대
+              <LineBreak/>
+              제10작전전대//J2//
+              <LineBreak/>
+              제55해군보병사단//J2//
+            </TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="3" TextWrapping="Wrap">
+              EO 13526 3.3(b)(1)&gt;25Yrs
+              <LineBreak/>
+              EO 13526 3.5(c)
+            </TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="제목:   "/>
+            <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Text="미사와 공습 이후 일본 통신 감청 내용"/>
+          </Grid>
+          <TextBlock Grid.Row="2" TextWrapping="Wrap">
+            1. 신호정보(SIGINT) 감청소 바랴그가 미사와 공군기지 무력화를 보고하는 일본 지휘통신을 감청함. 해당 통신은 홋카이도가 이제 전투기 엄호와 근접항공지원을 상실했다는 절박한 우려를 담고 있음.
+            <LineBreak/>
+            <LineBreak/>
+            2. JMSDF 및 JGSDF 통신망은 홋카이도 사령관들에게 어떤 대가를 치르더라도 홋카이도를 지키라고 지시함. 요청 내용에는 추가 기동식 방공미사일 체계, 미사일 재보급, 포병 탄약이 포함됨. 미 해군 항모 항공전력이 추가 공중 엄호 및 지상 지원을 위해 요청됨.
+            <LineBreak/>
+            <LineBreak/>
+            3. 적은 공중 위협이나 예상 상륙 지역에 배치된 추가 방공포대와 무관하게 항모를 북쪽으로 재배치하여 이를 보완할 것으로 예상됨.
+            <LineBreak/>
+            <LineBreak/>
+			4. 일본 및 미국 지휘관들은 홋카이도와 일본 북부가 이제 노출되었음을 인식하고 있는 것으로 보임. 이를 고려할 때, 계획된 상륙작전의 즉각적인 실행에 유리한 조건이 조성되었다고 평가함.
+            <LineBreak/>
+            <LineBreak/>
+          </TextBlock>
+          <TextBlock TextAlignment="Right" Text="블라들렌 미하일로프, 국장" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
+          <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
+            <Run TextDecorations="Underline">배포: ER / 1988년 2월 21일 (첨부물 포함)</Run>
+            <LineBreak/>
+            <LineBreak/>
+            원본 - 각 수신자
+            <LineBreak/>
+               1부 - GRU 제2국
+            <LineBreak/>
+               1부 - GRU 제6국
+            <LineBreak/>
+               1부 - GRU 제12국
+          </TextBlock>
+          <TextBlock Grid.Row="4" Text="TOP SECRET" TextAlignment="Center"/>
+        </Grid>
+      </Border>
+    </Border>
+  </Viewbox>
+</Page>

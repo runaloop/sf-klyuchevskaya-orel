@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="25 FÉV 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="La Deuxième Escadre du Pacifique" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        En janvier 1988, SF Narod a quitté sa base de la Flotte du Nord pour un tour du monde. Lorsque la guerre a éclaté, la force opérationnelle se trouvait dans le golfe d'Aden, en route pour Mumbai, en Inde. L'OTAN refusant de s'impliquer dans le conflit, Moscou a décidé que cette puissante force opérationnelle serait mieux employée dans le Pacifique.
+        <LineBreak/><LineBreak/>
+		Centrée sur le grand croiseur lance-missiles KIROV, SF Narod est escortée par plusieurs puissants navires ASM et anti-surface. Dans l'intérêt de l'unité socialiste, un porte-aéronefs léger ADAV lui a été rattaché, afin de convaincre les nations alignées sur l'URSS d'acheter des Yak-38 FORGER pour leurs forces aériennes.
+        <LineBreak/><LineBreak/>
+        Maintenant que la guerre a éclaté, SF Narod a passé le mois de février à tenter d'échapper aux moyens de l'USN dans l'océan Indien. Avec des réserves de carburant limitées, la Flotte du Nord de la Bannière Rouge a ordonné à SF Narod de franchir le détroit de Malacca et de se ravitailler à Cam Ranh.
+        <LineBreak/><LineBreak/>
+        Nous sommes le 25 février 1988, et le matin de SF Narod est interrompu par les émissions électromagnétiques caractéristiques d'un E-2 Hawkeye.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

@@ -1,0 +1,71 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 11 1900Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 태평양 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="사령관 {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		제10작전전대
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="작전명령"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}는 북태평양의 적 호송선단을 요격, 격멸하라.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 적 잠항자산은 일본 본토 인근에 집중되어 있으며 이 작전구역에서는 예상되지 않는다. 페트로파블롭스크-캄차츠키 소속 우군 요격기가 이 작전구역에서 적의 항공엄호를 저지하고 있다.
+		<LineBreak/>
+		<LineBreak/>
+		3a. (S) 국가기술정보수단에 의하면 대형 호송선단 1개가 귀 부대 동쪽에, 소형 호송선단 1개가 남쪽에 있다. 예상 항로와 위치는 지도에 표시되어 있다.
+		<LineBreak/>
+		<LineBreak/>3b. (S) 남쪽 호송선단에는 스프루언스급 구축함 1척과 추가 대잠호위함이 포함되어 있을 가능성이 있다.
+		<LineBreak/>
+		<LineBreak/>3c. (S) 동쪽 호송선단에는 순양함 1척, 미사일구축함 1~2척과 추가 대잠호위함이 포함되어 있을 가능성이 있다.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) 중립국 선박 통행은 소규모로, 무리를 지어 이동할 가능성이 있다. 적성 상선은 항로상에 없을 것으로 예상된다. 고립된 적성 상선은 모두 격침되었거나 호송선단 집결구역으로 물러난 상태다.
+		<LineBreak/>
+		<LineBreak/>5. (S) {TaskForceName}는 임무 종료 후 휴식 및 재보급을 위해 페트로파블롭스크-캄차츠키로 이동하라. 동지, 좋은 사냥이 되길 빈다.
+		<LineBreak/>
+		<LineBreak/>
+		서명: 흐바토프
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

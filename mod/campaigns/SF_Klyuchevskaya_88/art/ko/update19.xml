@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="캠페인 완료" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="플레이해 주셔서 감사합니다" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+		SF Klyuchevskaya '88을 플레이해 주셔서 감사합니다.
+        <LineBreak/><LineBreak/>
+		이것은 저의 첫 캠페인으로, 역사적으로 정확한 부대들을 바탕으로 제작되었으며, Wargame: Red Dragon의 특정 캠페인에서 큰 영향을 받았습니다.
+		<LineBreak/><LineBreak/>
+		소련 최정예 전력이 재래식으로 우세한 미 해군을 상대하는 이 흥미롭고도 유익한 경험이 되었기를 바랍니다.
+		<LineBreak/><LineBreak/>
+        Part Two는 JMSDF FRAM 함정, 미 해군 Mk41 순양함, 그리고 영국 해군이 게임에 추가되는 대로 공개될 예정입니다.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

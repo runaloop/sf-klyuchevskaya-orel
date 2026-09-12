@@ -1,0 +1,105 @@
+<!-- Pacific Strike CIA memorandum event, adapted from Strike Group Molniya U.S.-voice interstitial format. -->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="864" Height="1120" Padding="45"
+            TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+      <Border.Effect>
+        <DropShadowEffect />
+      </Border.Effect>
+
+      <Border BorderThickness="0,10,10,10" BorderBrush="#FF000000">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <TextBlock Text="C05084534" Background="#FFFFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,-15,0,0" Padding="5,0,5,0" />
+          <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="10"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TRÈS SECRET" TextAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
+              Direction principale du renseignement
+              <LineBreak/>
+              <LineBreak/>
+              <Run FontSize="12">Moscou, 62665</Run>
+            </TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="3" Text="17 février 1988"/>
+            <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="MÉMORANDUM À L'ATTENTION DE :   "/>
+            <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
+              HAUT COMMANDEMENT DE LA VMF
+              <LineBreak/>
+              FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE
+              <LineBreak/>
+              10e DIVISION SOUS-MARINE//J2//
+              <LineBreak/>
+              11e DIVISION SOUS-MARINE//J2//
+            </TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="3" TextWrapping="Wrap">
+              EO 13526 3.3(b)(1)&gt;25Yrs
+              <LineBreak/>
+              EO 13526 3.5(c)
+            </TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="OBJET :   "/>
+            <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Text="Trafic radio de l'USN sur le réseau de commandement du groupe aéronaval NIMITZ"/>
+          </Grid>
+          <TextBlock Grid.Row="2" TextWrapping="Wrap">
+            1. La station SIGINT VARYAG a transmis des communications de commandement américaines relatives à la destruction du convoi de ravitaillement du NIMITZ. Ce trafic reflète une inquiétude urgente quant au réarmement et au ravitaillement du groupe aéronaval NIMITZ, et quant à la probabilité que la zone du Pacifique occidental ne dispose plus que de sa propre puissance aérienne terrestre.
+            <LineBreak/>
+            <LineBreak/>
+            2. Les canaux de commandement de l'USN ordonnent au groupe aéronaval NIMITZ de faire route à vitesse maximale vers Pearl Harbor, compte tenu de la présence soviétique de surface et sous-marine interdisant le ravitaillement entre Hawaï et Iwo Jima. Les ordres reçus par le NIMITZ exigent un transit à vitesse maximale, sans manœuvres anti-sous-marines en zigzag, avec des commentaires optimistes quant à la capacité des aéronefs ASM embarqués de l'USN à protéger les groupes aéronavals des sous-marins amis.
+            <LineBreak/>
+            <LineBreak/>
+            3. Il faut s'attendre à ce que le groupe aéronaval NIMITZ concentre ses réserves limitées de carburant aviation sur les vols de lutte anti-sous-marine, réduisant d'autant le nombre de sorties anti-surface et de patrouille aérienne de combat.
+            <LineBreak/>
+            <LineBreak/>
+			4. Les commandants américains comprennent que leur puissance aérienne limitée, terrestre comme embarquée, est insuffisante pour empêcher l'encerclement ami de Tokyo ou l'occupation complète du Japon par les forces amies. Avec seulement 2 groupes aéronavals opérationnels restants dans le théâtre du Pacifique, le GRU estime que la destruction de l'un d'entre eux entraînera l'effondrement de la résistance ennemie au Japon, et probablement l'ouverture de pourparlers de paix entre l'URSS et l'Amérique.
+            <LineBreak/>
+            <LineBreak/>
+          </TextBlock>
+          <TextBlock TextAlignment="Right" Text="Vladlen Mikhaïlov, Directeur" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
+          <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
+            <Run TextDecorations="Underline">Diffusion par ER/01 mars 1988 avec annexes</Run>
+            <LineBreak/>
+            <LineBreak/>
+            Orig. - Chaque destinataire
+            <LineBreak/>
+               1 - 2e Direction du GRU
+            <LineBreak/>
+               1 - 6e Direction du GRU
+            <LineBreak/>
+               1 - 12e Direction du GRU
+          </TextBlock>
+          <TextBlock Grid.Row="4" Text="TRÈS SECRET" TextAlignment="Center"/>
+        </Grid>
+      </Border>
+    </Border>
+  </Viewbox>
+</Page>

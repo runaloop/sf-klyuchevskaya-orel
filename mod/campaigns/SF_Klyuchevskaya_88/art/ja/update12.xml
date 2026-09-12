@@ -1,0 +1,105 @@
+<!-- Pacific Strike CIA memorandum event, adapted from Strike Group Molniya U.S.-voice interstitial format. -->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="864" Height="1120" Padding="45"
+            TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+      <Border.Effect>
+        <DropShadowEffect />
+      </Border.Effect>
+
+      <Border BorderThickness="0,10,10,10" BorderBrush="#FF000000">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <TextBlock Text="C05084534" Background="#FFFFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,-15,0,0" Padding="5,0,5,0" />
+          <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="10"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="最高機密" TextAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
+              参謀本部情報総局
+              <LineBreak/>
+              <LineBreak/>
+              <Run FontSize="12">モスクワ、62665</Run>
+            </TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="3" Text="1988年2月17日"/>
+            <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="宛先：   "/>
+            <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
+              ソ連海軍最高司令部
+              <LineBreak/>
+              赤旗太平洋艦隊
+              <LineBreak/>
+              第10潜水艦師団//J2//
+              <LineBreak/>
+              第11潜水艦師団//J2//
+            </TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="3" TextWrapping="Wrap">
+              EO 13526 3.3(b)(1)&gt;25Yrs
+              <LineBreak/>
+              EO 13526 3.5(c)
+            </TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="件名：   "/>
+            <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Text="米海軍ニミッツ空母戦闘群指揮通信網からの通信"/>
+          </Grid>
+          <TextBlock Grid.Row="2" TextWrapping="Wrap">
+            1. 信号情報（SIGINT）基地「ヴァリャーグ」より、ニミッツ補給船団の撃滅に関する米側指揮通信が伝達された。当該通信は、ニミッツ空母戦闘群の再武装・再燃料補給に対する強い懸念、および西太平洋方面が地上基地の航空戦力のみに依存せざるを得なくなる可能性を示している。
+            <LineBreak/>
+            <LineBreak/>
+            2. 米海軍の指揮通信網は、ハワイと硫黄島間の補給を妨害するソ連の水上・潜水戦力の存在を踏まえ、ニミッツ空母戦闘群に対しパールハーバーへの最大速力での移動を命じている。ニミッツへの命令には、対潜ジグザグ航法を無視した最大速力での移動要求が含まれ、米海軍空母の対潜航空機が友軍潜水艦から戦闘群を守れるとする楽観的な見解も付されている。
+            <LineBreak/>
+            <LineBreak/>
+            3. ニミッツ空母戦闘群は、限られた航空燃料の残余を対潜飛行に集中させ、対水上戦および戦闘空中哨戒（CAP）の出撃数を減少させると見込まれる。
+            <LineBreak/>
+            <LineBreak/>
+			4. 米軍指揮官は、その限られた地上基地および空母搭載の航空戦力では、友軍による東京包囲の阻止、あるいは友軍による日本占領の完遂を防ぎきれないことを理解している。太平洋戦域に稼働可能な空母戦闘群が2個残存する状況を踏まえ、GRUは、いずれかの空母戦闘群の撃滅が日本における敵の抵抗の崩壊、および米ソ間の講和交渉開始をもたらす可能性が高いと評価する。
+            <LineBreak/>
+            <LineBreak/>
+          </TextBlock>
+          <TextBlock TextAlignment="Right" Text="ヴラドレン・ミハイロフ、局長" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
+          <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
+            <Run TextDecorations="Underline">配布：ER扱い／1988年3月1日／添付資料ありs</Run>
+            <LineBreak/>
+            <LineBreak/>
+            原本－各宛先
+            <LineBreak/>
+               1－GRU第2局
+            <LineBreak/>
+               1－GRU第6局
+            <LineBreak/>
+               1－GRU第12局
+          </TextBlock>
+          <TextBlock Grid.Row="4" Text="最高機密" TextAlignment="Center"/>
+        </Grid>
+      </Border>
+    </Border>
+  </Viewbox>
+</Page>

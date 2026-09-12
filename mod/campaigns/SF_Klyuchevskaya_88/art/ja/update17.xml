@@ -1,0 +1,164 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="海軍電信" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******機　密*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="海軍省" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					最優先（FLASH）
+					<LineBreak/>
+					Z 10 0348Z MAR 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="発"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="赤旗太平洋艦隊"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="宛"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="指揮官"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="報"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="第10作戦戦隊"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="第11作戦戦隊"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="第143海軍ミサイル航空師団"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="件名"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="緊急戦況報告"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					機密（SECRET）
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					最優先 最優先 最優先
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) 概要：敵空母艦載機が東京上空で検知され、コンステレーション空母戦闘群が東京南東方200海里で確認された。友軍の指揮統制網は混乱している。利用可能なすべての戦力がコンステレーション空母戦闘群の迎撃へ転用された。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) 敵情：
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					・A-6およびA-7機が東京の友軍部隊に対し爆撃を実施中である。尾翼標識より、コンステレーション航空団所属と判明。
+					<LineBreak/>
+					・SIGINTにより、東京南東方200海里で米空母の着艦誘導レーダー放射を検知。コンステレーション空母戦闘群のものと推定される。
+					<LineBreak/>
+					・友軍の地対空ミサイル拠点に対する多方向からのトマホーク攻撃があり、少なくとも米海軍SSN1隻が当該海域に存在することを示している。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) 友軍状況：
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					・東京南西方300海里に位置するSFクリュチェフスカヤは、最大速力でコンステレーション空母戦闘群を捜索・撃滅せよ。
+					<LineBreak/>
+					・第143海軍ミサイル航空師団は、司令部付近にA-7機を報告した後、連絡が取れなくなっている。
+					<LineBreak/>
+					・占領した浜松基地は被弾しておらず、戦闘機を緊急発艦させている。
+					<LineBreak/>
+					</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) 友軍・地域情勢：陸軍の現地司令部はA-6の空襲後、応答不能となっている。友軍の指揮統制網は混乱し、激しい妨害を受けている。KTOFは、東京地域上空において敵が完全な航空優勢を有していると評価する。初期攻撃後、稼働中または応答可能な防空資産はない。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) 指揮官所見：この東京への奇襲攻撃にもかかわらず、米国が窮地にあることは明らかである。米国は東京の友軍部隊に大きな損害を与えたが、それでも空母は依然として1隻しか残っていない。同志、貴官の任務は変わらない。コンステレーションを撃沈し、米国に停戦を受け入れさせよ。KTOFより。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					署名：フヴァトフ
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					最優先 最優先 最優先
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					機密（SECRET）DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

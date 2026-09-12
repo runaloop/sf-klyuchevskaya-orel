@@ -1,0 +1,27 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988年2月8日" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="内密の会話" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        新たな命令書を読み終えたところで、ドアをノックする音が聞こえる。同志政治委員だ。
+        <LineBreak/><LineBreak/>
+		「同志指揮官」と彼は切り出す。「KGBより、貴官限りの追加命令が届いている。KGBは人的情報（HUMINT）の活用のため、『対象者』の確保に強い関心を抱いている。生存者を4名救助するごとに、KGBは任務ポイント1点を貴官に与えるだろう。心配するな、同志。今は1938年ではない。グラスノスチの下では、KGBもまた内部調査の例外ではないのだ。」
+        <LineBreak/><LineBreak/>
+        貴官は思う――4人の生存者でポイント1点か？悪くない話だ。委員の言葉を信じたふりをしておけば、あの捕虜たちも危害を受けずに済むかもしれない。そもそも、真の船乗りは漂流する水兵を見捨てて死なせはしないものだろう？
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

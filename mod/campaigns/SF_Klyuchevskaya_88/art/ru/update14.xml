@@ -1,0 +1,83 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="#F3E8CF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="920" Height="1270" Padding="44"
+            TextElement.FontFamily="Times New Roman" TextElement.Foreground="#111111" TextElement.FontSize="17">
+      <Border.Effect>
+        <DropShadowEffect BlurRadius="16" ShadowDepth="6" Opacity="0.45"/>
+      </Border.Effect>
+      <StackPanel Orientation="Vertical">
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+        <TextBlock Text="5 марта 1988 | АЗИАТСКИЙ ОБОЗРЕВАТЕЛЬ | 30 центов" Margin="0,14,0,14" FontSize="23" TextAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <Grid Margin="0,8,0,12">
+          <Rectangle Fill="#9B1C1C" Height="16" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
+          <TextBlock Text="СРОЧНЫЕ НОВОСТИ" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <TextBlock Text="ТОКИО СДАЁТСЯ"
+                   FontWeight="Bold" FontSize="36" TextWrapping="Wrap" TextAlignment="Center" Margin="0,18,0,12"/>
+        <TextBlock Text="Советские официальные лица заявляют о ходе мирных переговоров с представителями Японии в Токио."
+                   FontSize="24" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,18"/>
+
+        <Border BorderBrush="#111111" BorderThickness="3" Background="#FFF7DD" Padding="14" Margin="0,0,0,18">
+          <TextBlock Text="Вашингтон заявляет: мира не будет, пока Японии не будет возвращена демократия."
+                     FontSize="28" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Border>
+
+        <Grid Margin="0,0,0,16">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="3*"/>
+          </Grid.ColumnDefinitions>
+
+          <StackPanel Grid.Column="0">
+            <TextBlock Text="ГДЕ АВИАНОСЦЫ?" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Несмотря на жёсткую цензуру прессы, несколько анонимных источников утверждают, что большинство авианосцев 7-го флота США серьёзно повреждены или потоплены.
+              <LineBreak/><LineBreak/>
+              Советские газеты утверждают, что несколько американских авианосных групп уничтожены в Тихом и Индийском океанах.
+              <LineBreak/><LineBreak/>
+              Семьи военнослужащих по всей Америке требуют ответов, поскольку солдаты, моряки и лётчики пропускают звонки и не отвечают на письма.
+            </TextBlock>
+          </StackPanel>
+
+          <StackPanel Grid.Column="2">
+            <TextBlock Text="ПАРИЖ" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Советские и европейские официальные лица завершают переговоры по энергетике: Москва обещает сибирскую нефть и газ в обмен на расширение экономических связей с Западной Европой.
+              <LineBreak/><LineBreak/>
+              Энергетические рынки Западной Европы стабилизировались после трёх недель неопределённости.
+              <LineBreak/><LineBreak/>
+              Москва заверяет, что будут проложены новые трубопроводы через Балтику, которые свяжут Европу с советской нефтью и газом.
+            </TextBlock>
+          </StackPanel>
+        </Grid>
+
+        <Border BorderBrush="#111111" BorderThickness="2" Padding="12" Margin="0,0,0,16">
+          <StackPanel>
+            <TextBlock Text="СОВЕТСКИЕ ОФИЦИАЛЬНЫЕ ЛИЦА ЗАЯВЛЯЮТ О СКОРЫХ СВОБОДНЫХ И ЧЕСТНЫХ ВЫБОРАХ В ЯПОНИИ" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="23">
+              В сегодняшней речи советский министр иностранных дел заявил, что демократические выборы скоро вернутся в Японию, как только ранее запрещённые социалистические партии будут допущены к избирательным бюллетеням.
+			  <LineBreak/><LineBreak/>
+              Американские аналитические центры, отстаивающие демократию, ставят под сомнение честность любых выборов, проходящих под неусыпным надзором КГБ. Обеспокоенность растёт по мере того, как многие японские государственные чиновники исчезают или уступают свои посты назначенным Советами «советникам».
+            </TextBlock>
+          </StackPanel>
+        </Border>
+
+        <Rectangle HorizontalAlignment="Stretch" Height="3" Fill="#111111"/>
+        <TextBlock Text="Внутри номера: военные аналитики ставят под вопрос жизнеспособность авианосцев против сверхзвуковых противокорабельных ракет | советский дипломатический корпус отрицает военные преступления против японских мирных жителей на Хоккайдо | президент США выступит с экстренным обращением сегодня в 21:00 по восточному времени США" TextWrapping="Wrap" FontSize="17" Margin="0,12,0,10" TextAlignment="Center"/>
+        <TextBlock Text="-1-" TextAlignment="Center" FontSize="16"/>
+      </StackPanel>
+    </Border>
+  </Viewbox>
+</Page>

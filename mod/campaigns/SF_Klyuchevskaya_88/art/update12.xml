@@ -86,7 +86,7 @@
           </TextBlock>
           <TextBlock TextAlignment="Right" Text="Vladlen Mikhailov, Director" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
           <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
-            <Run TextDecorations="Underline">Distribution by ER/01 March 1988 w/Att</Run>s
+            <Run TextDecorations="Underline">Distribution by ER/01 March 1988 w/Atts</Run>
             <LineBreak/>
             <LineBreak/>
             Orig - Each Addressee

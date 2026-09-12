@@ -1,0 +1,68 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		即時（IMMEDIATE）
+		<LineBreak/>
+		O 16 1100Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="発"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="赤旗太平洋艦隊"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="宛"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="K-242指揮官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="報"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第10潜水艦師団
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="件名"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作戦命令"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密（SECRET）
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) K-242は、海上自衛隊第2護衛隊群を無力化せよ。
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) はるな DDH-141およびくらま DDH-144が優先目標であり、任務部隊の中心に位置すると見込まれる。想定される護衛艦は、ミサイル駆逐艦（DDG）1隻および駆逐艦（DD）2隻以上である。
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 敵の航空戦力による強い抵抗を予期せよ。第2護衛隊群は自前でHSS-2B対潜ヘリコプター6機を搭載している。海上自衛隊の駆逐艦は遠隔操作式の対潜無人機も運用可能である。厚木基地を拠点とする敵哨戒機も当該海域に存在する可能性が高い。
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) 敵潜水艦の存在は現時点で不明である。
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 貴官の南東方において、友軍SSGN K-175が別任務で行動中であることに留意せよ。健闘を祈る、同志。
+		<LineBreak/>
+		<LineBreak/>
+		署名：フヴァトフ
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		機密（SECRET）
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

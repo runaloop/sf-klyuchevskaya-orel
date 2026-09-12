@@ -1,0 +1,81 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="#F3E8CF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="920" Height="1270" Padding="44"
+            TextElement.FontFamily="Times New Roman" TextElement.Foreground="#111111" TextElement.FontSize="17">
+      <Border.Effect>
+        <DropShadowEffect BlurRadius="16" ShadowDepth="6" Opacity="0.45"/>
+      </Border.Effect>
+      <StackPanel Orientation="Vertical">
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+        <TextBlock Text="10-2-88 | ASIA OBSERVER | 30 Cents" Margin="0,14,0,14" FontSize="23" TextAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <Grid Margin="0,8,0,12">
+          <Rectangle Fill="#9B1C1C" Height="16" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
+          <TextBlock Text="TIN NÓNG" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <TextBlock Text="LIÊN XÔ ĐỔ BỘ LÊN HOKKAIDO"
+                   FontWeight="Bold" FontSize="36" TextWrapping="Wrap" TextAlignment="Center" Margin="0,18,0,12"/>
+        <TextBlock Text="Tokyo xác nhận giao tranh dữ dội tại Sapporo và các khu vực lân cận. "
+                   FontSize="24" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,18"/>
+
+        <Border BorderBrush="#111111" BorderThickness="3" Background="#FFF7DD" Padding="14" Margin="0,0,0,18">
+          <TextBlock Text="Các quan chức Nhật Bản tuyên bố Liên Xô chịu tổn thất nặng nề dù liên tục bị không kích."
+                     FontSize="28" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Border>
+
+        <Grid Margin="0,0,0,16">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="3*"/>
+          </Grid.ColumnDefinitions>
+
+          <StackPanel Grid.Column="0">
+            <TextBlock Text="WASHINGTON" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Hạm đội 3 Hoa Kỳ ra lệnh cho toàn bộ tàu buôn Mỹ và Nhật Bản tập trung tại các điểm tập kết ngoài khơi Anchorage, AK.
+              <LineBreak/><LineBreak/>
+              Lực lượng dự bị Hải quân Hoa Kỳ được huy động để thực hiện nhiệm vụ hộ tống đoàn tàu vận tải, các tàu USNS được tái kích hoạt để phục vụ vận tải quân sự.
+              <LineBreak/><LineBreak/>
+              Các tàu chở dầu Nhật Bản và Mỹ mắc kẹt trên các tuyến hàng hải Bắc Thái Bình Dương đang gấp rút tìm nơi an toàn. Hạm đội 3 Hoa Kỳ xác nhận đã điều các tàu khu trục đến bảo vệ các tuyến vận tải.
+            </TextBlock>
+          </StackPanel>
+
+          <StackPanel Grid.Column="2">
+            <TextBlock Text="MOSCOW TUYÊN BỐ HÀNH ĐỘNG PHÒNG THỦ" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Đoàn ngoại giao Liên Xô nói rằng lực lượng Nhật Bản đã khơi mào chiến tranh, đưa ra bằng chứng từ một tàu ngầm Nhật Bản bị đánh chìm trong hải phận Liên Xô. Tuyên bố tàu ngầm này đã nhận lệnh tấn công các tàu chiến Liên Xô.
+              <LineBreak/><LineBreak/>
+              Các đại sứ quán Liên Xô tại châu Âu cho rằng cuộc tấn công gần đây chỉ nhằm chặn đứng "sự gây hấn của Nhật Bản" và chủ nghĩa quân phiệt đang trỗi dậy.
+              <LineBreak/><LineBreak/>
+              Các chính phủ NATO thúc đẩy giải pháp hòa bình tại Tây Thái Bình Dương. Các quan chức giấu tên cho biết các phương án quân sự "vẫn đang được xem xét" nhưng vẫn còn những lựa chọn khác.
+            </TextBlock>
+          </StackPanel>
+        </Grid>
+
+        <Border BorderBrush="#111111" BorderThickness="2" Padding="12" Margin="0,0,0,16">
+          <StackPanel>
+            <TextBlock Text="NGUỒN TIN GIẤU TÊN CHO BIẾT LỰC LƯỢNG TẬP KÍCH LIÊN XÔ BỊ THIỆT HẠI TẠI BẮC THÁI BÌNH DƯƠNG" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="23">
+              Các quan chức Nhật Bản không nêu danh tính cho biết một lực lượng hải quân nhỏ của Liên Xô đã thất bại trong một nỗ lực đột phá tại biển Okhotsk sáng nay. Các báo cáo ban đầu cho thấy lực lượng Liên Xô đã chịu tổn thất nặng nề do các đợt tấn công trên không và dưới nước.
+            </TextBlock>
+          </StackPanel>
+        </Border>
+
+        <Rectangle HorizontalAlignment="Stretch" Height="3" Fill="#111111"/>
+        <TextBlock Text="Bên trong: Tàu sân bay Mỹ trong thế giằng co căng thẳng với máy bay ném bom Liên Xô | Giá xăng tăng vọt khi các nhà máy lọc dầu Nhật Bản buộc phải ngừng hoạt động | Các phiên họp khẩn cấp tại các thủ đô châu Âu" TextWrapping="Wrap" FontSize="17" Margin="0,12,0,10" TextAlignment="Center"/>
+        <TextBlock Text="-1-" TextAlignment="Center" FontSize="16"/>
+      </StackPanel>
+    </Border>
+  </Viewbox>
+</Page>

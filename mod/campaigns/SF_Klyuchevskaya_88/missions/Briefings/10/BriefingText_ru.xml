@@ -1,0 +1,81 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		СРОЧНОЕ СООБЩЕНИЕ
+		<LineBreak/>
+		O 10 0400Z МАР 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="От кого:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="КРАСНОЗНАМЁННЫЙ ТИХООКЕАНСКИЙ ФЛОТ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Кому:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Командир КУГ «Ключевская»"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Копия:"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10-я оперативная эскадра
+		<LineBreak/>
+		11-я оперативная эскадра
+		<LineBreak/>
+		143-я дивизия морской ракетоносной авиации
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Тема:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Боевой приказ"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		СЕКРЕТНО
+		<LineBreak/>
+		<LineBreak/>
+		МОЛНИЯ МОЛНИЯ МОЛНИЯ
+		<LineBreak/>
+		<LineBreak/>
+		1. (С) КУГ «Ключевская» перенацелено на предотвращение выхода КОНСТЕЛЛЕЙШН из Токийского залива.
+		<LineBreak/>
+		<LineBreak/>
+		2. (С) Подводная угроза противника не установлена, крайне маловероятно, что американская атомная подводная лодка сумела удержать скоростной ход КОНСТЕЛЛЕЙШН. Сопровождающая подводная лодка ВМС США, вероятно, отделилась для прикрытия флангов авианосной группы.
+		<LineBreak/>
+		<LineBreak/>
+		3. (С) Вражеская воздушная угроза высока, в налёте на Токио участвовали 1+ эскадрилья A-7 и 2+ эскадрильи A-6. Повторные удары A-6 по кораблям вероятно задержаны из-за цикла посадки и перезарядки. Следующий удар вероятен силами бомбардировочных авиакрыльев с Гуама.
+		<LineBreak/>
+		<LineBreak/>
+		4. (С) Вражеская надводная угроза высока, авианосная группа КОНСТЕЛЛЕЙШН включает 2 крейсера, 2+ эсминца и 2+ фрегата УРО.
+		<LineBreak/>
+		<LineBreak/>
+		5. (С) Авиабаза Хамамацу не была поражена при первом ударе, дружественная авиация может действовать с этого аэродрома. Степень повреждений авиабазы Ацуги неизвестна, ударов дружественной авиации с этого аэродрома не ожидается.
+		<LineBreak/>
+		<LineBreak/>
+		6. (С) Противник появился в очень удобной для нас точке, второго такого случая может не представиться. Заставьте американцев заплатить за их дерзость. Удачи, товарищ.
+		<LineBreak/>
+		<LineBreak/>
+		МОЛНИЯ МОЛНИЯ МОЛНИЯ
+		<LineBreak/>
+		<LineBreak/>
+		ПОДПИСАЛ: Хватов
+		<LineBreak/>
+		КТОФ
+		<LineBreak/>
+		<LineBreak/>
+		СЕКРЕТНО
+		<LineBreak/>
+		КОНЕЦ СООБЩЕНИЯ
+	  </TextBlock>
+</Grid>

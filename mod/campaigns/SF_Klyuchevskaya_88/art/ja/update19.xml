@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="キャンペーン完了" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="プレイに感謝" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+		SF Klyuchevskaya '88をプレイしていただき、感謝する。
+        <LineBreak/><LineBreak/>
+		本作は私にとって最初のキャンペーンであり、歴史的に忠実なユニットを中心に構築し、『Wargame: Red Dragon』のある特定のキャンペーンに大きな影響を受けている。
+		<LineBreak/><LineBreak/>
+		ソ連の最精鋭部隊を、通常戦力で優勢な米海軍と対決させるという、刺激的かつ学びのある体験になっていれば幸いである。
+		<LineBreak/><LineBreak/>
+        海上自衛隊のFRAM艦、米海軍のMk41搭載巡洋艦、そして英海軍がゲームに追加された時点で、おそらく第2部がリリースされるだろう。
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

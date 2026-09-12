@@ -1,0 +1,164 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="ВОЕННО-МОРСКОЕ СООБЩЕНИЕ" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******С Е К Р Е Т Н О*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="ВОЕННО-МОРСКОЕ ВЕДОМСТВО" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					СРОЧНОЕ СООБЩЕНИЕ
+					<LineBreak/>
+					Z 10 0348Z МАР 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="ОТ КОГО"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="КРАСНОЗНАМЁННЫЙ ТИХООКЕАНСКИЙ ФЛОТ"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="КОМУ"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="КОМАНДИРУ"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="КОПИЯ"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10-я ОПЕРАТИВНАЯ ЭСКАДРА"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="11-я ОПЕРАТИВНАЯ ЭСКАДРА"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="143-я ДИВИЗИЯ МОРСКОЙ РАКЕТОНОСНОЙ АВИАЦИИ"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="ТЕМА"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="ЭКСТРЕННАЯ СВОДКА"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					СЕКРЕТНО
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					МОЛНИЯ МОЛНИЯ МОЛНИЯ
+					<LineBreak/>
+					<LineBreak/>
+					1. (С) СВОДКА: Над Токио обнаружена палубная авиация противника, авианосная группа КОНСТЕЛЛЕЙШН обнаружена в 200 морских милях юго-восточнее Токио. Собственные сети управления и связи в расстройстве. Все имеющиеся силы перенацелены на перехват авианосной группы КОНСТЕЛЛЕЙШН.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (С) ОБСТАНОВКА ПРОТИВНИКА:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Самолёты A-6 и A-7 наносят бомбовый удар по нашим силам в Токио. Опознавательные знаки на хвостовом оперении указывают на принадлежность к авиагруппе КОНСТЕЛЛЕЙШН.
+					<LineBreak/>
+					- Радиотехническая разведка обнаружила излучение посадочных радаров американского авианосца в 200 морских милях юго-восточнее Токио, предположительно авианосной группы КОНСТЕЛЛЕЙШН.
+					<LineBreak/>
+					- Удары ракетами TOMAHAWK с нескольких направлений по нашим позициям ЗРК, что указывает на наличие в районе не менее 1 атомной подводной лодки США.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (С) СОБСТВЕННАЯ ОБСТАНОВКА:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- КУГ «Ключевская», находящееся в 300 морских милях юго-западнее Токио, должно обнаружить и уничтожить авианосную группу КОНСТЕЛЛЕЙШН в кратчайшие сроки.
+					<LineBreak/>
+					- 143-я дивизия морской ракетоносной авиации вышла из связи после сообщения о самолётах A-7 в районе своего штаба.
+					<LineBreak/>
+					- Захваченный аэродром в Хамамацу не подвергся удару и поднимает истребители по тревоге.
+					<LineBreak/>
+					</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (С) ОБСТАНОВКА У СОЮЗНИКОВ / В РЕГИОНЕ: Местный штаб сухопутных войск не отвечает после удара A-6. Собственные сети управления и связи в расстройстве и подвергаются сильному радиоэлектронному подавлению. КТОФ оценивает, что противник обладает полным господством в воздухе над районом Токио. Ни одно средство ПВО не функционирует и не отвечает после первых ударов.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (С) КОММЕНТАРИЙ КОМАНДУЮЩЕГО: Несмотря на этот внезапный удар по Токио, ясно, что США в отчаянном положении. Американцы нанесли нашим силам в Токио серьёзный урон, но у них всё ещё остался только один авианосец. Товарищ, ваша задача не изменилась: потопите КОНСТЕЛЛЕЙШН и вынудите США принять прекращение огня. КТОФ передаёт.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					ПОДПИСАЛ: Хватов
+					<LineBreak/>
+					КТОФ
+					<LineBreak/>
+					<LineBreak/>
+					МОЛНИЯ МОЛНИЯ МОЛНИЯ
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					СЕКРЕТНО DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

@@ -1,0 +1,81 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="#F3E8CF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="920" Height="1270" Padding="44"
+            TextElement.FontFamily="Times New Roman" TextElement.Foreground="#111111" TextElement.FontSize="17">
+      <Border.Effect>
+        <DropShadowEffect BlurRadius="16" ShadowDepth="6" Opacity="0.45"/>
+      </Border.Effect>
+      <StackPanel Orientation="Vertical">
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+        <TextBlock Text="10 февраля 1988 | АЗИАТСКИЙ ОБОЗРЕВАТЕЛЬ | 30 центов" Margin="0,14,0,14" FontSize="23" TextAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <Grid Margin="0,8,0,12">
+          <Rectangle Fill="#9B1C1C" Height="16" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
+          <TextBlock Text="СРОЧНЫЕ НОВОСТИ" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <TextBlock Text="СОВЕТСКИЙ ДЕСАНТ НА ХОККАЙДО"
+                   FontWeight="Bold" FontSize="36" TextWrapping="Wrap" TextAlignment="Center" Margin="0,18,0,12"/>
+        <TextBlock Text="Токио подтверждает тяжёлые бои в Саппоро и соседних районах. "
+                   FontSize="24" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,18"/>
+
+        <Border BorderBrush="#111111" BorderThickness="3" Background="#FFF7DD" Padding="14" Margin="0,0,0,18">
+          <TextBlock Text="Японские официальные лица заявляют о тяжёлых советских потерях, несмотря на непрерывные удары с воздуха."
+                     FontSize="28" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Border>
+
+        <Grid Margin="0,0,0,16">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="3*"/>
+          </Grid.ColumnDefinitions>
+
+          <StackPanel Grid.Column="0">
+            <TextBlock Text="ВАШИНГТОН" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              3-й флот США приказывает всем американским и японским торговым судам собраться в районах сосредоточения у Анкориджа, штат Аляска.
+              <LineBreak/><LineBreak/>
+              Призваны резервисты ВМС США для конвойной службы, суда резерва USNS возвращены в строй для военных перевозок.
+              <LineBreak/><LineBreak/>
+              Японские и американские танкеры, застигнутые в северной части Тихого океана, спешат в безопасные воды. 3-й флот США подтверждает, что эсминцы направлены на охрану морских коммуникаций.
+            </TextBlock>
+          </StackPanel>
+
+          <StackPanel Grid.Column="2">
+            <TextBlock Text="МОСКВА: ЭТО ОБОРОНИТЕЛЬНЫЕ ДЕЙСТВИЯ" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Советский МИД заявляет, что войну спровоцировали японские силы, и представляет доказательства — потопленную японскую подлодку в советских территориальных водах. Утверждается, что подлодка имела приказ атаковать советские боевые корабли.
+              <LineBreak/><LineBreak/>
+              Советские посольства в Европе заявляют, что недавнее наступление — лишь способ остановить «японскую агрессию» и возрождающийся милитаризм.
+              <LineBreak/><LineBreak/>
+              Правительства НАТО настаивают на мирном урегулировании в западной части Тихого океана. Неназванные официальные лица заявляют, что военные варианты «на столе», но есть и другие возможности.
+            </TextBlock>
+          </StackPanel>
+        </Grid>
+
+        <Border BorderBrush="#111111" BorderThickness="2" Padding="12" Margin="0,0,0,16">
+          <StackPanel>
+            <TextBlock Text="АНОНИМНЫЕ ИСТОЧНИКИ: СОВЕТСКОЕ РЕЙДЕРСКОЕ СОЕДИНЕНИЕ ПОВРЕЖДЕНО В СЕВЕРНОЙ ЧАСТИ ТИХОГО ОКЕАНА" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="23">
+              Неназванные японские официальные лица утверждают, что небольшое советское морское соединение сегодня утром не смогло прорваться через Охотское море. По первым данным, советская группа понесла тяжёлые потери от ударов с воздуха и атак подводных лодок.
+            </TextBlock>
+          </StackPanel>
+        </Border>
+
+        <Rectangle HorizontalAlignment="Stretch" Height="3" Fill="#111111"/>
+        <TextBlock Text="В номере: американские авианосцы в напряжённом противостоянии с советскими бомбардировщиками | Цены на бензин растут — японские НПЗ остановлены | Экстренные заседания в европейских столицах" TextWrapping="Wrap" FontSize="17" Margin="0,12,0,10" TextAlignment="Center"/>
+        <TextBlock Text="-1-" TextAlignment="Center" FontSize="16"/>
+      </StackPanel>
+    </Border>
+  </Viewbox>
+</Page>

@@ -1,0 +1,164 @@
+<!-- Modèle d'événement de campagne pour un message d'intentions quotidiennes (DIM) de style USN - mise en forme reprise d'exemples réels. -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MESSAGE NAVAL" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="DÉPARTEMENT DE LA MARINE" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					FLASH
+					<LineBreak/>
+					Z 10 0348Z MARS 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="DE"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="À"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="COMMANDANT"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10e ESCADRE OPÉRATIONNELLE"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="11e ESCADRE OPÉRATIONNELLE"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="143e DIVISION D'AVIATION MARITIME DE MISSILES"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="OBJET"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="SITREP D'URGENCE"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					SECRET
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					FLASH FLASH FLASH
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) RÉSUMÉ : Aéronefs de porte-avions ennemis détectés au-dessus de Tokyo, groupe aéronaval CONSTELLATION détecté à 200 nq au sud-est de Tokyo. Réseaux de commandement et de contrôle amis en désordre. Tous les moyens disponibles sont détournés pour intercepter le groupe aéronaval CONSTELLATION.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) SITUATION ENNEMIE :
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Des A-6 et A-7 mènent un raid de bombardement contre nos forces à Tokyo. Les marquages de dérive indiquent qu'ils appartiennent au groupe aérien du CONSTELLATION.
+					<LineBreak/>
+					- Le SIGINT a détecté des émissions radar d'approche pour l'appontage d'un porte-avions américain à 200 nq au sud-est de Tokyo, présumées être celles du groupe aéronaval CONSTELLATION.
+					<LineBreak/>
+					- Des frappes TOMAHAWK multi-axes contre des sites SAM amis indiquent la présence d'au moins 1 SNA américain dans la zone.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) SITUATION AMIE :
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya, à 300 nq au sud-ouest de Tokyo, doit localiser et détruire le groupe aéronaval CONSTELLATION à vitesse maximale.
+					<LineBreak/>
+					- La 143e Division d'aviation maritime de missiles est hors de contact après avoir signalé des A-7 près de son QG.
+					<LineBreak/>
+					- La base aérienne capturée de Hamamatsu n'a pas été touchée et fait décoller ses chasseurs en alerte.
+					<LineBreak/>
+					</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) SITUATION ALLIÉE / RÉGIONALE : Le QG local de l'armée de terre ne répond plus après le raid des A-6. Réseaux de commandement et de contrôle amis en désordre et fortement brouillés. Le KTOF estime que l'ennemi possède la supériorité aérienne totale sur la zone de Tokyo. Aucun moyen de défense aérienne n'est opérationnel ou réactif après les frappes initiales.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) COMMENTAIRES DU COMMANDANT : Malgré cette attaque surprise contre Tokyo, il est clair que les États-Unis sont désespérés. Ils ont causé des dommages considérables à nos forces à Tokyo, mais il ne leur reste toujours qu'un seul porte-avions. Camarade, votre objectif reste inchangé : coulez le CONSTELLATION et forcez les États-Unis à accepter un cessez-le-feu. KTOF, terminé.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					SIGNÉ : Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					FLASH FLASH FLASH
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					SECRET DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

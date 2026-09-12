@@ -1,0 +1,105 @@
+<!-- Pacific Strike CIA memorandum event, adapted from Strike Group Molniya U.S.-voice interstitial format. -->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="864" Height="1120" Padding="45"
+            TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+      <Border.Effect>
+        <DropShadowEffect />
+      </Border.Effect>
+
+      <Border BorderThickness="0,10,10,10" BorderBrush="#FF000000">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <TextBlock Text="C05084534" Background="#FFFFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,-15,0,0" Padding="5,0,5,0" />
+          <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="10"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TOP SECRET" TextAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
+              Tổng cục Tình báo
+              <LineBreak/>
+              <LineBreak/>
+              <Run FontSize="12">Moscow, 62665</Run>
+            </TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="3" Text="17 Tháng 2, 1988"/>
+            <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="GỬI ĐẾN:   "/>
+            <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
+              BỘ TƯ LỆNH CẤP CAO VMF
+              <LineBreak/>
+              HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ
+              <LineBreak/>
+              SƯ ĐOÀN TÀU NGẦM 10//J2//
+              <LineBreak/>
+              SƯ ĐOÀN TÀU NGẦM 11//J2//
+            </TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="3" TextWrapping="Wrap">
+              EO 13526 3.3(b)(1)&gt;25Yrs
+              <LineBreak/>
+              EO 13526 3.5(c)
+            </TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="CHỦ ĐỀ:   "/>
+            <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Text="Lưu lượng thông tin liên lạc USN từ mạng chỉ huy NIMITZ CVBG"/>
+          </Grid>
+          <TextBlock Grid.Row="2" TextWrapping="Wrap">
+            1. Trạm SIGINT VARYAG đã thu được thông tin liên lạc chỉ huy của Mỹ liên quan đến việc tiêu diệt đoàn tàu tiếp tế của NIMITZ. Lưu lượng thông tin cho thấy mối lo ngại cấp bách về việc tái vũ trang và tiếp nhiên liệu cho NIMITZ CVBG, cùng khả năng khu vực Tây Thái Bình Dương sẽ chỉ còn lại không lực mặt đất hữu cơ.
+            <LineBreak/>
+            <LineBreak/>
+            2. Các kênh chỉ huy USN yêu cầu NIMITZ CVBG di chuyển với tốc độ tối đa về Pearl Harbor trước sự hiện diện của lực lượng mặt nước và tàu ngầm Liên Xô đang cắt đứt đường tiếp tế giữa Hawaii và Iwo Jima. Lệnh của NIMITZ yêu cầu hành trình với tốc độ tối đa, bỏ qua động tác zig-zag chống ngầm, kèm theo những nhận định lạc quan về khả năng của máy bay ASW trên tàu sân bay USN trong việc bảo vệ các CVBG khỏi tàu ngầm của ta.
+            <LineBreak/>
+            <LineBreak/>
+            3. Dự kiến NIMITZ CVBG sẽ tập trung lượng xăng máy bay hạn chế còn lại cho các chuyến bay ASW, làm giảm số lượt xuất kích ASuW và CAP.
+            <LineBreak/>
+            <LineBreak/>
+			4. Các chỉ huy Mỹ hiểu rằng không lực mặt đất và không lực trên tàu sân bay hạn chế của họ không đủ để ngăn chặn việc quân ta bao vây Tokyo hay hoàn tất việc chiếm đóng Nhật Bản. Với chỉ còn 2 CVBG còn hoạt động tại chiến trường Thái Bình Dương, GRU đánh giá rằng việc tiêu diệt bất kỳ CVBG nào cũng sẽ dẫn đến sự sụp đổ của sức kháng cự của địch tại Nhật, và có khả năng dẫn tới khởi đầu các cuộc đàm phán hòa bình giữa Liên Xô và Mỹ.
+            <LineBreak/>
+            <LineBreak/>
+          </TextBlock>
+          <TextBlock TextAlignment="Right" Text="Vladlen Mikhailov, Giám đốc" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
+          <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
+            <Run TextDecorations="Underline">Phân phối theo ER/01 Tháng 3, 1988 kèm phụ lục</Run>
+            <LineBreak/>
+            <LineBreak/>
+            Bản gốc - Mỗi người nhận
+            <LineBreak/>
+               1 - Cục 2 GRU
+            <LineBreak/>
+               1 - Cục 6 GRU
+            <LineBreak/>
+               1 - Cục 12 GRU
+          </TextBlock>
+          <TextBlock Grid.Row="4" Text="TOP SECRET" TextAlignment="Center"/>
+        </Grid>
+      </Border>
+    </Border>
+  </Viewbox>
+</Page>

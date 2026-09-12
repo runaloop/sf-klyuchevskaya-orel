@@ -1,0 +1,72 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		即時（IMMEDIATE）
+		<LineBreak/>
+		O 25 0000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="発"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="赤旗北方艦隊"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="宛"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="SFナロード"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="報"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第7作戦戦隊<LineBreak/>第169混成航空連隊<LineBreak/>第17作戦戦隊
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="件名"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作戦命令"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密（SECRET）
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) SFナロードは、マラッカ海峡通過時における米海軍の妨害を阻止するため、米空母群を撃滅せよ。
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 米空母群はエンタープライズ CVN-65を中心に編成されている可能性が高い。護衛艦は戦艦（BB）1隻、巡洋艦（CG）2隻、駆逐艦（DD）2隻以上、フリゲート（FFG）2隻以上を含むと見込まれる。加えて、貴官の北方に未確認の米海軍水上戦闘群が探知されている。
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 米空母の通常の展開パターンに一致する、米海軍のSSNが当該海域に存在する可能性が高い。
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) 敵の航空脅威は高い。SFナロードが識別された場合、敵の集中空襲を予期せよ。
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) カムラン基地はTu-95RTおよびTu-16Kの複数の飛行を発艦させている。友軍航空戦力は生存性を高めるため広く分散している。その任務は、F-14の戦闘空中哨戒（CAP）をSFナロードから引き離すための陽動である。爆撃機の損失が予期される。
+		<LineBreak/>
+		<LineBreak/>6. (S) キーロフおよびAORゲンリフ・ガサノフは必ず生存させよ。その他の友軍ユニットはすべて消耗品と見なしてよいが、不必要に犠牲にするな。
+		<LineBreak/>
+		<LineBreak/>7. (S) SFナロードは本任務終了後、休息と補給のためカムラン湾への移動を継続せよ。エンタープライズこそが、貴官と友軍水域とを隔てる唯一の障壁である。健闘を祈る、同志。
+		<LineBreak/>
+		<LineBreak/>
+		署名：フヴァトフ
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		機密（SECRET）
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

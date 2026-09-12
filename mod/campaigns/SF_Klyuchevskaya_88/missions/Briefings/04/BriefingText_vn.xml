@@ -1,0 +1,71 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 11 1900Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10th OPERATIONAL SQN
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATIONAL ORDER"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} sẽ đánh chặn các đoàn tàu vận tải của đối phương ở Bắc Thái Bình Dương.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) Lực lượng tàu ngầm của đối phương tập trung gần lãnh thổ chính của Nhật Bản và không được cho là có mặt trong khu vực tác chiến (AO) này. Máy bay đánh chặn của quân bạn từ Petropavlovsk-Kamchatsky đang ngăn chặn không quân yểm trợ của đối phương trong khu vực này.
+		<LineBreak/>
+		<LineBreak/>
+		3a. (S) Các phương tiện kỹ thuật quốc gia cho thấy 1 đoàn tàu vận tải lớn ở phía Đông và 1 đoàn tàu vận tải nhỏ ở phía Nam vị trí của bạn. Hướng di chuyển và vị trí dự kiến của các đoàn tàu đã được đánh dấu trên bản đồ.
+		<LineBreak/>
+		<LineBreak/>3b. (S) Đoàn tàu phía Nam có thể có 1 tàu khu trục (DD) lớp SPRUANCE và các tàu hộ tống chống ngầm bổ sung.
+		<LineBreak/>
+		<LineBreak/>3c. (S) Đoàn tàu phía Đông có thể có 1 tàu tuần dương (CG), 1-2 tàu khu trục có tên lửa dẫn đường (DDG) và các tàu hộ tống chống ngầm bổ sung.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) Lưu lượng tàu trung lập dự kiến thấp và có thể di chuyển theo nhóm. Tàu buôn của đối phương không còn được cho là hoạt động trên các tuyến hàng hải; toàn bộ tàu buôn địch hoạt động đơn lẻ đã bị đánh chìm hoặc rút về các khu vực tập kết đoàn tàu.
+		<LineBreak/>
+		<LineBreak/>5. (S) {TaskForceName} sẽ di chuyển đến Petropavlovsk-Kamchatsky để nghỉ ngơi và tiếp tế sau nhiệm vụ này. Chúc săn bắn tốt lành, Đồng chí.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

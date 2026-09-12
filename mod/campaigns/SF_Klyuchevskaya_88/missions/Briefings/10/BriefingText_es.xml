@@ -1,0 +1,81 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		FLASH
+		<LineBreak/>
+		O 10 0400Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="FLOTA DEL PACÍFICO DE LA BANDERA ROJA"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10.ª ESCUADRA OPERATIVA
+		<LineBreak/>
+		11.ª ESCUADRA OPERATIVA
+		<LineBreak/>
+		143rd MARITIME MISSILE AVIATION DIV
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ORDEN DE OPERACIONES"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		FLASH FLASH FLASH
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} reasignado para impedir que el CONSTELLATION escape de la Bahía de Tokio.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) Amenaza de submarino enemigo desconocida; es muy poco probable que un SSN estadounidense haya podido mantener el ritmo de la carrera de alta velocidad del CONSTELLATION. Es probable que el submarino de escolta de la USN se haya separado para proteger los flancos del CVBG.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) Amenaza aérea enemiga alta; 1 o más escuadrones de A-7 y 2 o más escuadrones de A-6 participaron en la incursión sobre Tokio. Es probable que los ataques antibuque de los A-6 se retrasen debido a los ciclos de recuperación y armamento. El siguiente ataque probablemente provendrá de las alas de bombarderos de Guam.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) Amenaza de superficie enemiga alta; el CVBG del CONSTELLATION consta de 2 CG, 2 o más DD y 2 o más FFG.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) La AFB de Hamamatsu no fue alcanzada en el ataque inicial; hay aviación amiga disponible desde esta base. Se desconoce en este momento el daño a la NAF Atsugi; no se esperan ataques amigos desde este aeródromo.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) El enemigo ha aparecido en un lugar muy conveniente para nosotros; probablemente nunca volveremos a tener una oportunidad como esta. Haz que los americanos paguen por su audacia. Buena suerte, Camarada.
+		<LineBreak/>
+		<LineBreak/>
+		FLASH FLASH FLASH
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

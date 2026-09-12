@@ -1,0 +1,74 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		即時（IMMEDIATE）
+		<LineBreak/>
+		O 08 2330Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="発"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="赤旗太平洋艦隊"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="宛"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指揮官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="報"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第10作戦戦隊
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="件名"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="警告命令――通過"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		最高機密（TOP SECRET）――{TaskForceName}指揮官限り閲覧可
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}は、当初の航海計画に従い宗谷海峡を通過する。
+		<LineBreak/>
+		<LineBreak/>
+		2. (TS) 命令「クリュチェフスカヤ山に登れ」は現地時間0900に発動される。米国または日本のいずれの資産に対しても攻勢作戦を実施する態勢を維持せよ。
+		<LineBreak/>
+		<LineBreak/>
+		3. (TS) 海上自衛隊の水上戦闘群が過去12時間にわたり貴部隊を追尾している。命令「クリュチェフスカヤ山に登れ」が発動された時点で、これを撃滅せよ。
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) 米空軍三沢基地および海上自衛隊八戸基地は貴官の南方300海里に位置する。この方向からF-4およびP-3の飛行が予期される。
+		<LineBreak/>
+		<LineBreak/>
+		4b. (TS) {TaskForceName}はこれらの基地には交戦せず、他の資産が命令「クリュチェフスカヤ山に登れ」に従い無力化する。
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 信号情報（SIGINT）によれば、宗谷海峡西方に海上自衛隊の通常型潜水艦（SSK）が存在する可能性がある。
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) 貴任務部隊を保全し、オホーツク海への到達を必ず果たせ。健闘を祈る、同志。
+		<LineBreak/>
+		<LineBreak/>
+		署名：フヴァトフ
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		最高機密（TOP SECRET）――{TaskForceName}指揮官限り閲覧可
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

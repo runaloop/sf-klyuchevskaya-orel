@@ -1,0 +1,160 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="ĐIỆN VĂN HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="BỘ HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					IMMEDIATE
+					<LineBreak/>
+					O 28 0200Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="TƯ LỆNH"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="LIÊN ĐỘI TÁC CHIẾN 10"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="SƯ ĐOÀN HẢI QUÂN LỤC CHIẾN 55"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="LỮ ĐOÀN TÀU ĐỔ BỘ 14"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="BÁO CÁO TÌNH HÌNH HÀNG NGÀY"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					SECRET
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) TÓM TẮT: Lục quân hiện đã tới vùng ngoại ô Tokyo, Lục quân đã tách một nửa lực lượng để tiến nhanh về Kitakyushu nhằm ngăn quân Nhật thoát khỏi Tokyo.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) TÌNH HÌNH ĐỊCH:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Vòng vây Kushiro đã đầu hàng 3 giờ trước; Hokkaido hoàn toàn thuộc về Liên Xô và việc chuyển đổi sang chính quyền Xã hội chủ nghĩa đã hoàn tất.
+					<LineBreak/>
+					- CONSTELLATION được xác định đang cập cảng tại Pearl Harbor vào lúc 27 2345Z Feb 88. Các phương tiện kỹ thuật quốc gia cho thấy tàu này và các tàu hộ tống đang tiếp tế, có khả năng sẽ ra khơi trở lại trong 48 giờ tới.
+					<LineBreak/>
+					- NIMITZ, được xác định ở vị trí 500nm phía Đông Bắc Iwo Jima vào lúc 24 2228Z FEB 88, có vẻ đang giữ nguyên vị trí.
+					<LineBreak/>
+					- Một đoàn tàu vận tải lớn đã xuất phát từ Pearl Harbor vào khoảng 27 1800Z Feb 88. Nhóm này có vẻ đang trên đường hội quân với NIMITZ CVBG, ETA dự kiến 02 MAR 88. SIGINT đánh giá đây là lực lượng tiếp tế cho NIMITZ CVBG.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) TÌNH HÌNH TA:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya đang ở OPBOX BOGOTYR, sẽ áp sát để đánh chặn lực lượng tiếp tế của NIMITZ trước khi lực lượng này vào được tầm bảo vệ không quân của NIMITZ CVBG.
+					<LineBreak/>
+					- Sư đoàn Hải quân Lục chiến 55 hiện đang tham gia đợt tiến công Tokyo.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) TÌNH HÌNH ĐỒNG MINH / KHU VỰC: Một đơn vị Lục quân đang tiếp cận vùng ngoại ô Nagoya; Tokyo có khả năng sẽ bị bao vây hoàn toàn trong 48 giờ tới. Lục quân báo cáo sức kháng cự của quân Nhật ở các vùng nông thôn là hạn chế, nhưng ở ngoại ô Tokyo thì quân Nhật kháng cự rất quyết liệt.
+					<LineBreak/>
+					Các đơn vị thuộc Sư đoàn Tàu ngầm 11 của Hạm đội Phương Bắc Cờ Đỏ đã hoàn tất hành trình qua Vòng Bắc Cực và hiện đã thuộc quyền chỉ huy của KTOF.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) NHẬN XÉT CỦA TƯ LỆNH: KGB báo cáo các đơn vị an ninh của họ đã tiêu diệt quân du kích tại Hokkaido và trên các đảo chính của Nhật. Họ khẳng định lực lượng kháng cự tại địa phương phần lớn đã bị dập tắt; có vẻ đây sẽ không lặp lại kịch bản Afghanistan. Vấn đề còn lại giờ là liệu ta có thể dồn ép và tiêu diệt các nhóm tàu sân bay USN còn lại hay không. KTOF gửi.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					KÝ: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					SECRET DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

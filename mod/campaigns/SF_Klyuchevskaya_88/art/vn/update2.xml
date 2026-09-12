@@ -1,0 +1,165 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="ĐIỆN HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******T O P S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="BỘ HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					IMMEDIATE
+					<LineBreak/>
+					O 08 0800Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="CHỈ HUY"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="FOKINO PRIMORSKY KRAI"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="LIÊN ĐỘI TÁC CHIẾN 10"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="SƯ ĐOÀN KHÔNG QUÂN TÊN LỬA HẢI QUÂN 143"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="SƯ ĐOÀN TÀU NGẦM 10"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="CONPLAN ORANGE 1-4"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					TOP SECRET - EYES ONLY
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (TS) TÓM TẮT: Các vụ xâm nhập gần đây vào lãnh thổ Liên Xô cho thấy nguy cơ Nhật Bản và Hoa Kỳ sắp xâm lược vùng Viễn Đông của Liên Xô. Bộ Tư lệnh Tối cao Hạm đội Đỏ đã ra lệnh triển khai ngay CONPLAN ORANGE 1-4. Toàn bộ các đơn vị Liên Xô hiện có phải chuẩn bị cho các hoạt động tác chiến chống lại Nhật Bản và Hạm đội 7 Hoa Kỳ.
+					<LineBreak/>
+					<LineBreak/>
+					Các hoạt động tác chiến sẽ bắt đầu bằng lệnh "Climb Mt. Klyuchevskaya" vào lúc 09 0000Z FEB 88.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (TS) TÌNH TRẠNG ĐỊCH:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- CONSTELLATION, KITTY HAWK và các tàu hộ tống đi cùng đang hoạt động phối hợp với Hạm đội hộ tống số 1 của Nhật Bản tại biển Nhật Bản.
+					<LineBreak/>
+					- RANGER, MIDWAY và các tàu hộ tống đi cùng đang hoạt động cùng các tàu đổ bộ, cách Petropavlovsk 200 hải lý về phía nam.
+					<LineBreak/>
+					- NIMITZ đang neo đậu tại Yokosuka, Nhật Bản.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (TS) TÌNH TRẠNG TA:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya đang di chuyển tới eo biển Soya sẽ giữ nguyên hướng đi và tiến vào Bắc Thái Bình Dương để cắt đứt tuyến vận tải của địch.
+					<LineBreak/>
+					- Sư đoàn Không quân Tên lửa Hải quân 143 sẽ chuẩn bị thực hiện đòn tập kích bão hòa nhằm vào nhóm RANGER-MIDWAY.
+					<LineBreak/>
+					- Sư đoàn Tàu ngầm 10 sẽ chuẩn bị tăng cường các tàu ngầm SSN và SSGN vào Tây Thái Bình Dương và biển Nhật Bản.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (TS) TÌNH TRẠNG ĐỒNG MINH / KHU VỰC: Không quân Xô viết (VVS) và các lực lượng Hồng quân đang chuẩn bị cho chiến dịch đổ bộ đường biển và đường không nhằm vào Sapporo, Nhật Bản. Họ có ý định cắt ngang Hokkaido và đánh bại quân đội Nhật Bản từng phần bằng lực lượng thiết giáp và cơ giới áp đảo. Khi Hokkaido bị chiếm, các cuộc đổ bộ đường biển và đường không tiếp theo sẽ cho phép nhanh chóng khai thác đảo chính.
+					<LineBreak/>
+					<LineBreak/>
+					Ngoài ra, VVS sẽ triển khai Không quân Tầm xa tấn công các căn cứ không quân Nhật Bản trong khu vực. Việc vô hiệu hóa các căn cứ không quân của địch sẽ giảm đáng kể mối đe dọa đối với các lực lượng tàu mặt nước và tàu ngầm của ta.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (TS) Ý ĐỊNH CỦA CHỈ HUY: Ý định của chiến dịch là nhanh chóng tiêu diệt các phương tiện hải quân của Nhật Bản và Hoa Kỳ trong khu vực, cho phép lực lượng tàu mặt nước và tàu ngầm phong tỏa Nhật Bản bằng cách phá hủy tuyến vận tải thương mại. Một nước Nhật Bản bị cô lập sẽ cho phép lực lượng lục quân của ta áp đảo tuyến phòng thủ của địch và chiếm toàn bộ đảo. Cần thận trọng để không giao chiến với các bên trung lập. Đây sẽ là một cuộc chiến khu vực, không lôi kéo NATO hay các quốc gia thân phương Tây khác vào. KTOF gửi.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					KÝ: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					TOP SECRET - EYES ONLY DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

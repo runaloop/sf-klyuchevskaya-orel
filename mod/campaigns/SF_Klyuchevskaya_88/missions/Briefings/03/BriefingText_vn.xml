@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 09 2000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10th OPERATIONAL SQN
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="WARNING ORDER - TRANSIT"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} sẽ di chuyển qua Quần đảo Kuril để tiếp tục các chiến dịch tập kích đoàn tàu vận tải.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) SIGINT cho thấy 2 tàu ngầm diesel-điện (SSK) hoặc nhiều hơn của đối phương có ý định cản đường di chuyển của bạn.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) Các đợt tấn công ban đầu vào Căn cứ Không quân Hachinohe không đạt hiệu quả. Hãy dự đoán máy bay tuần tra biển (MPA) của đối phương không có hộ tống từ hướng Tây Nam.
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) Nhiều tàu buôn của đối phương vẫn còn trên các tuyến hàng hải. Mọi tàu buôn mang cờ Mỹ và Nhật Bản đều được coi là mục tiêu địch. Tiêu diệt nếu có cơ hội.
+		<LineBreak/>
+		<LineBreak/>4b. (S) Các phương tiện kỹ thuật quốc gia cho thấy một đoàn tàu vận tải tốc độ cao của Hải quân Mỹ đang di chuyển theo tuyến hàng hải hướng Tây. Đoàn tàu này được cho là đang chở hàng tiếp tế quan trọng gồm RGM-109B TASM và RIM-66D cho Hạm đội 7 của Mỹ.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) GHI CHÚ 1: Do lịch trình hành quân gấp gáp, không có cơ sở sửa chữa hay tái vũ trang sau nhiệm vụ này. Hãy sử dụng vũ khí một cách khôn ngoan. Chúc may mắn, Đồng chí.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) GHI CHÚ 2: Có tàu buôn trung lập trên các tuyến hàng hải. Không đánh chìm tàu buôn trung lập; NATO vẫn giữ vị trí trung lập trong cuộc xung đột này và Moskva không thể chấp nhận có thêm một mặt trận thứ hai vào lúc này. Không nên khai hỏa SS-N-12 SANDBOX vào khu vực có nhiều tàu buôn dày đặc; hệ thống tên lửa này sẽ phân bổ loạt đạn vào tất cả các mục tiêu trong phạm vi 20 hải lý quanh điểm khai hỏa ban đầu.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 09 2000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="FLOTA DEL PACÍFICO DE LA BANDERA ROJA"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10.ª ESCUADRA OPERATIVA
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ORDEN DE ALERTA - TRÁNSITO"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} debe transitar las Islas Kuriles para operaciones de asalto a convoyes subsiguientes.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) SIGINT sugiere que 2 o más SSK enemigos pretenden obstruir tu tránsito.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) Los ataques iniciales fueron inefectivos contra la Base Aérea de Hachinohe. Se esperan MPA enemigos sin escolta desde el Sudoeste.
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) Múltiples buques mercantes enemigos aún transitan en las rutas de tráfico. Todos los mercantes con bandera americana y japonesa se consideran hostiles. Destruir si se presenta la oportunidad.
+		<LineBreak/>
+		<LineBreak/>4b. (S) Los medios técnicos nacionales sugieren un convoy de la USN de alta velocidad transitando hacia el oeste por las rutas mercantes. Se espera que el convoy transporte un reabastecimiento crítico de RGM-109B TASM y RIM-66D para la 7ª Flota estadounidense.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) NOTA 1: Nota: debido al calendario operativo ajustado, no se esperan instalaciones de reparación o rearme después de la misión. Gasta las municiones con inteligencia. Buena suerte, Camarada.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) NOTA 2: Hay tráfico neutral presente en las rutas de navegación. No hundir tráfico mercante neutral; la OTAN permanece neutral en este conflicto y Moscú no puede permitirse un segundo frente en este momento. Se recomienda no disparar el SS-N-12 SANDBOX contra tráfico mercante denso; el complejo de misiles distribuirá la andanada contra todos los contactos dentro de 20nm del punto inicial.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

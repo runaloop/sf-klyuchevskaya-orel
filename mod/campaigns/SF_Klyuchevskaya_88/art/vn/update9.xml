@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="25-2-88" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Hải đội Thái Bình Dương thứ Hai" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Vào tháng 1 năm 1988, SF Narod đã xuất phát từ căn cứ của Hạm đội Phương Bắc để thực hiện một chuyến hải trình vòng quanh thế giới. Khi chiến tranh nổ ra, lực lượng đặc nhiệm này đang ở Vịnh Aden, trên đường đến Mumbai, Ấn Độ. Khi NATO không muốn tham gia vào cuộc xung đột, Moskva quyết định rằng lực lượng hùng mạnh này sẽ được sử dụng hiệu quả nhất tại Thái Bình Dương.
+        <LineBreak/><LineBreak/>
+		Lấy Tuần dương hạm mang tên lửa hạng nặng KIROV làm trung tâm, SF Narod được hộ tống bởi nhiều tàu chống ngầm (ASW) và chống hạm mặt nước (ASuW) mạnh mẽ. Vì lợi ích thúc đẩy sự đoàn kết của phe Xã hội chủ nghĩa, một tàu sân bay hạng nhẹ V/STOL được biên chế kèm theo để thuyết phục các quốc gia thân Liên Xô mua tiêm kích Yak-38 FORGER cho không quân của họ.
+        <LineBreak/><LineBreak/>
+        Giờ đây khi chiến tranh đã nổ ra, SF Narod đã dành cả tháng 2 để né tránh các lực lượng USN tại Ấn Độ Dương. Với lượng nhiên liệu dự trữ còn hạn chế, Hạm đội Phương Bắc Cờ Đỏ đã lệnh cho SF Narod vượt eo biển Malacca và tiếp tế tại Cam Ranh.
+        <LineBreak/><LineBreak/>
+        Bây giờ là ngày 25 tháng 2 năm 1988, và buổi sáng của SF Narod bị gián đoạn bởi tín hiệu phát xạ điện từ đặc trưng của một máy bay E-2 Hawkeye.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

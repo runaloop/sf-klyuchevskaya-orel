@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="Kampagne abgeschlossen" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Danke fürs Spielen" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+		Danke, dass Sie SF Klyuchevskaya '88 gespielt haben.
+        <LineBreak/><LineBreak/>
+		Dies ist meine erste Kampagne, aufgebaut um historisch akkurate Einheiten und stark inspiriert von einer bestimmten Kampagne in Wargame: Red Dragon.
+		<LineBreak/><LineBreak/>
+		Ich hoffe, dies war eine spannende und lehrreiche Erfahrung, die das Beste der Sowjetunion gegen die konventionelle Überlegenheit der USN antreten ließ.
+		<LineBreak/><LineBreak/>
+        Teil Zwei wird voraussichtlich erscheinen, sobald die FRAM-Schiffe der JMSDF, die Mk-41-Kreuzer der USN und die Royal Navy zum Spiel hinzugefügt werden.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

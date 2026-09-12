@@ -1,0 +1,165 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MARINEMELDUNG" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S T R E N G G E H E I M*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="MARINEMINISTERIUM" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					SOFORT
+					<LineBreak/>
+					O 08 0800Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="VON"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="ROTBANNER-PAZIFIKFLOTTE"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="AN"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="KOMMANDANT"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="FOKINO PRIMORSKI KRAI"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10. OPERATIVE STAFFEL"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="143. SEEFLIEGER-RAKETENDIVISION"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="10. U-BOOT-DIVISION"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="BETR"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="CONPLAN ORANGE 1-4"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					STRENG GEHEIM - NUR FÜR BEFUGTE
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (TS) ZUSAMMENFASSUNG: Jüngste Vorstöße auf sowjetisches Gebiet lassen auf eine unmittelbar bevorstehende japanische und amerikanische Invasion des sowjetischen Fernen Ostens schließen. Das Oberkommando der Roten Flotte hat die sofortige Ausführung von CONPLAN ORANGE 1-4 angeordnet. Alle verfügbaren sowjetischen Einheiten haben sich auf Kampfhandlungen gegen Japan und die 7. US-Flotte vorzubereiten.
+					<LineBreak/>
+					<LineBreak/>
+					Die Kampfhandlungen beginnen mit dem Befehl "Besteigt den Berg Kljutschewskaja" um 09 0000Z FEB 88.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (TS) FEINDLAGE:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- CONSTELLATION, KITTY HAWK und zugeteilte Geleitschiffe im Japanischen Meer bei gemeinsamen Operationen mit der 1. japanischen Geleitflottille.
+					<LineBreak/>
+					- RANGER, MIDWAY und zugeteilte Geleitschiffe 200 sm südlich von Petropawlowsk bei Operationen mit Landungsschiffen.
+					<LineBreak/>
+					- NIMITZ liegt in Yokosuka, JP.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (TS) EIGENE LAGE:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya, im Übergang zur Soya-Straße, hält Kurs und bricht in den Nordpazifik durch, um den feindlichen Handelsverkehr zu unterbinden.
+					<LineBreak/>
+					- Die 143. Seeflieger-Raketendivision bereitet einen Sättigungsschlag gegen die RANGER-MIDWAY-Gruppe vor.
+					<LineBreak/>
+					- Die 10. U-Boot-Division bereitet sich vor, SSNs und SSGNs in den Westpazifik und das Japanische Meer vorzuschieben.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (TS) LAGE VERBÜNDETER / REGIONALE LAGE: VVS und Truppen der Roten Armee bereiten amphibische und Luftlandeoperationen gegen Sapporo, JP, vor. Sie beabsichtigen, Hokkaido zu durchqueren und die japanische Armee mit überwältigenden Panzer- und mechanisierten Kräften einzeln zu schlagen. Sobald Hokkaido eingenommen ist, ermöglichen weitere amphibische und Luftlandungen ein rasches Ausnutzen des Erfolgs auf der Hauptinsel.
+					<LineBreak/>
+					<LineBreak/>
+					Zusätzlich wird die VVS Langstreckenfliegerkräfte gegen japanische Luftwaffenstützpunkte in der Region einsetzen. Die Neutralisierung feindlicher Luftwaffenstützpunkte wird die Bedrohung für befreundete Überwasser- und U-Boot-Kräfte erheblich verringern.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (TS) ABSICHT DES KOMMANDEURS: Ziel der Operation ist die rasche Vernichtung japanischer und amerikanischer Seestreitkräfte in der Region, damit Überwasser- und U-Boot-Kräfte Japan durch Zerstörung seines Handelsverkehrs blockieren können. Ein isoliertes Japan wird es befreundeten Landstreitkräften ermöglichen, die feindliche Verteidigung zu überrennen und die gesamte Insel einzunehmen. Es ist darauf zu achten, neutrale Parteien nicht zu verwickeln. Dies soll ein regionaler Krieg bleiben, der NATO oder andere westlich orientierte Staaten nicht einbezieht. KTOF sendet.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					GEZEICHNET: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					STRENG GEHEIM - NUR FÜR BEFUGTE DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

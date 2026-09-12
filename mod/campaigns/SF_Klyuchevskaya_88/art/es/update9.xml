@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="25 FEB 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="La Segunda Escuadra del Pacífico" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        En enero de 1988, SF Narod partió de su base en la Flota del Norte para una travesía alrededor del mundo. Cuando comenzó la guerra, la fuerza operativa se encontraba en el Golfo de Adén, en ruta hacia Mumbai, India. Con la OTAN sin intención de participar en el conflicto, Moscú decidió que esta poderosa fuerza operativa sería mejor empleada en el Pacífico.
+        <LineBreak/><LineBreak/>
+		Centrada en el gran crucero de misiles KIROV, SF Narod está escoltada por varios buques ASW y ASuW poderosos. En interés de avanzar la unidad socialista, se adjuntó un portaaviones ligero V/STOL para convencer a las naciones alineadas con la URSS de comprar cazas Yak-38 FORGER para sus fuerzas aéreas.
+        <LineBreak/><LineBreak/>
+        Ahora que ha estallado la guerra, SF Narod ha pasado febrero intentando evadir activos de la Armada estadounidense en el Océano Índico. Con reservas de combustible limitadas, la Flota del Norte de la Bandera Roja ha ordenado a SF Narod atravesar el Estrecho de Malaca y reabastecerse en la Bahía de Cam Ranh.
+        <LineBreak/><LineBreak/>
+        Es ahora el 25 de febrero de 1988, y SF Narod encuentra su mañana interrumpida por las inconfundibles emisiones electromagnéticas de un E-2 Hawkeye.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

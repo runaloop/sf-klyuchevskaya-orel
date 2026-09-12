@@ -1,0 +1,27 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="08 DE FEBRERO DE 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Una Conversación Privada" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Después de leer tus nuevas órdenes, alguien llama a tu puerta. Es el camarada comisario político.
+        <LineBreak/><LineBreak/>
+		"Camarada Comandante", comienza, "el KGB ha transmitido órdenes adicionales para sus ojos exclusivamente. El KGB está muy interesado en adquirir 'sujetos' para su explotación de inteligencia humana. Por cada CUATRO supervivientes que rescate, el KGB le recompensará con UN punto de misión. No se preocupe, camarada, ya no estamos en 1938; la Glasnost significa que ni siquiera el KGB es inmune a las investigaciones internas."
+        <LineBreak/><LineBreak/>
+        Piensas para ti mismo: ¿cuatro supervivientes por un punto? Es un buen trato, y si finges creer al comisario, quizás esos prisioneros no sufran daño alguno. Además, los buenos marinos no dejan morir a náufragos varados, ¿verdad?
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

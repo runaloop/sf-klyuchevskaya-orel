@@ -1,0 +1,74 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 08 2330Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10th OPERATIONAL SQN
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="WARNING ORDER - TRANSIT"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		TOP SECRET - EYES ONLY CO {TaskForceName}
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} sẽ vượt qua eo biển Soya theo đúng kế hoạch hành quân ban đầu.
+		<LineBreak/>
+		<LineBreak/>
+		2. (TS) Lệnh "Climb Mt Klyuchevskaya" sẽ được thực thi vào 0900 giờ địa phương. Sẵn sàng tiến hành các hoạt động tấn công nhằm vào bất kỳ lực lượng Mỹ hoặc Nhật Bản nào.
+		<LineBreak/>
+		<LineBreak/>
+		3. (TS) Một biên đội tấn công mặt nước (SAG) của JMSDF đã bám theo lực lượng của bạn trong 12 giờ qua. Hãy tiêu diệt biên đội này khi Lệnh "Climb Mt Klyuchevskaya" được thực thi.
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) Căn cứ Không quân Misawa của USAF và Căn cứ Không quân Hachinohe của JMSDF nằm cách bạn 300 hải lý về phía Nam. Hãy dự đoán các đợt xuất kích của F-4 và P-3 từ hướng này.
+		<LineBreak/>
+		<LineBreak/>
+		4b. (TS) {TaskForceName} không được tấn công các căn cứ không quân này; các lực lượng khác sẽ vô hiệu hóa chúng theo Lệnh "Climb Mt Klyuchevskaya".
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) SIGINT cho thấy khả năng có tàu ngầm diesel-điện (SSK) của JMSDF ở phía Tây eo biển Soya.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) Hãy bảo toàn Lực lượng đặc nhiệm của bạn và đảm bảo đến được biển Okhotsk. Chúc may mắn, Đồng chí.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		TOP SECRET - EYES ONLY CO {TaskForceName}
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

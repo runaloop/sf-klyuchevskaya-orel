@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 09 2000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 태평양 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="사령관 {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		제10작전전대
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="경고명령 - 항해"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}는 쿠릴 열도를 통과하여 후속 호송선단 습격작전에 대비하라.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 신호정보에 의하면 적 재래식 잠수함 2척 이상이 귀 부대의 통과를 저지하려 할 것으로 판단된다.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 하치노헤 항공기지에 대한 초기 타격은 효과가 없었다. 남서쪽에서 호위기 없는 적 해상초계기의 접근을 예상하라.
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) 다수의 적국 상선이 여전히 항로상에 있다. 미국 및 일본 국적 상선은 모두 적성으로 간주한다. 기회가 있으면 격침하라.
+		<LineBreak/>
+		<LineBreak/>4b. (S) 국가기술정보수단에 의하면 고속 미 해군 호송선단이 서쪽 항로를 통과 중이다. 이 호송선단은 미 제7함대에 대한 RGM-109B TASM 및 RIM-66D의 긴급 재보급 물자를 운송 중인 것으로 판단된다.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 참고 1: 작전 일정이 촉박하여 임무 후 수리 및 재무장 시설을 이용할 수 없을 것으로 예상된다. 무장을 신중하게 사용하라. 동지, 무운을 빈다.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) 참고 2: 항로에 중립국 선박이 존재한다. 중립국 상선을 격침하지 말라. NATO는 이번 분쟁에서 중립을 유지하고 있으며 모스크바는 현재 제2전선을 감당할 수 없다. 밀집한 상선단을 향해 SS-N-12 샌드박스를 발사하지 말 것을 권고한다. 이 미사일 체계는 발사 초점으로부터 20해리 내의 모든 접촉물에 산개 사격을 실시한다.
+		<LineBreak/>
+		<LineBreak/>
+		서명: 흐바토프
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

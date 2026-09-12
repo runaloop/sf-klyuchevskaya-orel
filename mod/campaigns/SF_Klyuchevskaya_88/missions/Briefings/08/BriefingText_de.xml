@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		SOFORT
+		<LineBreak/>
+		O 01 0700Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="VON"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ROTBANNER-PAZIFIKFLOTTE"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="AN"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="KOMMANDANT {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10. OPERATIVE STAFFEL
+		<LineBreak/>
+		10. U-BOOT-DIVISION
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="BETR"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATIONSBEFEHL"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		GEHEIM
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} vernichtet den Nachschubverband der NIMITZ.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) Begrenzte U-Boot-Bedrohung im Raum. Die Vernichtung des feindlichen U-Boot-Rudels am 26. FEB 88 hat die feindliche U-Boot-Aktivität deutlich verringert.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) Feindliche Luftbedrohung gering; feindliche Seefernaufklärer im Raum nicht erwartet. Wird Ihre Task Force jedoch erkannt, ist mit massierten Luftangriffen von der NIMITZ zu rechnen.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) Aufgrund der großen Entfernung zu befreundeten Luftwaffenstützpunkten können nur Langstrecken-Seefernaufklärer eingesetzt werden.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) K-175 könnte im Raum operieren, ist jedoch aufgrund der Tauchtiefe außer Kontakt. Können Sie K-175 orten, kann sie Sie bei Ihrem Auftrag unterstützen.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) {TaskForceName} verlegt nach Abschluss der Mission nach Osten zum OPBOX Bogatyr. Viel Glück, Genosse.
+		<LineBreak/>
+		<LineBreak/>
+		GEZ.: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		GEHEIM
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

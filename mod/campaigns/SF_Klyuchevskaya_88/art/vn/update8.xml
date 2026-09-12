@@ -1,0 +1,162 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="ĐIỆN VĂN HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="BỘ HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					IMMEDIATE
+					<LineBreak/>
+					O 24 0200Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="CHỈ HUY"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="LIÊN ĐỘI TÁC CHIẾN SỐ 10"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="SƯ ĐOÀN HẢI QUÂN ĐÁNH BỘ SỐ 55"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="LỮ ĐOÀN TÀU ĐỔ BỘ SỐ 14"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="BÁO CÁO TÌNH HÌNH HÀNG NGÀY"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					SECRET
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) TÓM LƯỢC: Cuộc đổ bộ đường biển thành công, lực lượng Nhật Bản bị tiêu diệt trong một thế hợp vây đôi ở phía Tây Sapporo. Các lực lượng Nhật Bản còn lại đang rút chạy trong hỗn loạn về Kushiro. Lục quân bắt đầu chiến dịch tiến công vào các đảo chính của Nhật Bản.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) TÌNH HÌNH ĐỊCH:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Phần lớn các đơn vị xe bọc thép và pháo binh Nhật Bản đã được điều chuyển đến Hokkaido trước chiến dịch đổ bộ Hakodate. Các đảo chính của Nhật Bản hiện chỉ còn rất ít lực lượng xe bọc thép hoặc cơ giới hóa.
+					<LineBreak/>
+					- CONSTELLATION không được xác định vị trí từ 22 0600Z FEB 88, lần cuối được báo cáo cách Yokosuka 200 hải lý về phía Đông
+					<LineBreak/>
+					- NIMITZ được xác định vị trí cách Iwo Jima 150 hải lý về phía Bắc vào lúc 23 2231Z FEB 88, có vẻ như đang giữ nguyên vị trí.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) TÌNH HÌNH TA:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya sẽ tiếp tục di chuyển đến điểm hội quân (RV) với lực lượng tiếp tế từ Petropavlovsk.
+					<LineBreak/>
+					- Sư đoàn Hải quân đánh bộ số 55 sẽ lên tàu đổ bộ trở lại sau khi hoàn tất các chiến dịch quét dọn.
+					<LineBreak/>
+					- Lữ đoàn tàu đổ bộ số 14 sẽ ở lại Hakodate để chuẩn bị cho chiến dịch đổ bộ vượt eo biển sắp tới.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) TÌNH HÌNH ĐỒNG MINH / KHU VỰC: Lục quân đã đạt được những bước tiến đáng kể trong 72 giờ qua. Túi vây Hakodate-Sapporo hiện đã bị tiêu diệt, các lực lượng Nhật Bản còn lại bị dồn vào một túi vây sâu 50 km quanh Kushiro.
+					<LineBreak/>
+					20 giờ trước, Lục quân đã tận dụng tình hình để chiếm được một đầu cầu sâu 50 km trên bờ Nam eo biển Tsugaru. Liên Xô hiện đã ở vị thế để tiến công vào các đảo chính của Nhật Bản.
+					<LineBreak/>
+					Cuộc tấn công của VVS nhằm vào biên đội chiến đấu CONSTELLATION vào ngày 22 FEB 88 đã thất bại, lực lượng tấn công bị F-14 và F-15 đánh thiệt hại nặng. Năng lực của Không quân tầm xa VVS bị suy giảm đáng kể cho đến khi có lực lượng tăng viện được điều chuyển từ Hạm đội Phương Bắc Cờ Đỏ.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) NHẬN XÉT CỦA CHỈ HUY: Cuối cùng mọi việc đã diễn ra đúng lịch trình. Với cuộc đổ bộ vượt eo biển gần đây của Lục quân, và việc tiêu diệt túi vây Kushiro đang đến gần, chúng ta sẽ sớm ở vị thế để áp đặt các điều khoản hòa bình với người Mỹ. Sự trở lại của các lực lượng tàu sân bay Mỹ trong khu vực là điều đáng lo ngại, nhưng Hạm đội Thái Bình Dương Cờ Đỏ sẽ không thất bại. KTOF gửi.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					KÝ: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					SECRET DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

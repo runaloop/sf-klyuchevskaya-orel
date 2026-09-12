@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 01 0700Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10th OPERATIONAL SQN
+		<LineBreak/>
+		10th SUBMARINE DIV
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION ORDER"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} sẽ tiêu diệt lực lượng tiếp tế của NIMITZ.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) Mối đe dọa tàu ngầm trong khu vực này hạn chế. Việc tiêu diệt bầy tàu ngầm ("sói biển") vào ngày 26 tháng 2 năm 1988 đã làm giảm đáng kể hoạt động tàu ngầm của đối phương.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) Mối đe dọa từ không quân đối phương thấp; không có máy bay tuần tra biển (MPA) của đối phương trong khu vực này. Tuy nhiên, nếu lực lượng đặc nhiệm của bạn bị phát hiện, bạn sẽ phải đối mặt với một đợt không kích quy mô lớn từ NIMITZ.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) Do khoảng cách xa từ các căn cứ không quân của quân bạn, chỉ có thể điều động máy bay tuần tra tầm xa.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) K-175 có thể đang hoạt động trong khu vực này, nhưng mất liên lạc do độ sâu hoạt động. Nếu bạn có thể xác định vị trí của K-175, tàu này có thể hỗ trợ bạn trong nhiệm vụ.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) {TaskForceName} sẽ di chuyển về phía Đông đến OPBOX Bogatyr sau khi hoàn thành nhiệm vụ. Chúc may mắn, Đồng chí.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

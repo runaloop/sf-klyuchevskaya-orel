@@ -1,0 +1,164 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="海軍電信" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******最　高　機　密*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="海軍省" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					即時（IMMEDIATE）
+					<LineBreak/>
+					O 08 0800Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="発"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="赤旗太平洋艦隊"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="宛"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="指揮官"/>
+					<Run Text="（フォキノ、沿海地方）"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="報"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="第10作戦戦隊"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="第143海軍ミサイル航空師団"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="第10潜水艦師団"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="件名"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="作戦計画オレンジ1-4"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					最高機密――関係者限り
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (TS) 概要：最近のソ連領内への侵入行為は、日米両国によるソ連極東への侵攻が差し迫っていることを示している。赤色艦隊最高司令部は、作戦計画オレンジ1-4の即時発動を命じた。利用可能なすべてのソ連軍部隊は、日本および米第7艦隊に対する戦闘作戦の準備を行うものとする。
+					<LineBreak/>
+					<LineBreak/>
+					戦闘作戦は、1988年2月9日0000Z（Zulu時間）に発令される命令「クリュチェフスカヤ山に登れ」をもって開始される。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (TS) 敵情：
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					・コンステレーション、キティホークおよび随伴護衛艦は日本海において、日本第1護衛隊群と共同作戦を実施中。
+					<LineBreak/>
+					・レンジャー、ミッドウェイおよび随伴護衛艦はペトロパブロフスク南方200海里において、揚陸艦部隊との作戦を実施中。
+					<LineBreak/>
+					・ニミッツは横須賀に接岸中。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (TS) 友軍状況：
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					・宗谷海峡へ向けて移動中のSFクリュチェフスカヤは、針路を維持しつつ北太平洋へ進出し、敵の通商路を遮断するものとする。
+					<LineBreak/>
+					・第143海軍ミサイル航空師団は、レンジャー・ミッドウェイ部隊に対する飽和攻撃の準備を行うものとする。
+					<LineBreak/>
+					・第10潜水艦師団は、SSNおよびSSGNを西太平洋および日本海へ増派する準備を行うものとする。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (TS) 友軍・地域情勢：ソ連空軍（VVS）および赤軍は、日本札幌に対する水陸両用および空挺による上陸作戦を準備中である。両軍は北海道を横断し、圧倒的な機甲・機械化戦力をもって日本陸軍を各個撃破する意図を有する。北海道を制圧した後、追加の水陸両用・空挺上陸作戦により本州への迅速な進出が可能となる。
+					<LineBreak/>
+					<LineBreak/>
+					さらにVVSは、当該地域の日本の航空基地に対し長距離航空部隊を投入する。敵航空基地の無力化は、友軍水上・潜水戦力への脅威を著しく低下させる。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (TS) 指揮官の意図：本作戦の意図は、当該地域における日米両国の海軍資産を迅速に撃滅し、水上および潜水戦力による通商破壊を通じて日本を封鎖することにある。孤立した日本により、友軍地上部隊は敵の防御を圧倒し、全島を制圧できる。中立国との交戦は避けるよう留意すること。本作戦はNATOその他の西側諸国を巻き込まない地域戦争とする。KTOFより。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					署名：フヴァトフ
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					最高機密――関係者限り　DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

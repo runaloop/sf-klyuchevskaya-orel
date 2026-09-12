@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		СРОЧНОЕ СООБЩЕНИЕ
+		<LineBreak/>
+		O 04 2200Z МАР 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="От кого:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="КРАСНОЗНАМЁННЫЙ ТИХООКЕАНСКИЙ ФЛОТ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Кому:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Командир КУГ «Ключевская»"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Копия:"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10-я оперативная эскадра
+		<LineBreak/>
+		10-я дивизия подводных лодок
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Тема:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Боевой приказ"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		СЕКРЕТНО
+		<LineBreak/>
+		<LineBreak/>
+		1. (С) КУГ «Ключевская» надлежит уничтожить японский конвой, отходящий из Токийского залива.
+		<LineBreak/>
+		<LineBreak/>
+		2. (С) Подводная угроза в районе ограничена. Уничтожение волчьей стаи подводных лодок 26 февраля 1988 значительно снизило активность вражеских подводных сил.
+		<LineBreak/>
+		<LineBreak/>
+		3. (С) Вражеская воздушная угроза средняя, ожидайте ударов дальней авиации США с Гуама. Японская авиабаза Ацуги пока функционирует, на ней имеются истребители-бомбардировщики F-1 и F-4.
+		<LineBreak/>
+		<LineBreak/>
+		4. (С) Вражеская надводная угроза высока. По данным национальных технических средств разведки, крупная надводная группировка ВМС США во главе с NEW JERSEY BB-62 и LONG BEACH CGN-9 вышла с Гуама 48 часов назад курсом на северо-запад. Оставшиеся японские боевые корабли также находятся в Токийском заливе, вероятно в роли охранения конвоя.
+		<LineBreak/>
+		<LineBreak/>
+		5. (С) Бывший японский аэродром в Хамамацу доступен для дружественной авиации.
+		<LineBreak/>
+		<LineBreak/>
+		6. (С) КУГ «Ключевская» после выполнения задачи надлежит совершить переход на юг в операционный район «Бородино». Удачи, товарищ.
+		<LineBreak/>
+		<LineBreak/>
+		ПОДПИСАЛ: Хватов
+		<LineBreak/>
+		КТОФ
+		<LineBreak/>
+		<LineBreak/>
+		СЕКРЕТНО
+		<LineBreak/>
+		КОНЕЦ СООБЩЕНИЯ
+	  </TextBlock>
+</Grid>

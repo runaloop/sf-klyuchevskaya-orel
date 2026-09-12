@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="Enero de 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Preludio a la Guerra" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Ene, 1988. La Unión Soviética está cada vez más preocupada por la presencia americana y japonesa cerca del Mar de Ojotsk.
+        <LineBreak/><LineBreak/>
+		Japón está mejorando rápidamente sus fuerzas de "autodefensa", y el Kremlin sospecha que Japón ha reavivado sus ambiciones territoriales. Mientras tanto, la reciente conclusión de la Guerra Irán-Irak ha permitido que buena parte de los escuadrones de la 7.ª Flota estadounidense en el Océano Índico regresen al Pacífico Occidental. Un Japón resurgente y la afluencia de fuerzas estadounidenses han convencido a Moscú de enviar un mensaje audaz.
+        <LineBreak/><LineBreak/>
+        Se ordena a SF Klyuchevskaya patrullar las Islas Kuriles y demostrar la determinación soviética. Centrada en el TAVKR TBILISI, el más nuevo portaaviones Proyecto 1160 de la Flota del Pacífico, es una poderosa fuerza operativa que reafirmará la voluntad del pueblo soviético.
+        <LineBreak/><LineBreak/>
+        Forma tu grupo de tarea, protege al TBILISI y defiende a la Patria.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

@@ -1,0 +1,160 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MARINEMELDUNG" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******G E H E I M*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="MARINEMINISTERIUM" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					SOFORT
+					<LineBreak/>
+					O 04 0200Z MAR 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="VON"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="ROTBANNER-PAZIFIKFLOTTE"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="AN"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="KOMMANDANT"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10. OPERATIVE STAFFEL"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="11. OPERATIVE STAFFEL"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14. LANDUNGSSCHIFF-BRIGADE"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="BETR"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="TAGESLAGEBERICHT"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					GEHEIM
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) ZUSAMMENFASSUNG: Tokio vollständig von Armee- und Marineinfanteriekräften eingekesselt. Kitakyushu bei begrenztem japanischem Widerstand eingenommen. Die Armee bereitet die Landung auf Kyushu vor; die Armee erwartet auch dort begrenzten japanischen Widerstand.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) FEINDLAGE:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Die Außenbezirke Tokios sind nun in befreundeter Hand, im Stadtzentrum hält jedoch hartnäckiger Widerstand an.
+					<LineBreak/>
+					- CONSTELLATION auf Aufnahmen nicht mehr sichtbar, vermutlich in den letzten 24 Stunden aus Pearl Harbor ausgelaufen.
+					<LineBreak/>
+					- Die Vernichtung der NIMITZ-Trägerkampfgruppe hat die amerikanische Luftstreitkraft im Westpazifik erheblich verringert. Die Armee meldet verbesserte Logistik, da die feindliche Luftunterbindung nun geringer ist.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) EIGENE LAGE:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya in der OPERATIONSZONE BOGATYR, hält Position, bis ein Gelegenheitsziel erscheint.
+					<LineBreak/>
+					- Die 14. Marinelandungsbrigade läuft nach Kitakyushu über, zur Unterstützung der Armeelandungen gegen Kyushu.
+					<LineBreak/>
+					- SF Narod lief am 03 1800Z MAR 88 aus Cam Ranh Bay aus. Die SLAVA wurde mit Geleitschiffen abgezweigt, um die 17. Operative Staffel bei Cam Ranh Bay zu verstärken. In der kommenden Woche ist mit dem Beitritt mächtiger Überwassereinheiten zur Gefechtsordnung der KTOF zu rechnen.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) LAGE VERBÜNDETER / REGIONALE LAGE: Die Armee hat Tokio vollständig eingekesselt. Japanische Landstreitkräfte zeigen entschlossenen Widerstand, kämpfen von Haus zu Haus und verwandeln jedes Hochhaus in einen Panzerabwehr-Hinterhalt.
+					<LineBreak/>
+					Die VVS meldet die Instandsetzung der Langstreckenfliegerkräfte, bereit für Seezielangriffe gegen USN-Überwasserkräfte von erbeuteten japanischen Stützpunkten aus.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) ANMERKUNGEN DES KOMMANDEURS: Der Fall Japans ist nun eine Frage des Wann, nicht des Ob. Sobald Tokio fällt, verlieren die Amerikaner ihre letzten Vorwärtsstützpunkte. Guam liegt in leichter Reichweite befreundeter Langstreckenfliegerkräfte, sobald Kyushu erobert ist. KTOF sendet.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					GEZEICHNET: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					GEHEIM DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

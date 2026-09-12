@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988년 1월" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="전쟁의 서곡" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        1988년 1월, 소련은 오호츠크해 인근에서 미국과 일본의 세력 확대에 점점 더 우려를 표하고 있다.
+        <LineBreak/><LineBreak/>
+		일본은 "자위대"를 빠르게 증강하고 있으며, 크렘린은 일본이 영토적 야심을 다시 품고 있다고 의심한다. 한편, 이란-이라크 전쟁이 최근 종결되면서 미 제7함대의 인도양 파견 전력 대부분이 서태평양으로 복귀할 수 있게 되었다. 부활하는 일본과 밀려드는 미군 전력에, 모스크바는 단호한 메시지를 보내기로 결정했다.
+        <LineBreak/><LineBreak/>
+        클류쳅스카야 기동부대는 쿠릴 열도를 순찰하며 소련의 결의를 보여주라는 명령을 받았다. 태평양 함대의 최신 프로젝트 1160 항공모함인 TAVKR 트빌리시를 중심으로 편성된 이 기동부대는, 소련 인민의 의지를 다시 한번 확인시켜 줄 강력한 전력이다.
+        <LineBreak/><LineBreak/>
+        기동부대를 편성하고, 트빌리시를 지키며, 조국을 수호하라.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

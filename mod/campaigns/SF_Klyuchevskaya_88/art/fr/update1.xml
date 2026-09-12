@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="Janvier 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Prélude à la guerre" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Janvier 1988. L'Union soviétique s'inquiète de plus en plus de la présence américaine et japonaise près de la mer d'Okhotsk.
+        <LineBreak/><LineBreak/>
+		Le Japon renforce rapidement ses forces d'« autodéfense », et le Kremlin soupçonne Tokyo d'avoir ravivé ses ambitions territoriales. Par ailleurs, la conclusion récente de la guerre Iran-Irak a permis à une grande partie des escadres de la 7e Flotte américaine, jusqu'alors dans l'océan Indien, de regagner le Pacifique occidental. Ce regain de puissance japonais, conjugué à l'afflux de forces américaines, a convaincu Moscou d'envoyer un message sans équivoque.
+        <LineBreak/><LineBreak/>
+        SF Klyuchevskaya reçoit l'ordre de patrouiller les îles Kouriles et de démontrer la détermination soviétique. Centrée sur le TAVKR TBILISI, le plus récent porte-avions de Projet 1160 de la Flotte du Pacifique, il s'agit d'une force opérationnelle puissante qui réaffirmera la volonté du peuple soviétique.
+        <LineBreak/><LineBreak/>
+        Constituez votre groupe opérationnel, protégez le TBILISI et défendez la Mère Patrie.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

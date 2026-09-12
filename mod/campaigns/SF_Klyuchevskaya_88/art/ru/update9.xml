@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="25 февраля 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Вторая Тихоокеанская эскадра" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Ещё в январе 1988 года корабельная ударная группа «Народ» вышло с базы Северного флота в кругосветный поход. Когда началась война, соединение находилось в Аденском заливе, на пути в Мумбаи, Индия. Поскольку НАТО не пожелало вступать в конфликт, Москва решила, что это мощное соединение лучше использовать на Тихом океане.
+        <LineBreak/><LineBreak/>
+		Ядро соединения — тяжёлый атомный ракетный крейсер КИРОВ, которого сопровождают несколько мощных кораблей ПЛО и противокорабельной обороны. В интересах укрепления социалистического единства к соединению придан лёгкий авианосец вертикального/короткого взлёта и посадки — чтобы убедить просоветские страны закупить Як-38 для своих ВВС.
+        <LineBreak/><LineBreak/>
+        С началом войны КУГ «Народ» весь ФЕВ уклонялось от сил ВМС США в Индийском океане. Ввиду ограниченных запасов топлива Краснознамённый Северный флот приказал КУГ «Народ» пройти Малаккский пролив и пополнить запасы в Камрани.
+        <LineBreak/><LineBreak/>
+        Сейчас 25 февраля 1988, и утро КУГ «Народ» прерывают характерные электромагнитные излучения E-2 Hawkeye.
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

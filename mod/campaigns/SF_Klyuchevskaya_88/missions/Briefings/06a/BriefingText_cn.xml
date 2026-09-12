@@ -1,0 +1,72 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 25 0000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="红旗北方舰队"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="&quot;人民&quot;特遣舰队"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		第7作战支队<LineBreak/>第169混成航空兵团<LineBreak/>第17作战支队
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作战命令"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) "人民"特遣舰队将摧毁美国航母群，以防其在通过马六甲海峡时遭到美国海军拦截。
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 美国航母群很可能以企业号（CVN-65）为核心。护航舰预计包括1艘战列舰、2艘巡洋舰、2艘以上驱逐舰和2艘以上护卫舰。此外，你部以北还发现一支不明美国海军水面行动群。
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 该区域可能有美国海军核潜艇，符合美国海军航母部署的常规做法。
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) 敌方空中威胁很高；一旦"人民"特遣舰队被发现，预计将遭受集中的敌方空袭。
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 金兰基地已派出多批图-95RT和图-16K机群。友军飞机已广泛分散以提高生存率。其任务是把F-14战斗巡逻队从"人民"特遣舰队方向吸引开。预计会有轰炸机损失。
+		<LineBreak/>
+		<LineBreak/>6. (S) 基洛夫号和补给舰根里赫·加萨诺夫号必须存活。其他友军单位均视为可消耗，但不要无谓浪费。
+		<LineBreak/>
+		<LineBreak/>7. (S) "人民"特遣舰队将在本任务结束后继续转移至金兰湾休整补给。企业号是你部与友军海域之间唯一的阻碍。祝你好运，同志。
+		<LineBreak/>
+		<LineBreak/>
+		SIGNED: 赫瓦托夫
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

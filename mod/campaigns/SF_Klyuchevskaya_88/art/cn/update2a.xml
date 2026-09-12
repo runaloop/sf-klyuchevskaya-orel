@@ -1,0 +1,27 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988年2月8日" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="一次私下谈话" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        你刚读完新的命令，就听到有人敲门。是政治委员同志。
+        <LineBreak/><LineBreak/>
+		"指挥官同志，"他开口说道，"克格勃传来了额外指示，仅供你本人阅知。克格勃对获取可供人力情报（HUMINT）利用的'对象'极为关注。每救起四名幸存者，克格勃将奖励你一枚任务点数。别担心，同志，现在已经不是1938年了，公开性政策意味着即便是克格勃也难免受到内部审查。"
+        <LineBreak/><LineBreak/>
+        你心想，四名幸存者换一枚点数？这买卖不错，而且只要装出相信政委的样子，那些俘虏或许就不会受到伤害。再说了，好水手怎会弃搁浅的水兵不顾而让他们去死呢？
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

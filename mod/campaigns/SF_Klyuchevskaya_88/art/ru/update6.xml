@@ -1,0 +1,158 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="ВОЕННО-МОРСКОЕ СООБЩЕНИЕ" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******С Е К Р Е Т Н О*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="ВОЕННО-МОРСКОЕ ВЕДОМСТВО" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					СРОЧНОЕ СООБЩЕНИЕ
+					<LineBreak/>
+					O 17 0200Z ФЕВ 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="ОТ КОГО"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="КРАСНОЗНАМЁННЫЙ ТИХООКЕАНСКИЙ ФЛОТ"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="КОМУ"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="КОМАНДИРУ"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="КОПИЯ"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10-Я ОПЕРАТИВНАЯ ЭСКАДРА"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="55-Я ДИВИЗИЯ МОРСКОЙ ПЕХОТЫ"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14-Я БРИГАДА ДЕСАНТНЫХ КОРАБЛЕЙ"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="ТЕМА"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="ЕЖЕДНЕВНАЯ СВОДКА"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					СЕКРЕТНО
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (С) ОБЩАЯ ОБСТАНОВКА: Морская блокада вокруг Японии установлена. Армия добилась незначительного прорыва под Саппоро. Командование армии требует второй десант в районе Хакодате, чтобы снизить давление на саппорском направлении.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (С) ОБСТАНОВКА У ПРОТИВНИКА:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Надводные силы Японии нейтрализованы. Патрульная авиация противника в районе также сильно истощена на данный момент.
+					<LineBreak/>
+					- МИДУЭЙ подтверждённо потоплен восточнее Гавайев в результате подводной засады.
+					<LineBreak/>
+					- НИМИЦ, КОНСТЕЛЛЕЙШН не обнаружены с 14 0200Z ФЕВ 88, последний раз замечены восточнее Гуама.
+					<LineBreak/>
+					- По данным агентурной разведки, КИТТИ-ХОК совершает переход на восток, к Гавайям, для ремонта.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (С) ОБСТАНОВКА У СВОИХ СИЛ:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- КУГ «Ключевская» выходит из Петропавловска и совершает переход восточнее Хоккайдо для подготовки к десантной операции.
+					<LineBreak/>
+					- 14-я бригада десантных кораблей принимает на борт подразделения 55-й дивизии морской пехоты и совершает переход в район операции AURORA для проведения десантирования.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (С) ОБСТАНОВКА СОЮЗНИКОВ / В РЕГИОНЕ: Вчера армия добилась прорыва на 15 км восточнее Саппоро, прежде чем была остановлена сосредоточенным ударом авиации и ракет. Снабжение и пополнение японских войск через Сангарский пролив не встречает препятствий. Дальняя авиация ВВС снижает темп операций в ожидании повторного появления авианосцев ВМС США.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (С) КОММЕНТАРИИ КОМАНДУЮЩЕГО: Стратегическая инициатива пока остаётся за нами. Если армии для завершения захвата Хоккайдо нужен флот — быть посему. Армия уже отстаёт от графика операции на неделю, к этому моменту мы должны были быть в Токио. КТОФ передаёт.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					ПОДПИСАЛ: Хватов
+					<LineBreak/>
+					КТОФ
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					СЕКРЕТНО DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

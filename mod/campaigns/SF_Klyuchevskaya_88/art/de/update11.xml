@@ -1,0 +1,160 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MARINEMELDUNG" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******G E H E I M*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="MARINEMINISTERIUM" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					SOFORT
+					<LineBreak/>
+					O 28 0200Z FEB 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="VON"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="ROTBANNER-PAZIFIKFLOTTE"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="AN"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="KOMMANDANT"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10. OPERATIVE STAFFEL"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="55. MARINEINFANTERIEDIVISION"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14. LANDUNGSSCHIFF-BRIGADE"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="BETR"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="TAGESLAGEBERICHT"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					GEHEIM
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) ZUSAMMENFASSUNG: Die Armee steht nun vor den Toren Tokios, sie hat die Hälfte ihrer Kräfte abgezweigt, um im Eilmarsch Kitakyushu zu erreichen und ein Entkommen japanischer Kräfte aus Tokio zu verhindern.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) FEINDLAGE:
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- Der Kessel von Kushiro hat vor 3 Stunden kapituliert; Hokkaido gehört nun vollständig der UdSSR, der Übergang zu einer sozialistischen Regierung ist abgeschlossen.
+					<LineBreak/>
+					- CONSTELLATION am 27 2345Z Feb 88 in Pearl Harbor liegend geortet. Nationale technische Aufklärungsmittel weisen darauf hin, dass sie und ihre Geleitschiffe Nachschub aufnehmen, voraussichtliche Rückkehr auf See innerhalb der nächsten 48 Stunden.
+					<LineBreak/>
+					- NIMITZ, am 24 2228Z FEB 88 500 sm nordöstlich von Iwo Jima geortet, scheint auf Position zu verharren.
+					<LineBreak/>
+					- Ein großer Konvoi lief gegen 27 1800Z Feb 88 aus Pearl Harbor aus. Diese Gruppe scheint auf Abfangkurs mit der NIMITZ-Trägerkampfgruppe zu sein, voraussichtliche Ankunft 02. MAR 88. SIGINT bewertet diese Gruppe als Nachschubverband für die NIMITZ-Trägerkampfgruppe.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) EIGENE LAGE:
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya in der OPERATIONSZONE BOGATYR, wird auf Abfangkurs mit dem NIMITZ-Nachschubverband überführt, bevor dieser in den Luftschirm der NIMITZ-Trägerkampfgruppe eintritt.
+					<LineBreak/>
+					- Die 55. Marineinfanteriedivision schließt sich nun dem Vorstoß auf Tokio an.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) LAGE VERBÜNDETER / REGIONALE LAGE: Die abgezweigte Armeegruppe nähert sich den Außenbezirken von Nagoya; Tokio wird voraussichtlich innerhalb der nächsten 48 Stunden eingekesselt. Die Armee meldet begrenzten japanischen Widerstand in ländlichen Gebieten, jedoch hartnäckigen japanischen Widerstand an den Außenbezirken von Tokio.
+					<LineBreak/>
+					Teile der 11. U-Boot-Division der Rotbanner-Nordflotte haben den Übergang durch den Polarkreis abgeschlossen und stehen nun unter dem Kommando der KTOF.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) ANMERKUNGEN DES KOMMANDEURS: Der KGB meldet, seine Sicherungsabteilungen hätten die Partisanen auf Hokkaido und den japanischen Hauptinseln liquidiert. Sie behaupten, der örtliche Widerstand sei weitgehend unterdrückt; es scheint, dass dies kein zweites Afghanistan wird. Nun stellt sich die Frage, ob wir die verbleibenden USN-Trägerkampfgruppen einkesseln und vernichten können. KTOF sendet.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					GEZEICHNET: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					GEHEIM DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

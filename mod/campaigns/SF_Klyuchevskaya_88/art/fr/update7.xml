@@ -1,0 +1,105 @@
+<!-- Pacific Strike CIA memorandum event, adapted from Strike Group Molniya U.S.-voice interstitial format. -->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="864" Height="1120" Padding="45"
+            TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+      <Border.Effect>
+        <DropShadowEffect />
+      </Border.Effect>
+
+      <Border BorderThickness="0,10,10,10" BorderBrush="#FF000000">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <TextBlock Text="C05084534" Background="#FFFFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,-15,0,0" Padding="5,0,5,0" />
+          <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="10"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TRÈS SECRET" TextAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
+              Direction principale du renseignement
+              <LineBreak/>
+              <LineBreak/>
+              <Run FontSize="12">Moscou, 62665</Run>
+            </TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="3" Text="17 février 1988"/>
+            <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="MÉMORANDUM À L'ATTENTION DE :   "/>
+            <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
+              HAUT COMMANDEMENT DE LA VMF
+              <LineBreak/>
+              FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE
+              <LineBreak/>
+              10e ESCADRE OPÉRATIONNELLE//J2//
+              <LineBreak/>
+              55e DIVISION D'INFANTERIE NAVALE//J2//
+            </TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="3" TextWrapping="Wrap">
+              EO 13526 3.3(b)(1)&gt;25Yrs
+              <LineBreak/>
+              EO 13526 3.5(c)
+            </TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="OBJET :   "/>
+            <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Text="Trafic radio japonais après le raid sur Misawa"/>
+          </Grid>
+          <TextBlock Grid.Row="2" TextWrapping="Wrap">
+            1. La station SIGINT VARYAG a transmis des communications de commandement japonaises signalant la neutralisation de la base aérienne de Misawa. Ce trafic reflète une inquiétude urgente : Hokkaido ne dispose désormais plus de couverture aérienne de chasse ni d'appui aérien rapproché.
+            <LineBreak/>
+            <LineBreak/>
+            2. Les canaux de la JMSDF et de la JGSDF ordonnent aux commandants de Hokkaido de tenir l'île à tout prix. Les demandes portent sur des systèmes SAM mobiles supplémentaires, des rechargements de missiles et des munitions d'artillerie. La puissance aérienne des porte-avions de l'USN est demandée pour renforcer la couverture aérienne et l'appui au sol.
+            <LineBreak/>
+            <LineBreak/>
+            3. Il faut s'attendre à ce que l'ennemi compense en repositionnant ses porte-avions vers le nord, indépendamment de la menace aérienne ou des batteries SAM supplémentaires déployées autour des zones de débarquement prévues.
+            <LineBreak/>
+            <LineBreak/>
+			4. Les commandants japonais et américains semblent comprendre qu'Hokkaido et le nord du Japon sont désormais exposés. Dans ces conditions, nous estimons que la situation est favorable à l'exécution immédiate de l'opération de débarquement prévue.
+            <LineBreak/>
+            <LineBreak/>
+          </TextBlock>
+          <TextBlock TextAlignment="Right" Text="Vladlen Mikhaïlov, Directeur" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
+          <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
+            <Run TextDecorations="Underline">Diffusion par ER/21 FÉV 1988 avec annexe</Run>
+            <LineBreak/>
+            <LineBreak/>
+            Orig. - Chaque destinataire
+            <LineBreak/>
+               1 - 2e Direction du GRU
+            <LineBreak/>
+               1 - 6e Direction du GRU
+            <LineBreak/>
+               1 - 12e Direction du GRU
+          </TextBlock>
+          <TextBlock Grid.Row="4" Text="TRÈS SECRET" TextAlignment="Center"/>
+        </Grid>
+      </Border>
+    </Border>
+  </Viewbox>
+</Page>

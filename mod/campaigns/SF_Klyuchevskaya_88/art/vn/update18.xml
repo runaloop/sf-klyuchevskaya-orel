@@ -1,0 +1,83 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="#F3E8CF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="920" Height="1270" Padding="44"
+            TextElement.FontFamily="Times New Roman" TextElement.Foreground="#111111" TextElement.FontSize="17">
+      <Border.Effect>
+        <DropShadowEffect BlurRadius="16" ShadowDepth="6" Opacity="0.45"/>
+      </Border.Effect>
+      <StackPanel Orientation="Vertical">
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+        <TextBlock Text="20-3-88 | ASIA OBSERVER | 30 Cents" Margin="0,14,0,14" FontSize="23" TextAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <Grid Margin="0,8,0,12">
+          <Rectangle Fill="#9B1C1C" Height="16" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
+          <TextBlock Text="TIN NÓNG" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <TextBlock Text="ĐÀM PHÁN HÒA BÌNH KẾT THÚC TẠI THỤY SĨ"
+                   FontWeight="Bold" FontSize="36" TextWrapping="Wrap" TextAlignment="Center" Margin="0,18,0,12"/>
+        <TextBlock Text="Các nhà ngoại giao Liên Xô và Mỹ ký hiệp ước hòa bình không ràng buộc."
+                   FontSize="24" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,18"/>
+
+        <Border BorderBrush="#111111" BorderThickness="3" Background="#FFF7DD" Padding="14" Margin="0,0,0,18">
+          <TextBlock Text="Cuộc rút quân căng thẳng nhưng êm thấm khi lực lượng Liên Xô và Mỹ trở lại hoạt động thời bình."
+                     FontSize="28" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Border>
+
+        <Grid Margin="0,0,0,16">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="3*"/>
+          </Grid.ColumnDefinitions>
+
+          <StackPanel Grid.Column="0">
+            <TextBlock Text="ZURICH" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Hôm nay, Bộ trưởng Ngoại giao Liên Xô và Mỹ đã ký một hiệp ước hòa bình không ràng buộc. Hiệp ước này chia quốc gia Nhật Bản trước đây thành hai khối xã hội chủ nghĩa và dân chủ. 
+              <LineBreak/><LineBreak/>
+              Hokkaido và các đảo chính của Nhật Bản do Liên Xô chiếm đóng được trao lại cho một "Cộng hòa Nhân dân Nhật Bản" mới, còn Okinawa và Iwo Jima vẫn nằm dưới quyền kiểm soát của phía Nhật Bản dân chủ. 
+              <LineBreak/><LineBreak/>
+              Các quan sát viên nước ngoài lưu ý sự vắng mặt của phái đoàn Nhật Bản trong suốt quá trình ký kết hiệp ước. 
+            </TextBlock>
+          </StackPanel>
+
+          <StackPanel Grid.Column="2">
+            <TextBlock Text="WASHINGTON" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              Phẫn nộ và tang thương lan khắp nước Mỹ hôm nay khi toàn bộ mức độ tổn thất của Mỹ được công bố. 
+              <LineBreak/><LineBreak/>
+              Giới chức Mỹ đang chịu sự soi xét gắt gao vì màn thể hiện yếu kém ở Tây Thái Bình Dương. 
+              <LineBreak/><LineBreak/>
+              Đại sứ quán Liên Xô tại Washington cam kết sớm trao trả các quân nhân Mỹ bị bắt giữ.  
+            </TextBlock>
+          </StackPanel>
+        </Grid>
+
+        <Border BorderBrush="#111111" BorderThickness="2" Padding="12" Margin="0,0,0,16">
+          <StackPanel>
+            <TextBlock Text="CĂNG THẲNG GIA TĂNG TRONG NATO" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="23">
+              Hôm nay, Tổng thống Mỹ đặt dấu hỏi về quyết tâm chiến đấu của Tây Âu, cho rằng khu vực này đã sa vào sự thao túng chính trị của cộng sản. 
+			  <LineBreak/><LineBreak/>
+			  Giới phân tích cảnh báo về việc châu Âu sẵn sàng tiếp nhận dầu khí của Liên Xô, cùng những hiểm họa khi gắn các nền kinh tế phương Tây với một nhà nước Liên Xô "bành trướng" và "độc đoán". 
+            </TextBlock>
+          </StackPanel>
+        </Border>
+
+        <Rectangle HorizontalAlignment="Stretch" Height="3" Fill="#111111"/>
+        <TextBlock Text="Bên trong: Bầu cử tại nước Nhật Xô viết vào tuần tới | Nhìn lại 32 năm Hiệp ước An ninh Mỹ-Nhật | Hội đồng Tham mưu trưởng Liên quân Mỹ từ chức để phản đối hiệp định hòa bình" TextWrapping="Wrap" FontSize="17" Margin="0,12,0,10" TextAlignment="Center"/>
+        <TextBlock Text="-1-" TextAlignment="Center" FontSize="16"/>
+      </StackPanel>
+    </Border>
+  </Viewbox>
+</Page>

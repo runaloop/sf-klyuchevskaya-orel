@@ -1,0 +1,27 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="8 февраля 1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Разговор с глазу на глаз" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Едва вы успеваете прочитать новый приказ, в дверь вашей каюты стучат. Это товарищ политработник.
+        <LineBreak/><LineBreak/>
+		«Товарищ командир, — начинает он, — КГБ передал дополнительные указания только для ваших глаз. Комитет крайне заинтересован в получении «объектов» для агентурной разведки. За каждых ЧЕТЫРЕ спасённых уцелевших вы получите от КГБ ОДНО очко к выполнению задания. Не волнуйтесь, товарищ, сейчас не тридцать восьмой год — гласность коснулась даже Комитета, и внутренние проверки там теперь не редкость».
+        <LineBreak/><LineBreak/>
+        Вы про себя думаете: четыре спасённых за одно очко? Сделка неплохая, и если сделать вид, что верите комиссару, этим пленным, возможно, не причинят вреда. К тому же — какой моряк оставит гибнущих на волю волн?
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

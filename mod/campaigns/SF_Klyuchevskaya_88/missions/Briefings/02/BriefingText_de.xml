@@ -1,0 +1,74 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		SOFORT
+		<LineBreak/>
+		O 08 2330Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="VON"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ROTBANNER-PAZIFIKFLOTTE"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="AN"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="KOMMANDANT {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10. OPERATIVE STAFFEL
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="BETR"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="VORBEFEHL - DURCHFAHRT"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		STRENG GEHEIM - NUR FÜR KOMMANDANT {TaskForceName}
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} durchfährt die Soya-Straße gemäß ursprünglichem Fahrplan.
+		<LineBreak/>
+		<LineBreak/>
+		2. (TS) Befehl "Climb Mt Klyuchevskaya" wird um 0900 Ortszeit ausgeführt. Seien Sie bereit, offensive Operationen gegen jegliche amerikanische oder japanische Stellungen durchzuführen.
+		<LineBreak/>
+		<LineBreak/>
+		3. (TS) Eine SAG der JMSDF beschattet Ihren Verband seit 12 Stunden. Vernichten Sie diese, wenn Befehl "Climb Mt Klyuchevskaya" ausgeführt wird.
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) Luftwaffenstützpunkt Misawa der USAF und Luftwaffenstützpunkt Hachinohe der JMSDF liegen 300 sm südlich Ihrer Position. Erwarten Sie F-4- und P-3-Verbände aus dieser Richtung.
+		<LineBreak/>
+		<LineBreak/>
+		4b. (TS) {TaskForceName} greift diese Luftwaffenstützpunkte nicht an, andere Kräfte werden sie gemäß Befehl "Climb Mt Klyuchevskaya" neutralisieren.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) Funkaufklärung deutet auf ein mögliches SSK der JMSDF westlich der Soya-Straße hin.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) Bewahren Sie Ihre Task Force und stellen Sie sicher, dass Sie das Ochotskische Meer erreichen. Viel Glück, Genosse.
+		<LineBreak/>
+		<LineBreak/>
+		GEZ.: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		STRENG GEHEIM - NUR FÜR KOMMANDANT {TaskForceName}
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

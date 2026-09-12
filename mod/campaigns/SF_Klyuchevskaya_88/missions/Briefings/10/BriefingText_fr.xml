@@ -1,0 +1,81 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		FLASH
+		<LineBreak/>
+		O 10 0400Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10e ESCADRE OPÉRATIONNELLE
+		<LineBreak/>
+		11e ESCADRE OPÉRATIONNELLE
+		<LineBreak/>
+		143e DIVISION D'AVIATION DE MISSILES MARITIMES
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ORDRE D'OPÉRATION"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		FLASH FLASH FLASH
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} est réaffectée pour empêcher le CONSTELLATION de s'échapper de la baie de Tokyo.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) La menace sous-marine ennemie est inconnue ; il est hautement improbable qu'un SSN américain ait pu suivre la course à grande vitesse du CONSTELLATION. Le sous-marin d'escorte de l'USN s'est probablement détaché pour protéger les flancs du groupe aéronaval. 
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) La menace aérienne ennemie est élevée ; 1 escadrille de A-7 ou plus et 2 escadrilles de A-6 ou plus ont participé au raid sur Tokyo. Les frappes antinavires des A-6 sont probablement retardées par les cycles de récupération et d'armement. Une frappe de suivi est probable depuis les escadres de bombardiers de Guam.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) La menace de surface ennemie est élevée ; le groupe aéronaval CONSTELLATION comprend 2 CG, 2 DD ou plus et 2 FFG ou plus. 
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) La base aérienne de Hamamatsu n'a pas été touchée lors de l'attaque initiale ; l'aviation amie est disponible depuis cette base. Les dommages subis par la NAF d'Atsugi sont inconnus pour le moment ; n'attendez aucune frappe amie depuis cet aérodrome. 
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) L'ennemi est apparu à un endroit qui nous est particulièrement favorable ; nous n'aurons probablement plus jamais une occasion pareille. Faites payer aux Américains leur audace. Bonne chance, camarade.
+		<LineBreak/>
+		<LineBreak/>
+		FLASH FLASH FLASH
+		<LineBreak/>
+		<LineBreak/>
+		SIGNÉ : Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

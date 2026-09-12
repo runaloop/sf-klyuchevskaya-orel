@@ -1,0 +1,160 @@
+<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+		
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+			
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="ĐIỆN VĂN HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="BỘ HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+			
+		</Grid>
+		
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					IMMEDIATE
+					<LineBreak/>
+					O 06 0200Z MAR 88
+				</TextBlock>
+				
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="TƯ LỆNH"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="LIÊN ĐỘI TÁC CHIẾN 10"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="LIÊN ĐỘI TÁC CHIẾN 11"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="SƯ ĐOÀN TÀU NGẦM 10"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="BÁO CÁO TÌNH HÌNH HÀNG NGÀY"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					SECRET
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (S) TÓM TẮT: Tokyo đã đầu hàng vô điều kiện vào 05 Mar 0000Z, chấm dứt giao tranh trên các đảo chính của Nhật Bản. Tuy nhiên, lực lượng Mỹ vẫn giữ thái độ thù địch, cũng như trên các đảo của Nhật Bản có quân Mỹ đồn trú, cụ thể là Okinawa và Iwo Jima. 
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (S) TÌNH HÌNH ĐỊCH:
+				</TextBlock>	
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">	
+					- Okinawa và Iwo Jima được tăng viện thêm lực lượng USAF cùng máy bay từ Tây Âu. HUMINT tại Đức và vùng duyên hải phía Tây nước Mỹ xác nhận ít nhất 2x phi đội F-15C đã được điều chuyển sang Tây Thái Bình Dương. 
+					<LineBreak/>
+					- CONSTELLATION không còn xuất hiện trên ảnh trinh sát, nhiều khả năng đã rời Pearl Harbor trong 72 giờ qua. Nhóm hộ tống của tàu gồm ít nhất 2x CG, 2x DD và 2+ tàu thuộc biến thể thân dài mới của lớp Oliver Hazard Perry. 
+					<LineBreak/>
+					- KITTY HAWK không còn xuất hiện trên ảnh trinh sát, nhiều khả năng đã rời Pearl Harbor trong 24 giờ qua. Các phương tiện trinh sát kỹ thuật quốc gia đánh giá tàu sân bay này khó có thể đạt sức chiến đấu đầy đủ do thiệt hại nặng mà Không quân Tầm xa của ta đã gây ra. 
+					<LineBreak/>
+				</TextBlock>	
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) TÌNH HÌNH TA:
+				</TextBlock>	
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya đang ở OPBOX BORODINO, sẽ hội quân với SF Narod cách quần đảo Senkaku 150nm về phía Đông và hộ tống về vịnh Tokyo. 
+					<LineBreak/>
+					- SF Narod cách Đài Loan 150nm về phía Tây, đang hành trình tới Yokosuka để nghỉ ngơi và sửa chữa, ETA 08 2000Z Mar 26. 
+					<LineBreak/>
+					- Sư đoàn Không quân Tên lửa Hải quân 143 đang ở mức báo động cao, đề phòng đợt tập kích của tàu sân bay địch nhằm vào Petropavlovsk hoặc miền Bắc Nhật Bản. 
+					<LineBreak/>
+				</TextBlock>	
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (S) TÌNH HÌNH ĐỒNG MINH / KHU VỰC: Lục quân đang chuyển sang các nhiệm vụ an ninh thời hậu chiến tại Nhật Bản. Bộ Tư lệnh Tối cao Lục quân đang chuẩn bị các phương án dự phòng cho chiến dịch đổ bộ lên Okinawa hoặc Iwo Jima nếu Mỹ không chấm dứt hành động thù địch. 
+					<LineBreak/>
+					Không quân Tầm xa VVS cũng đang ở mức báo động cao, đề phòng các đợt tập kích từ tàu sân bay Mỹ nhằm vào lãnh thổ Liên Xô.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (S) NHẬN XÉT CỦA TƯ LỆNH: Các đảo chính của Nhật Bản nay đã hoàn toàn nằm dưới sự kiểm soát của Liên Xô. Nếu KGB giữ đúng cam kết của mình, một nước cộng hòa Xã hội chủ nghĩa mới sẽ ra đời ở Tây Thái Bình Dương trước năm mới. Câu hỏi lúc này là những tàu sân bay Mỹ còn lại sẽ làm gì. Hãy duy trì cảnh giác trước hoạt động không quân của địch. KTOF gửi.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					KÝ: Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					SECRET DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		СРОЧНОЕ СООБЩЕНИЕ
+		<LineBreak/>
+		O 09 2000Z ФЕВ 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="От кого:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="КРАСНОЗНАМЁННЫЙ ТИХООКЕАНСКИЙ ФЛОТ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Кому:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Командир КУГ «Ключевская»"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Копия:"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10-я оперативная эскадра
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Тема:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="Предварительное распоряжение — переход"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		СЕКРЕТНО
+		<LineBreak/>
+		<LineBreak/>
+		1. (С) КУГ «Ключевская» совершает переход через Курильские острова для последующих операций по уничтожению конвоев.
+		<LineBreak/>
+		<LineBreak/>
+		2. (С) По данным радиотехнической разведки, не менее двух вражеских неатомных подводных лодок намерены воспрепятствовать вашему переходу.
+		<LineBreak/>
+		<LineBreak/>
+		3. (С) Первые удары по авиабазе Хатинохэ оказались неэффективны. Ожидайте одиночные вылеты вражеской базовой патрульной авиации с юго-запада.
+		<LineBreak/>
+		<LineBreak/>
+		4a. (С) В судоходных полосах остаются многочисленные вражеские торговые суда. Все суда под американским и японским флагом считаются вражескими. Уничтожать при появлении возможности.
+		<LineBreak/>
+		<LineBreak/>4b. (С) По данным национальных технических средств разведки, в западном направлении по торговым полосам движется скоростной конвой ВМС США. Ожидается, что конвой перевозит остро необходимое пополнение запасов RGM-109B TASM и RIM-66D для 7-го флота США.
+		<LineBreak/>
+		<LineBreak/>
+		5. (С) ПРИМЕЧАНИЕ 1: Ввиду плотного оперативного графика ремонт и пополнение боезапаса после выполнения задачи не предусмотрены. Расходуйте боеприпасы разумно. Удачи, товарищ.
+		<LineBreak/>
+		<LineBreak/>
+		6. (С) ПРИМЕЧАНИЕ 2: В судоходных полосах присутствует нейтральное судоходство. Не топить нейтральные торговые суда — НАТО сохраняет нейтралитет в этом конфликте, и Москва не может позволить себе открытие второго фронта в данный момент. Не рекомендуется применять комплекс SS-N-12 SANDBOX по плотному скоплению торговых судов — комплекс распределит залп по всем целям в радиусе 20 морских миль от точки старта.
+		<LineBreak/>
+		<LineBreak/>
+		ПОДПИСАЛ: Хватов
+		<LineBreak/>
+		КТОФ
+		<LineBreak/>
+		<LineBreak/>
+		СЕКРЕТНО
+		<LineBreak/>
+		КОНЕЦ СООБЩЕНИЯ
+	  </TextBlock>
+</Grid>

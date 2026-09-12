@@ -1,0 +1,27 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988년 2월 8일" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="사적인 대화" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        새로운 명령서를 읽고 난 뒤, 문을 두드리는 소리가 들린다. 정치위원 동무다.
+        <LineBreak/><LineBreak/>
+		"지휘관 동무" 그가 입을 연다. "KGB가 귀관에게만 전달할 추가 지시를 보냈소. KGB는 인간정보(HUMINT) 활용을 위한 '대상자' 확보에 깊은 관심을 두고 있소. 생존자를 네 명 구조할 때마다, KGB는 임무 점수 1점을 지급하겠소. 걱정 마시오, 동무. 이제 1938년이 아니오. 글라스노스트 덕분에 KGB조차 내부 조사에서 예외일 수 없소."
+        <LineBreak/><LineBreak/>
+        속으로 생각한다. 생존자 네 명에 점수 1점이라니? 나쁘지 않은 거래다. 정치위원의 말을 믿는 척한다면, 그 포로들도 해를 입지 않을지 모른다. 게다가, 훌륭한 항해자라면 표류하는 선원들을 죽게 내버려 두지 않는 법 아닌가?
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

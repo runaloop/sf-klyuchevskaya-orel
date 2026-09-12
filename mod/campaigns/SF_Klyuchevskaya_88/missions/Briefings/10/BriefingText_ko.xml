@@ -1,0 +1,81 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		FLASH
+		<LineBreak/>
+		O 10 0400Z MAR 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 태평양 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="사령관 {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		제10작전전대
+		<LineBreak/>
+		제11작전전대
+		<LineBreak/>
+		제143해군미사일항공사단
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="작전명령"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		FLASH FLASH FLASH
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}는 컨스텔레이션이 도쿄만에서 이탈하지 못하도록 임무를 재부여받았다.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) 적 잠수함 위협은 불명확하나, 미 해군 공격원잠이 컨스텔레이션의 고속 이탈에 동행했을 가능성은 매우 낮다. 호위 잠수함은 항모전투단의 측면 경계를 위해 분리되었을 가능성이 높다.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) 적 항공위협은 높다. A-7 편대 1개 이상과 A-6 편대 2개 이상이 도쿄 공습에 참가했다. A-6의 대함타격은 착함 및 재무장 주기로 인해 지연될 가능성이 높다. 후속 공습은 괌 소재 폭격비행단에서 이루어질 가능성이 높다.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) 적 수상위협은 높다. 컨스텔레이션 항모전투단은 순양함 2척, 구축함 2척 이상, 미사일호위함 2척 이상으로 편성되어 있다.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 하마마츠 공군기지는 최초 공습에서 피해를 입지 않아 우군 항공기가 이용 가능하다. 아츠기 해군항공기지의 피해는 현재로선 불명확하며 이 기지에서의 우군 출격은 예상하지 말라.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) 적이 우리에게 매우 유리한 지점에 나타났다. 이런 기회는 다시 오지 않을 것이다. 미국인들에게 그들의 무모함에 대한 대가를 치르게 하라. 동지, 무운을 빈다.
+		<LineBreak/>
+		<LineBreak/>
+		FLASH FLASH FLASH
+		<LineBreak/>
+		<LineBreak/>
+		서명: 흐바토프
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

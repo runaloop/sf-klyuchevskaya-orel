@@ -1,0 +1,74 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 08 2330Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 태평양 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="사령관 {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		제10작전전대
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="경고명령 - 항해"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		TOP SECRET - EYES ONLY CO {TaskForceName}
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName}는 원래 항해계획에 따라 소야 해협을 통과하라.
+		<LineBreak/>
+		<LineBreak/>
+		2. (TS) "클류쳅스카야산 등정" 명령은 현지시간 0900시에 발령된다. 미국이나 일본 자산에 대한 공격작전을 즉시 수행할 준비를 하라.
+		<LineBreak/>
+		<LineBreak/>
+		3. (TS) 일본 해상자위대 수상타격단이 지난 12시간 동안 귀 부대를 추적하고 있다. "클류쳅스카야산 등정" 명령이 발령되면 이를 격멸하라.
+		<LineBreak/>
+		<LineBreak/>
+		4a. (S) 미 공군 미사와 공군기지와 일본 해상자위대 하치노헤 항공기지가 귀 부대 남방 300해리에 위치한다. 이 방향에서 F-4 및 P-3 비행편대의 접근이 예상된다.
+		<LineBreak/>
+		<LineBreak/>
+		4b. (TS) {TaskForceName}는 이 항공기지들을 직접 공격하지 말라. 다른 부대가 "클류쳅스카야산 등정" 명령에 따라 무력화한다.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) 신호정보에 의하면 소야 해협 서쪽에 일본 재래식 잠수함이 있을 가능성이 있다.
+		<LineBreak/>
+		<LineBreak/>
+		6. (S) 귀 기동부대를 보전하며 반드시 오호츠크해에 도달하라. 동지, 무운을 빈다.
+		<LineBreak/>
+		<LineBreak/>
+		서명: 흐바토프
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		TOP SECRET - EYES ONLY CO {TaskForceName}
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

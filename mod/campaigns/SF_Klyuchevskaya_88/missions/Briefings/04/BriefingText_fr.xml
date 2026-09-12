@@ -1,0 +1,71 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		IMMEDIATE
+		<LineBreak/>
+		O 11 1900Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		10e ESCADRE OPÉRATIONNELLE
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ORDRE OPÉRATIONNEL"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		SECRET
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) {TaskForceName} doit intercepter les convois ennemis dans le Pacifique Nord. 
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) Les moyens sous-marins ennemis sont concentrés près de l'archipel japonais et ne sont pas attendus dans cette ZO. Des intercepteurs amis basés à Petropavlovsk-Kamtchatski interdisent la couverture aérienne ennemie dans cette ZO. 
+		<LineBreak/>
+		<LineBreak/>
+		3a. (S) Les moyens techniques nationaux indiquent 1 gros convoi à l'est et 1 petit convoi au sud de votre position. Le cap et la position attendus des convois sont indiqués sur la carte. 
+		<LineBreak/>
+		<LineBreak/>3b. (S) Le convoi méridional pourrait comprendre 1 DD de classe SPRUANCE et des escorteurs ASW supplémentaires. 
+		<LineBreak/>
+		<LineBreak/>3c. (S) Le convoi oriental pourrait comprendre 1 CG, 1 à 2 DDG et des escorteurs ASW supplémentaires. 
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) Le trafic neutre attendu est faible et pourrait transiter en groupes. Le trafic marchand hostile n'est pas attendu dans les voies de navigation ; tous les navires marchands hostiles isolés ont été coulés ou repliés vers les zones de rassemblement des convois. 
+		<LineBreak/>
+		<LineBreak/>5. (S) {TaskForceName} doit transiter vers Petropavlovsk-Kamtchatski pour repos et ravitaillement après la mission. Bonne chasse, camarade.
+		<LineBreak/>
+		<LineBreak/>
+		SIGNÉ : Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		SECRET
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

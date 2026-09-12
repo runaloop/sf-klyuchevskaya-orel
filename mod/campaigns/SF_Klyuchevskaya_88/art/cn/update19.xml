@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="战役完成" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="感谢游玩" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+		感谢你游玩SF Klyuchevskaya '88。
+        <LineBreak/><LineBreak/>
+		这是我的第一个战役，围绕历史上真实存在的作战单位构建，并深受《战争游戏：红龙》中某个战役的启发。
+		<LineBreak/><LineBreak/>
+		希望这场苏联最精锐力量对抗美国海军常规优势的战役，能带给你一段既精彩又富有教育意义的体验。
+		<LineBreak/><LineBreak/>
+        一旦游戏加入日本海上自卫队的现代化改装舰、美国海军Mk41垂发巡洋舰以及英国皇家海军，第二部很可能会随之推出。
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

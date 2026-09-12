@@ -1,0 +1,165 @@
+<!-- Modèle d'événement de campagne pour un message d'intentions quotidiennes (DIM) de style USN - mise en forme reprise d'exemples réels. -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="MESSAGE NAVAL" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******T R È S S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="DÉPARTEMENT DE LA MARINE" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					IMMÉDIAT
+					<LineBreak/>
+					O 08 0800Z FÉV 88
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="DE"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="À"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="COMMANDANT"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="FOKINO, KRAÏ DU PRIMORSKI"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10e ESCADRE OPÉRATIONNELLE"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="143e DIVISION D'AVIATION MARITIME DE MISSILES"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="10e DIVISION SOUS-MARINE"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="OBJET"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="CONPLAN ORANGE 1-4"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					TRÈS SECRET - RÉSERVÉ AU DESTINATAIRE
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					<LineBreak/>
+					1. (TS) RÉSUMÉ : Des incursions récentes en territoire soviétique suggèrent une invasion imminente de l'Extrême-Orient soviétique par le Japon et les États-Unis. Le Haut Commandement de la Flotte Rouge a ordonné la mise en œuvre immédiate du CONPLAN ORANGE 1-4. Toutes les unités soviétiques disponibles doivent se préparer à des opérations de combat contre le Japon et la 7e Flotte américaine.
+					<LineBreak/>
+					<LineBreak/>
+					Les opérations de combat débuteront sur l'ordre « Climb Mt. Klyuchevskaya » à 09 0000Z FÉV 88.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					2. (TS) SITUATION ENNEMIE :
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- CONSTELLATION, KITTY HAWK et leurs escortes en mer du Japon, menant des opérations conjointes avec la 1re Flottille d'escorte de la 1re Flotte japonaise.
+					<LineBreak/>
+					- RANGER, MIDWAY et leurs escortes à 200 nq au sud de Petropavlovsk, menant des opérations avec des navires de débarquement.
+					<LineBreak/>
+					- NIMITZ à quai à Yokosuka, JP.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (TS) SITUATION AMIE :
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- SF Klyuchevskaya, en transit vers le détroit de Soya, maintiendra son cap et percera vers le Pacifique Nord pour interdire le commerce ennemi.
+					<LineBreak/>
+					- La 143e Division d'aviation maritime de missiles se préparera à une frappe de saturation contre le groupe RANGER-MIDWAY.
+					<LineBreak/>
+					- La 10e Division sous-marine se préparera à projeter des SNA et des SNLE vers le Pacifique occidental et la mer du Japon.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4. (TS) SITUATION ALLIÉE / RÉGIONALE : Les forces de la VVS et de l'Armée rouge se préparent à un débarquement amphibie et aéroporté contre Sapporo, JP. Elles entendent traverser Hokkaido et défaire l'armée japonaise en détail grâce à une supériorité écrasante de forces blindées et mécanisées. Une fois Hokkaido prise, des débarquements amphibies et aéroportés supplémentaires permettront une exploitation rapide de l'île principale.
+					<LineBreak/>
+					<LineBreak/>
+					Par ailleurs, la VVS engagera son aviation à long rayon d'action contre les bases aériennes japonaises de la région. La neutralisation des bases aériennes ennemies réduira sensiblement la menace pesant sur nos forces de surface et sous-marines.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5. (TS) INTENTION DU COMMANDANT : L'opération vise la destruction rapide des moyens navals japonais et américains dans la région, permettant aux forces de surface et sous-marines de bloquer le Japon par la destruction de son commerce. Un Japon isolé permettra à nos forces terrestres de submerger les défenses ennemies et de s'emparer de l'île entière. Il convient de veiller à ne pas engager de parties neutres. Il s'agira d'une guerre régionale n'impliquant ni l'OTAN ni d'autres nations alignées sur l'Occident. KTOF, terminé.
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					SIGNÉ : Khvatov
+					<LineBreak/>
+					KTOF
+					<LineBreak/>
+					<LineBreak/>
+					BT
+					<LineBreak/>
+					TRÈS SECRET - RÉSERVÉ AU DESTINATAIRE DECL OADR
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

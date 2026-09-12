@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988年1月" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="戦争前夜" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        1988年1月　ソ連は、オホーツク海付近における米日両国の軍事的プレゼンスの増大に強い懸念を抱いている。
+        <LineBreak/><LineBreak/>
+		日本は「自衛」隊の増強を急速に進めており、クレムリンは日本が領土的野心を再燃させたのではないかと疑っている。一方、イラン・イラク戦争の終結により、米第7艦隊のインド洋部隊の多くが西太平洋へ帰還可能となった。復興する日本と米軍戦力の増強を受け、モスクワは大胆なメッセージを送ることを決意した。
+        <LineBreak/><LineBreak/>
+        SFクリュチェフスカヤは、千島列島を巡視し、ソ連の決意を示すよう命じられる。太平洋艦隊最新のプロジェクト1160型空母TAVKRトビリシを中心とする本任務部隊は、ソ連人民の意志を改めて示す強力な戦力である。
+        <LineBreak/><LineBreak/>
+        任務部隊を編成し、トビリシを護衛し、祖国を守れ。
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988年2月25日" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="第二太平洋分舰队" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        早在1988年1月，"人民"特遣舰队便已离开其北方舰队基地，开始一次环球巡航。战争爆发时，该特遣舰队正身处亚丁湾，正驶向印度孟买。由于北约无意介入这场冲突，莫斯科决定将这支强大的特遣舰队调往太平洋方向发挥作用。
+        <LineBreak/><LineBreak/>
+		"人民"特遣舰队以大型导弹巡洋舰基洛夫号为核心，由数艘强大的反潜和反舰舰艇护航。出于推进社会主义团结的考量，编队中还附有一艘垂直/短距起降轻型航母，用以说服亲苏国家为其空军采购雅克-38"铸造者"战机。
+        <LineBreak/><LineBreak/>
+        战争爆发后，"人民"特遣舰队整个二月都在印度洋躲避美国海军力量。由于燃料储备有限，红旗北方舰队已下令"人民"特遣舰队突破马六甲海峡，前往金兰湾补给。
+        <LineBreak/><LineBreak/>
+        如今已是1988年2月25日，"人民"特遣舰队的清晨被一架E-2"鹰眼"预警机独特的电磁辐射信号打破了平静。
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

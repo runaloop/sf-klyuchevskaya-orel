@@ -1,0 +1,83 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="#F3E8CF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="920" Height="1270" Padding="44"
+            TextElement.FontFamily="Times New Roman" TextElement.Foreground="#111111" TextElement.FontSize="17">
+      <Border.Effect>
+        <DropShadowEffect BlurRadius="16" ShadowDepth="6" Opacity="0.45"/>
+      </Border.Effect>
+      <StackPanel Orientation="Vertical">
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+        <TextBlock Text="1988년 3월 5일 | 아시아 옵서버 | 30센트" Margin="0,14,0,14" FontSize="23" TextAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <Grid Margin="0,8,0,12">
+          <Rectangle Fill="#9B1C1C" Height="16" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
+          <TextBlock Text="속보" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
+
+        <TextBlock Text="도쿄, 항복"
+                   FontWeight="Bold" FontSize="36" TextWrapping="Wrap" TextAlignment="Center" Margin="0,18,0,12"/>
+        <TextBlock Text="소련 당국, 도쿄에서 일본 측과 평화 협상 진행 중이라고 주장"
+                   FontSize="24" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,18"/>
+
+        <Border BorderBrush="#111111" BorderThickness="3" Background="#FFF7DD" Padding="14" Margin="0,0,0,18">
+          <TextBlock Text="워싱턴, 일본이 민주주의로 복귀할 때까지 평화는 없다고 선언"
+                     FontSize="28" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Border>
+
+        <Grid Margin="0,0,0,16">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="3*"/>
+          </Grid.ColumnDefinitions>
+
+          <StackPanel Grid.Column="0">
+            <TextBlock Text="항공모함들은 어디에?" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              엄격한 언론 검열 속에서도, 여러 익명의 소식통은 미 제7함대 항모 대부분이 심각한 피해를 입거나 격침되었다고 주장.
+              <LineBreak/><LineBreak/>
+              소련 신문들은 태평양과 인도양에서 여러 미국 항모전투단이 파괴되었다고 주장.
+              <LineBreak/><LineBreak/>
+              미군 병사, 수병, 조종사들의 연락과 우편이 끊긴 채, 미국 전역의 군인 가족들이 답변을 요구하고 있음.
+            </TextBlock>
+          </StackPanel>
+
+          <StackPanel Grid.Column="2">
+            <TextBlock Text="파리" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
+              소련과 유럽 당국은 모스크바가 시베리아산 석유와 가스를 서유럽과의 경제 관계 강화와 교환하기로 약속하며 에너지 협상을 마무리함.
+              <LineBreak/><LineBreak/>
+              3주간의 불확실성 이후 서유럽 전역의 에너지 시장이 안정을 찾음.
+              <LineBreak/><LineBreak/>
+              모스크바는 유럽을 소련의 석유 및 가스와 연결하는 새로운 발트해 파이프라인이 건설될 것이라고 확언.
+            </TextBlock>
+          </StackPanel>
+        </Grid>
+
+        <Border BorderBrush="#111111" BorderThickness="2" Padding="12" Margin="0,0,0,16">
+          <StackPanel>
+            <TextBlock Text="소련 당국, 곧 일본에서 자유롭고 공정한 선거 있을 것이라 주장" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="23">
+              오늘 연설에서 소련 외무장관은 과거 금지되었던 사회주의 정당들이 투표에 참여하게 되는 즉시 일본에 민주적 선거가 곧 돌아올 것이라고 주장.
+			  <LineBreak/><LineBreak/>
+              미국의 친민주주의 성향 연구기관들은 KGB의 감시 아래 치러지는 어떤 선거의 공정성에도 의문을 제기함. 많은 일본 정부 관계자들이 실종되거나 소련이 임명한 "고문"에게 직위를 넘기면서 우려가 커지고 있음.
+            </TextBlock>
+          </StackPanel>
+        </Border>
+
+        <Rectangle HorizontalAlignment="Stretch" Height="3" Fill="#111111"/>
+        <TextBlock Text="지면 안내: 군사 전문가들, 초음속 대함미사일 공격에 대한 항모의 생존성에 의문 제기 | 소련 외교단, 홋카이도에서의 대일본 민간인 전쟁범죄 혐의 부인 | 미국 대통령, 오늘 오후 9시(동부시간) 긴급 담화 발표 예정" TextWrapping="Wrap" FontSize="17" Margin="0,12,0,10" TextAlignment="Center"/>
+        <TextBlock Text="-1-" TextAlignment="Center" FontSize="16"/>
+      </StackPanel>
+    </Border>
+  </Viewbox>
+</Page>

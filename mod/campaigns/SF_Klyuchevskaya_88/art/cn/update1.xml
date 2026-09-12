@@ -1,0 +1,29 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="1988年1月" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="战争前夜" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        1988年1月，苏联对美国和日本在鄂霍次克海附近的存在日益担忧。
+        <LineBreak/><LineBreak/>
+		日本正迅速壮大其"自卫"力量，克里姆林宫怀疑日本已重燃领土野心。同时，两伊战争的结束使美国第七舰队驻印度洋的大部分分舰队得以重返西太平洋。日本的复苏势头与美军的增势，促使莫斯科决心发出一个强硬的信号。
+        <LineBreak/><LineBreak/>
+        克柳切夫斯卡亚特遣舰队奉命在千岛群岛巡逻，以彰显苏联的决心。这支强大的特遣舰队以太平洋舰队最新的1160型航母——TAVKR 第比利斯——为核心，将再次宣示苏联人民的意志。
+        <LineBreak/><LineBreak/>
+        组建你的特遣舰队，保护第比利斯，捍卫祖国。
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

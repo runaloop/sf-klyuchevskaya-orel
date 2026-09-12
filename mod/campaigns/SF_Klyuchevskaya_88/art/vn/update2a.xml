@@ -1,0 +1,27 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Stretch="Uniform"
+  StretchDirection="Both">
+  <Grid Width="1560" Height="920" TextElement.Foreground="#D8DCE0" TextElement.FontFamily="Roboto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="90"/>
+      <RowDefinition Height="1"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Text="SF Klyuchevskaya '88" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Rectangle Grid.Row="1" Fill="#3E454B" Margin="28,0"/>
+
+    <StackPanel Grid.Row="2" Margin="170,90,170,0">
+      <TextBlock Text="8-2-1988" FontSize="20" Foreground="#AEB7C0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+      <TextBlock Text="Một Cuộc Trò Chuyện Riêng" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,28"/>
+      <TextBlock TextWrapping="Wrap" FontSize="18" LineHeight="30" Foreground="#D0D4D8">
+        Sau khi đọc mệnh lệnh mới, có tiếng gõ cửa. Đó là Đồng chí Chính ủy.
+        <LineBreak/><LineBreak/>
+		"Đồng chí Chỉ huy," ông ta bắt đầu, "KGB đã chuyển thêm lệnh chỉ dành riêng cho đồng chí. KGB rất quan tâm đến việc thu thập 'đối tượng' để khai thác tình báo con người (HUMINT). Với mỗi BỐN người sống sót mà đồng chí cứu được, KGB sẽ tặng đồng chí MỘT điểm nhiệm vụ. Đừng lo, đồng chí, đây không còn là năm 1938 nữa, Glasnost có nghĩa là ngay cả KGB cũng không tránh khỏi các cuộc điều tra nội bộ. "
+        <LineBreak/><LineBreak/>
+        Bạn tự nhủ, BỐN người sống sót đổi lấy MỘT điểm? Nghe cũng hời đấy, và nếu bạn giả vờ tin lời Chính ủy, những tù binh đó có thể sẽ không bị hại. Hơn nữa, những thủy thủ tốt không bao giờ để đồng đội mắc kẹt chết một mình, đúng không?
+      </TextBlock>
+    </StackPanel>
+  </Grid>
+</Viewbox>

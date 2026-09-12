@@ -1,0 +1,72 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		SOFORT
+		<LineBreak/>
+		O 25 0000Z FEB 88
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="VON"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ROTBANNER-NORDFLOTTE"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="AN"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="SF Narod"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		7. OPERATIVE STAFFEL<LineBreak/>169. GEMISCHTES FLIEGERREGIMENT<LineBreak/>17. OPERATIVE STAFFEL
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="BETR"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATIONSBEFEHL"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		GEHEIM
+		<LineBreak/>
+		<LineBreak/>
+		1. (S) SF Narod vernichtet den amerikanischen Trägerverband, um eine Unterbindung durch die USN bei der Durchfahrt der Straße von Malakka zu verhindern.
+		<LineBreak/>
+		<LineBreak/>
+		2. (S) Der US-Trägerverband ist wahrscheinlich um die ENTERPRISE CVN-65 zentriert. Geleitschiffe umfassen voraussichtlich 1x Schlachtschiff, 2x Kreuzer, 2+ Zerstörer und 2+ Fregatten. Zusätzlich wurde eine unbekannte USN-SAG nördlich Ihrer Position erfasst.
+		<LineBreak/>
+		<LineBreak/>
+		3. (S) Wahrscheinliches USN-SSN im Raum, im Einklang mit routinemäßigen USN-Trägerverlegungen.
+		<LineBreak/>
+		<LineBreak/>
+		4. (S) Feindliche Luftbedrohung hoch; wird SF Narod erkannt, ist mit einem konzentrierten feindlichen Luftangriff zu rechnen.
+		<LineBreak/>
+		<LineBreak/>
+		5. (S) Vom Stützpunkt Cam Ranh sind mehrere TU-95RT- und TU-16K-Verbände gestartet. Befreundete Luftstreitkräfte sind weit verteilt, um die Überlebensfähigkeit zu erhöhen. Ihr Auftrag ist es, die F-14-CAP von SF Narod abzulenken. Bomberverluste sind einzuplanen.
+		<LineBreak/>
+		<LineBreak/>6. (S) KIROV und der Versorger GENRIKH GASANOV müssen überleben. Alle anderen befreundeten Einheiten gelten als entbehrlich, verschwenden Sie sie jedoch nicht unnötig.
+		<LineBreak/>
+		<LineBreak/>7. (S) SF Narod setzt nach dieser Mission die Fahrt nach Cam Ranh Bay zur Rast und Auffrischung fort. ENTERPRISE ist das einzige, was zwischen Ihnen und befreundeten Gewässern steht. Viel Glück, Genosse.
+		<LineBreak/>
+		<LineBreak/>
+		GEZ.: Khvatov
+		<LineBreak/>
+		KTOF
+		<LineBreak/>
+		<LineBreak/>
+		GEHEIM
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

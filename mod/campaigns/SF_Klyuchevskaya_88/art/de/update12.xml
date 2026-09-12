@@ -1,0 +1,105 @@
+<!-- Pacific Strike CIA memorandum event, adapted from Strike Group Molniya U.S.-voice interstitial format. -->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="864" Height="1120" Padding="45"
+            TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+      <Border.Effect>
+        <DropShadowEffect />
+      </Border.Effect>
+
+      <Border BorderThickness="0,10,10,10" BorderBrush="#FF000000">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <TextBlock Text="C05084534" Background="#FFFFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,-15,0,0" Padding="5,0,5,0" />
+          <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="10"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="15"/>
+              <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="STRENG GEHEIM" TextAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
+              Hauptnachrichtendirektion (GRU)
+              <LineBreak/>
+              <LineBreak/>
+              <Run FontSize="12">Moskau, 62665</Run>
+            </TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="3" Text="17. Februar 1988"/>
+            <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="MEMORANDUM AN:   "/>
+            <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
+              OBERKOMMANDO DER VMF
+              <LineBreak/>
+              ROTBANNER-PAZIFIKFLOTTE
+              <LineBreak/>
+              10. U-BOOT-DIVISION//J2//
+              <LineBreak/>
+              11. U-BOOT-DIVISION//J2//
+            </TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="3" TextWrapping="Wrap">
+              EO 13526 3.3(b)(1)&gt;25Yrs
+              <LineBreak/>
+              EO 13526 3.5(c)
+            </TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="BETREFF:   "/>
+            <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Text="USN-Funkverkehr aus dem Führungsnetz der NIMITZ-Trägerkampfgruppe"/>
+          </Grid>
+          <TextBlock Grid.Row="2" TextWrapping="Wrap">
+            1. Die SIGINT-Station VARYAG hat amerikanischen Befehlsfunkverkehr über die Vernichtung des NIMITZ-Nachschubkonvois abgefangen. Der Verkehr zeigt dringende Besorgnis über die Wiederbewaffnung und Betankung der NIMITZ-Trägerkampfgruppe und die Wahrscheinlichkeit, dass im Westpazifik nur noch landgestützte Luftstreitkräfte verbleiben.
+            <LineBreak/>
+            <LineBreak/>
+            2. Die Führungskanäle der USN weisen die NIMITZ-Trägerkampfgruppe an, angesichts der sowjetischen Überwasser- und Unterwasserpräsenz, die den Nachschub zwischen Hawaii und Iwo Jima unterbindet, mit Höchstgeschwindigkeit auf Pearl Harbor zuzuhalten. Die Befehle an die NIMITZ verlangen den Übergang mit Höchstgeschwindigkeit unter Verzicht auf U-Boot-Abwehr-Zickzackkurse, begleitet von optimistischen Anmerkungen zur Fähigkeit der U-Jagd-Flugzeuge der USN-Träger, Trägerkampfgruppen vor befreundeten U-Booten abzuschirmen.
+            <LineBreak/>
+            <LineBreak/>
+            3. Es ist zu erwarten, dass die NIMITZ-Trägerkampfgruppe ihre begrenzten Flugbenzinreserven auf U-Jagd-Flüge konzentriert und damit die Zahl der Seeziel- und CAP-Einsätze verringert.
+            <LineBreak/>
+            <LineBreak/>
+			4. Die amerikanischen Kommandeure verstehen, dass ihre begrenzten land- und trägergestützten Luftstreitkräfte nicht ausreichen, um die befreundete Einkesselung Tokios oder die vollständige befreundete Besetzung Japans zu verhindern. Da nur noch 2 einsatzfähige Trägerkampfgruppen im Pazifik-Kriegsschauplatz verbleiben, bewertet der GRU die Vernichtung jeder weiteren Trägerkampfgruppe als geeignet, den feindlichen Widerstand in Japan zusammenbrechen zu lassen und wahrscheinlich Friedensgespräche zwischen der UdSSR und Amerika einzuleiten.
+            <LineBreak/>
+            <LineBreak/>
+          </TextBlock>
+          <TextBlock TextAlignment="Right" Text="Vladlen Michailow, Direktor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
+          <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
+            <Run TextDecorations="Underline">Verteilung durch ER/01. März 1988 m/Anl.s</Run>
+            <LineBreak/>
+            <LineBreak/>
+            Original - an jeden Empfänger
+            <LineBreak/>
+               1 - 2. Direktion GRU
+            <LineBreak/>
+               1 - 6. Direktion GRU
+            <LineBreak/>
+               1 - 12. Direktion GRU
+          </TextBlock>
+          <TextBlock Grid.Row="4" Text="STRENG GEHEIM" TextAlignment="Center"/>
+        </Grid>
+      </Border>
+    </Border>
+  </Viewbox>
+</Page>
