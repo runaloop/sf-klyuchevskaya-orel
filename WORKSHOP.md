@@ -85,7 +85,8 @@ and it will be taken down at his request without argument.
 The Project 1160 Orel and its aircraft are base-game content by Triassic Games
 and MicroProse.
 
-Source and a full list of every change: see the GitHub link on this page.
+Source and a full list of every change:
+[url=https://github.com/runaloop/sf-klyuchevskaya-orel]github.com/runaloop/sf-klyuchevskaya-orel[/url]
 
 ---
 
@@ -100,8 +101,8 @@ second Tbilisi shot that would not duplicate the cover.
        starting budget or the trimmed air wing.
 2. [x] `tools/rename_campaign.sh SF_Klyuchevskaya_88_Orel` — done, the campaign
        folder is `SF_Klyuchevskaya_88_Orel` and nothing references the old id.
-3. [ ] Push to GitHub and put the repository link in the description where it
-       says "see the GitHub link on this page".
+3. [x] Pushed to github.com/runaloop/sf-klyuchevskaya-orel; the link is in the
+       description above.
 4. [ ] Upload: Mod Manager → Create Mod → pick the mod folder, title and
        description from this file, preview image `mod/workshop_preview.jpg`,
        visibility public, no required items.
