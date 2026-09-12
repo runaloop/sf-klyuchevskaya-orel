@@ -54,7 +54,7 @@
             <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
             <TextBlock Grid.Row="7" Grid.Column="0" Text="备忘录呈送："/>
             <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
-              苏联海军最高统帅部
+              苏联海军总司令部
               <LineBreak/>
               红旗太平洋舰队
               <LineBreak/>
@@ -86,7 +86,7 @@
           </TextBlock>
           <TextBlock TextAlignment="Right" Text="弗拉德连·米哈伊洛夫，局长" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
           <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
-            <Run TextDecorations="Underline">分发：ER/1988年3月1日 附件s</Run>
+            <Run TextDecorations="Underline">分发：ER/1988年3月1日 附件</Run>
             <LineBreak/>
             <LineBreak/>
             正本——各收件方

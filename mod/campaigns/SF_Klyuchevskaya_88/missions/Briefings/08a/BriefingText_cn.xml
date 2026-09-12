@@ -21,26 +21,26 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		紧急
 		<LineBreak/>
 		O 03 0100Z MAR 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="发报"/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="红旗太平洋舰队"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收报"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指挥官"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		第10潜艇支队
 		<LineBreak/>
 		第11潜艇支队
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主题"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作战命令"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		机密
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) K-242将击沉尼米兹号及高价值巡洋舰护航舰。
@@ -65,7 +65,7 @@
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		机密
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

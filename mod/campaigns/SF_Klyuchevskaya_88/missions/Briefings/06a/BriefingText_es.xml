@@ -21,24 +21,24 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		INMEDIATO
 		<LineBreak/>
 		O 25 0000Z FEB 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="DE"/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="FLOTA DEL NORTE DE LA BANDERA ROJA"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="PARA"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="SF Narod"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFORMACIÓN"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		7.ª ESCUADRA OPERATIVA<LineBreak/>169.º REGIMIENTO MIXTO DE AVIACIÓN<LineBreak/>17.ª ESCUADRA OPERATIVA
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="ASUNTO"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ORDEN DE OPERACIONES"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		SECRETO
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) SF Narod debe destruir al grupo portaaviones estadounidense para impedir la interdicción de la USN mientras transita el Estrecho de Malaca.
@@ -60,12 +60,12 @@
 		<LineBreak/>7. (S) SF Narod debe continuar el tránsito hacia la Bahía de Cam Ranh tras esta misión para descanso y reabastecimiento. El ENTERPRISE es lo único que se interpone entre tú y aguas amigas. Buena suerte, Camarada.
 		<LineBreak/>
 		<LineBreak/>
-		SIGNED: Khvatov
+		FIRMADO: Khvatov
 		<LineBreak/>
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		SECRETO
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

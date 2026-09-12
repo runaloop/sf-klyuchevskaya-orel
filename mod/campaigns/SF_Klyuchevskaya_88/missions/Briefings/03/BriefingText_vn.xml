@@ -21,24 +21,24 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		THƯỢNG KHẨN
 		<LineBreak/>
 		O 09 2000Z FEB 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TỪ"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="GỬI"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CHỈ HUY TRƯỞNG {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SAO GỬI"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
-		10th OPERATIONAL SQN
+		LIÊN ĐỘI TÁC CHIẾN 10
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
-    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="WARNING ORDER - TRANSIT"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="CHỦ ĐỀ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="LỆNH CẢNH BÁO - HÀNH QUÂN"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		MẬT
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName} sẽ di chuyển qua Quần đảo Kuril để tiếp tục các chiến dịch tập kích đoàn tàu vận tải.
@@ -61,12 +61,12 @@
 		6. (S) GHI CHÚ 2: Có tàu buôn trung lập trên các tuyến hàng hải. Không đánh chìm tàu buôn trung lập; NATO vẫn giữ vị trí trung lập trong cuộc xung đột này và Moskva không thể chấp nhận có thêm một mặt trận thứ hai vào lúc này. Không nên khai hỏa SS-N-12 SANDBOX vào khu vực có nhiều tàu buôn dày đặc; hệ thống tên lửa này sẽ phân bổ loạt đạn vào tất cả các mục tiêu trong phạm vi 20 hải lý quanh điểm khai hỏa ban đầu.
 		<LineBreak/>
 		<LineBreak/>
-		SIGNED: Khvatov
+		KÝ: Khvatov
 		<LineBreak/>
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		MẬT
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

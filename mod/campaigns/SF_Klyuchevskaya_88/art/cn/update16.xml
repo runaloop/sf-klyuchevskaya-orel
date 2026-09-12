@@ -91,8 +91,8 @@
 				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="红旗太平洋舰队"/>
 				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="收报"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
-					<Run Text="指挥官"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="指挥官"/>
 				</TextBlock>
 				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="抄送"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="第10作战支队"/>

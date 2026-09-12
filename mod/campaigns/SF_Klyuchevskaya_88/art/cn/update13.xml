@@ -91,8 +91,8 @@
 				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="红旗太平洋舰队"/>
 				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="收报"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
-					<Run Text="指挥官"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="指挥官"/>
 				</TextBlock>
 				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="抄送"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="第10作战支队"/>
@@ -126,11 +126,11 @@
 					3. (S) 我情：
 				</TextBlock>
 				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
-					- 克柳切夫斯卡亚特遣舰队位于勇士战区，正保持战位以待临机目标出现。
+					- 克柳切夫斯卡亚特遣舰队位于"勇士"作战区，正保持战位以待临机目标出现。
 					<LineBreak/>
 					- 第14海军登陆舰旅将转赴北九州，支援陆军在九州的登陆行动。
 					<LineBreak/>
-					- "人民"特遣舰队于3月3日1800Z驶离金兰湾。斯拉瓦号已带同护航舰只分离，赴金兰湾增援第17作战支队。预计未来一周将有强大的水面力量加入红旗太平洋舰队作战序列。
+					- "人民"特遣舰队于3月3日1800Z驶离金兰湾。斯拉瓦号已率护航舰只分离，赴金兰湾增援第17作战支队。预计未来一周将有强大的水面力量加入红旗太平洋舰队作战序列。
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">

@@ -27,7 +27,7 @@
 			</Grid.ColumnDefinitions>
 
 			<TextBlock Grid.Row="0" Grid.Column="0" Text="해군 통신문" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
-			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******비밀*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
 			<TextBlock Grid.Row="0" Grid.Column="2" Text="해군성" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
 
 		</Grid>
@@ -79,7 +79,7 @@
 					<ColumnDefinition Width="Auto"/>
 				</Grid.ColumnDefinitions>
 				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
-					IMMEDIATE
+					긴급
 					<LineBreak/>
 					O 28 0200Z FEB 88
 				</TextBlock>
@@ -87,23 +87,23 @@
 				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
 
 
-				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
-				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="적기 태평양 함대"/>
-				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="발신"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="붉은기 태평양 함대"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="수신"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
 					<Run Text="지휘관"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="참조"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="제10작전전대"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="제55해군보병사단"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="제14상륙함여단"/>
-				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="제목"/>
 				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="일일 상황보고"/>
 
 				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
 					<LineBreak/>
-					SECRET
+					비밀
 					<LineBreak/>
 					BT
 					<LineBreak/>
@@ -117,7 +117,7 @@
 				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
 					- 구시로 포위망은 3시간 전 항복함. 홋카이도는 완전히 소련 영토가 되었으며 사회주의 정부로의 전환이 완료됨.
 					<LineBreak/>
-					- 컨스텔레이션은 27 2345Z Feb 88 기준 진주만에 정박 중임이 확인됨. 국가 기술 수단에 따르면 그녀와 호위 전력이 재보급 중이며 48시간 내 재출항할 가능성이 높음.
+					- 컨스텔레이션은 27 2345Z Feb 88 기준 진주만에 정박 중임이 확인됨. 국가 기술 수단에 따르면 해당 함정과 호위 전력이 재보급 중이며 48시간 내 재출항할 가능성이 높음.
 					<LineBreak/>
 					- 니미츠는 24 2228Z FEB 88 기준 이오지마 북동쪽 500해리에서 위치 확인, 정점 대기 중인 것으로 보임.
 					<LineBreak/>
@@ -136,7 +136,7 @@
 				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
 					4. (S) 동맹/지역 상황: 육군 분견대는 나고야 외곽에 접근 중이며, 도쿄는 향후 48시간 내 포위될 가능성이 높음. 육군은 농촌 지역에서 제한적인 일본군 저항을, 도쿄 외곽에서는 완강한 저항을 보고함.
 					<LineBreak/>
-					적기 북방 함대 제11잠수함사단 소속 부대들이 북극권 횡단을 완료하고 이제 KTOF 지휘 하에 편입됨.
+					붉은기 북방 함대 제11잠수함사단 소속 부대들이 북극권 횡단을 완료하고 이제 KTOF 지휘 하에 편입됨.
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
@@ -151,7 +151,7 @@
 					<LineBreak/>
 					BT
 					<LineBreak/>
-					SECRET DECL OADR
+					비밀 DECL OADR
 					<LineBreak/>
 				</TextBlock>
 			</Grid>

@@ -21,24 +21,24 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		긴급
 		<LineBreak/>
 		O 26 0200Z FEB 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 태평양 함대"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="발신"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="붉은기 태평양 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="수신"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="사령관 {TaskForceName}"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="참조"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		제10작전전대
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="제목"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="작전명령"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		비밀
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName}는 페트로파블롭스크 재보급대로부터 재보급을 받으라.
@@ -53,7 +53,7 @@
 		4. (S) 육군이 치토세 공군기지를 점령했다. 귀 부대 항공기는 이곳에서 전개할 수 있다.
 		<LineBreak/>
 		<LineBreak/>
-		5. (S) {TaskForceName}는 재보급이 완료되면 페트로파블롭스크 재보급대를 츠가루 해협까지 호위하라. 동지, 무운을 빈다.
+		5. (S) {TaskForceName}는 재보급이 완료되면 페트로파블롭스크 재보급대를 쓰가루 해협까지 호위하라. 동지, 무운을 빈다.
 		<LineBreak/>
 		<LineBreak/>
 		서명: 흐바토프
@@ -61,7 +61,7 @@
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		비밀
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

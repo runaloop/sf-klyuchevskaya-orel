@@ -91,8 +91,8 @@
 				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="红旗太平洋舰队"/>
 				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="收报"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
-					<Run Text="指挥官"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="指挥官"/>
 				</TextBlock>
 				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="抄送"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="第10作战支队"/>
@@ -108,7 +108,7 @@
 					BT
 					<LineBreak/>
 					<LineBreak/>
-					1. (S) 摘要：海上登陆行动成功，日军在札幌以西遭双重包围后被全歼。残余日军正混乱撤往钏路。陆军已开始进攻日本本岛。
+					1. (S) 摘要：两栖登陆行动成功，日军在札幌以西遭双重包围后被全歼。残余日军正混乱撤往钏路。陆军已开始进攻日本本岛。
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" TextWrapping="Wrap">
@@ -142,7 +142,7 @@
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
-					5. (S) 指挥官评语：局势终于按计划进行了。凭借陆军近期的跨海峡登陆，以及钏路包围圈即将被消灭，我们很快就能在与美国的和谈中掌握主导权。美国航母部队重返本地区令人担忧，但红旗太平洋舰队绝不会失败。红旗太平洋舰队发。
+					5. (S) 指挥官评语：局势终于按计划进行了。凭借陆军近期的跨海峡登陆，以及钏路包围圈即将被消灭，我们很快就能向美国开出和平条件。美国航母部队重返本地区令人担忧，但红旗太平洋舰队绝不会失败。红旗太平洋舰队发。
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">

@@ -19,7 +19,7 @@
 
         <Grid Margin="0,8,0,12">
           <Rectangle Fill="#9B1C1C" Height="16" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
-          <TextBlock Text="最新消息" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
+          <TextBlock Text="突发新闻" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
         </Grid>
         <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
 
@@ -69,7 +69,7 @@
             <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="23">
               苏联外交部长今日发表讲话称，一旦此前被禁止的社会主义政党重新进入选票，日本将很快恢复民主选举。
 			  <LineBreak/><LineBreak/>
-              美国的支持民主智库质疑，在克格勃的严密监视下进行的任何选举能否称得上公正。随着许多日本政府官员失踪，或将职位让位于苏方任命的"顾问"，人们的担忧日益加深。
+              美国亲民主派智库质疑，在克格勃的严密监视下进行的任何选举能否称得上公正。随着许多日本政府官员失踪，或将职位让给苏方任命的"顾问"，人们的担忧日益加深。
             </TextBlock>
           </StackPanel>
         </Border>

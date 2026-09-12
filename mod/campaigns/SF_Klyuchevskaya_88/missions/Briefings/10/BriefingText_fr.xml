@@ -27,11 +27,11 @@
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="DE"/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="FLOTTE DU PACIFIQUE DE LA BANNIÈRE ROUGE"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="À"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDANT {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="COPIE"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		10e ESCADRE OPÉRATIONNELLE
 		<LineBreak/>
@@ -39,7 +39,7 @@
 		<LineBreak/>
 		143e DIVISION D'AVIATION DE MISSILES MARITIMES
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="OBJET"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ORDRE D'OPÉRATION"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
 		SECRET
@@ -54,7 +54,7 @@
 		2. (S) La menace sous-marine ennemie est inconnue ; il est hautement improbable qu'un SSN américain ait pu suivre la course à grande vitesse du CONSTELLATION. Le sous-marin d'escorte de l'USN s'est probablement détaché pour protéger les flancs du groupe aéronaval. 
 		<LineBreak/>
 		<LineBreak/>
-		3. (S) La menace aérienne ennemie est élevée ; 1 escadrille de A-7 ou plus et 2 escadrilles de A-6 ou plus ont participé au raid sur Tokyo. Les frappes antinavires des A-6 sont probablement retardées par les cycles de récupération et d'armement. Une frappe de suivi est probable depuis les escadres de bombardiers de Guam.
+		3. (S) La menace aérienne ennemie est élevée ; 1 escadron de A-7 ou plus et 2 escadrons de A-6 ou plus ont participé au raid sur Tokyo. Les frappes antinavires des A-6 sont probablement retardées par les cycles de récupération et d'armement. Une frappe de suivi est probable depuis les escadres de bombardiers de Guam.
 		<LineBreak/>
 		<LineBreak/>
 		4. (S) La menace de surface ennemie est élevée ; le groupe aéronaval CONSTELLATION comprend 2 CG, 2 DD ou plus et 2 FFG ou plus. 

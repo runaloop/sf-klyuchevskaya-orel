@@ -57,10 +57,13 @@ is well formed.
 ## Translations
 
 Russian, German, Spanish, French, Japanese, Korean, Chinese and Vietnamese were
-machine-translated and then checked for structural correctness, not proofread by
-native speakers of every language. Corrections are welcome: open an issue or a
-pull request against the matching `language` file, or say so in the Workshop
-comments.
+machine-translated, checked for structural correctness, then reviewed line by
+line against the English original and corrected. None of them were proofread by a
+native speaker. `tools/loc_tools.py check` holds the line from here: it compares
+every string, attribute values included, and reports anything left identical to
+the English that is not on an explicit list of things that stay that way.
+Corrections are welcome: open an issue or a pull request against the matching
+`language` file, or say so in the Workshop comments.
 
 ## License and reuse
 

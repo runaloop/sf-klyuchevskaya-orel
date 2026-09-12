@@ -95,7 +95,7 @@
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 					<Run Text="FOKINO, KRAÏ DU PRIMORSKI"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="COPIE"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10e ESCADRE OPÉRATIONNELLE"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="143e DIVISION D'AVIATION MARITIME DE MISSILES"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="10e DIVISION SOUS-MARINE"/>
@@ -121,7 +121,7 @@
 				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
 					- CONSTELLATION, KITTY HAWK et leurs escortes en mer du Japon, menant des opérations conjointes avec la 1re Flottille d'escorte de la 1re Flotte japonaise.
 					<LineBreak/>
-					- RANGER, MIDWAY et leurs escortes à 200 nq au sud de Petropavlovsk, menant des opérations avec des navires de débarquement.
+					- RANGER, MIDWAY et leurs escortes à 200 nm au sud de Petropavlovsk, menant des opérations avec des navires de débarquement.
 					<LineBreak/>
 					- NIMITZ à quai à Yokosuka, JP.
 					<LineBreak/>
@@ -134,7 +134,7 @@
 					<LineBreak/>
 					- La 143e Division d'aviation maritime de missiles se préparera à une frappe de saturation contre le groupe RANGER-MIDWAY.
 					<LineBreak/>
-					- La 10e Division sous-marine se préparera à projeter des SNA et des SNLE vers le Pacifique occidental et la mer du Japon.
+					- La 10e Division sous-marine se préparera à projeter des SNA et des SNA lance-missiles vers le Pacifique occidental et la mer du Japon.
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">

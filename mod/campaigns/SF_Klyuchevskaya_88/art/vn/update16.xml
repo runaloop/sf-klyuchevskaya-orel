@@ -27,7 +27,7 @@
 			</Grid.ColumnDefinitions>
 			
 			<TextBlock Grid.Row="0" Grid.Column="0" Text="ĐIỆN VĂN HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
-			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******M Ậ T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
 			<TextBlock Grid.Row="0" Grid.Column="2" Text="BỘ HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
 			
 		</Grid>
@@ -79,7 +79,7 @@
 					<ColumnDefinition Width="Auto"/>
 				</Grid.ColumnDefinitions>
 				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
-					IMMEDIATE
+					THƯỢNG KHẨN
 					<LineBreak/>
 					O 08 0200Z MAR 88
 				</TextBlock>
@@ -87,23 +87,23 @@
 				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
 
 
-				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="TỪ"/>
 				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
-				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="GỬI"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
 					<Run Text="TƯ LỆNH"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="SAO GỬI"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="LIÊN ĐỘI TÁC CHIẾN 10"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="LIÊN ĐỘI TÁC CHIẾN 11"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="SƯ ĐOÀN TÀU NGẦM 10"/>
-				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="CHỦ ĐỀ"/>
 				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="BÁO CÁO TÌNH HÌNH HÀNG NGÀY"/>
 
 				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
 					<LineBreak/>
-					SECRET
+					MẬT
 					<LineBreak/>
 					BT
 					<LineBreak/>
@@ -151,7 +151,7 @@
 					<LineBreak/>
 					BT
 					<LineBreak/>
-					SECRET DECL OADR
+					MẬT DECL OADR
 					<LineBreak/>
 				</TextBlock>
 			</Grid>

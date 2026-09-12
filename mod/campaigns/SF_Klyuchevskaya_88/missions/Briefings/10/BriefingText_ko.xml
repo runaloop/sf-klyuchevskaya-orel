@@ -21,17 +21,17 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		FLASH
+		최우선
 		<LineBreak/>
 		O 10 0400Z MAR 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 태평양 함대"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="발신"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="붉은기 태평양 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="수신"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="사령관 {TaskForceName}"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="참조"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		제10작전전대
 		<LineBreak/>
@@ -39,13 +39,13 @@
 		<LineBreak/>
 		제143해군미사일항공사단
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="제목"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="작전명령"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		비밀
 		<LineBreak/>
 		<LineBreak/>
-		FLASH FLASH FLASH
+		최우선 최우선 최우선
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName}는 컨스텔레이션이 도쿄만에서 이탈하지 못하도록 임무를 재부여받았다.
@@ -66,7 +66,7 @@
 		6. (S) 적이 우리에게 매우 유리한 지점에 나타났다. 이런 기회는 다시 오지 않을 것이다. 미국인들에게 그들의 무모함에 대한 대가를 치르게 하라. 동지, 무운을 빈다.
 		<LineBreak/>
 		<LineBreak/>
-		FLASH FLASH FLASH
+		최우선 최우선 최우선
 		<LineBreak/>
 		<LineBreak/>
 		서명: 흐바토프
@@ -74,7 +74,7 @@
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		비밀
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

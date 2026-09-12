@@ -86,7 +86,7 @@
           </TextBlock>
           <TextBlock TextAlignment="Right" Text="Vladlen Michailow, Direktor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,500,0,0" Grid.Row="2"/>
           <TextBlock Grid.Row="2" Grid.RowSpan="3" VerticalAlignment="Bottom">
-            <Run TextDecorations="Underline">Verteilung durch ER/01. März 1988 m/Anl.s</Run>
+            <Run TextDecorations="Underline">Verteilung durch ER/01. März 1988 m/Anl.</Run>
             <LineBreak/>
             <LineBreak/>
             Original - an jeden Empfänger

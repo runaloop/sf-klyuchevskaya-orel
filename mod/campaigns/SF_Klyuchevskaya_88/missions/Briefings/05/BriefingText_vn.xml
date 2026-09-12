@@ -21,24 +21,24 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		THƯỢNG KHẨN
 		<LineBreak/>
 		O 21 1900Z FEB 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TỪ"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="GỬI"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CHỈ HUY TRƯỞNG {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SAO GỬI"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
-		10th OPERATIONAL SQN
+		LIÊN ĐỘI TÁC CHIẾN 10
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
-    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION ORDER"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="CHỦ ĐỀ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="MỆNH LỆNH TÁC CHIẾN"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		MẬT
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName} sẽ tiêu diệt Căn cứ Không quân Misawa. Căn cứ này đã bằng cách nào đó sống sót qua nhiều đợt tấn công bằng AS-4B Kitchen, và không thể để máy bay của căn cứ này cản trở chiến dịch đổ bộ sắp tới.
@@ -47,7 +47,7 @@
 		2. (S) Hãy dự đoán sự chống cự của tiêm kích và tiêm kích-bom đối phương từ Căn cứ Không quân Misawa. Căn cứ Không quân Hachinohe đã bị vô hiệu hóa do tổn thất nặng nề về máy bay tuần tra biển (MPA) của đối phương. Tuy nhiên, các máy bay P-3 của Hải quân Mỹ có thể tiếp cận từ phía Nam.
 		<LineBreak/>
 		<LineBreak/>
-		3. (S) Không có tàu ngầm đối phương trong khu vực này.
+		3. (S) Không dự kiến có tàu ngầm đối phương trong khu vực này.
 		<LineBreak/>
 		<LineBreak/>
 		4. (S) Có khả năng có một biên đội tấn công mặt nước (SAG) của Hải quân Mỹ ở phía Nam vị trí của bạn. Biên đội này được cho là gồm 1 tàu tuần dương (CG), 1 tàu khu trục có tên lửa dẫn đường (DDG) và 1 tàu khu trục (DD). Tiêu diệt lực lượng này sẽ loại bỏ toàn bộ các mối đe dọa mặt nước lớn đối với chiến dịch đổ bộ sắp tới.
@@ -56,12 +56,12 @@
 		5. (S) {TaskForceName} sẽ di chuyển về phía Bắc đến OPBOX AURORA và hợp quân với lực lượng đổ bộ sau nhiệm vụ này. Chúc may mắn, Đồng chí.
 		<LineBreak/>
 		<LineBreak/>
-		SIGNED: Khvatov
+		KÝ: Khvatov
 		<LineBreak/>
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		MẬT
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

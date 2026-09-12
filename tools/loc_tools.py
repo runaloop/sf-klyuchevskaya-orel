@@ -273,7 +273,8 @@ def compare_values(rep, where, key, en, xx):
             got = min(want, got + xx.count(TASKFORCE_LITERAL[rep.lang]))
         if want != got:
             rep.warn(f"{where}: {key}: '{token}' count {want} in EN vs {got}")
-    if en == xx and len(en) > 30 and key not in PATH_KEYS and not is_boilerplate(en):
+    if (en == xx and len(en) > 30 and key not in PATH_KEYS
+            and not is_boilerplate(en) and not stays_identical(rep.lang, en)):
         rep.warn(f"{where}: {key} looks untranslated")
 
 
@@ -352,6 +353,50 @@ def check_language_section(rep, where, en_lines, xx_lines, lang, path_check=True
             rep.warn(f"{where}: extra key {base} in [Language_{lang}]")
 
 
+# Strings a translation is expected to leave exactly as they are: procedural
+# signals of the message form, routing and document control numbers, the
+# declassification authorities of the American documents, dates and page
+# markers. Everything else that survives translation unchanged is reported.
+KEEP_IDENTICAL = [
+    "BT", "DECL OADR BT", "KTOF", "ZYUW RUHGOAA0777 0808100",
+    "C05084534", "222X1", "SF Narod", "CONPLAN ORANGE 1-4", "SF Klyuchevskaya '88",
+    "SF Klyuchevskaya '88: Orel Edition",
+    # place names Latin-script languages spell the same way
+    "WASHINGTON", "PARIS", "ZURICH", "TOKYO", "CANBERRA",
+]
+KEEP_IDENTICAL_RE = [
+    re.compile(r"^EO 13526"),
+    re.compile(r"^[OZP] \d\d \d{4}Z [A-Z]{3} \d\d$"),      # date-time group
+    re.compile(r"^\d\d:\d\dZ \(\d\d:\d\dL\)$"),           # zulu / local time
+    re.compile(r"^-\d+-$"),                                 # page marker
+]
+# Words a language shares with English, and the signal words it keeps on purpose.
+KEEP_IDENTICAL_LANG = {
+    "fr": ["SECRET", "SECRET DECL OADR", "*******S E C R E T*******",
+           "FLASH", "FLASH FLASH FLASH"],
+    "es": ["FLASH", "FLASH FLASH FLASH", "Vladlen Mikhailov, Director", "25 FEB 1988"],
+}
+
+
+def is_markup(value):
+    """Binding expressions, paths, placeholders and numbers - never translated."""
+    v = value.strip()
+    if v.startswith("{Binding") or v.startswith("{StaticResource"):
+        return True
+    if re.search(r"\.(xml|png|jpg|ini)$", v) or "/" in v or "\\" in v:
+        return True
+    without = v
+    for token in re.findall(r"\{[A-Za-z]+\}", v):
+        without = without.replace(token, "")
+    return without.strip(" .,:;-0123456789") == ""
+
+
+def stays_identical(lang, value):
+    if value in KEEP_IDENTICAL or value in KEEP_IDENTICAL_LANG.get(lang, ()):
+        return True
+    return any(rx.match(value) for rx in KEEP_IDENTICAL_RE)
+
+
 def xml_texts(path):
     """Human-readable strings of an XML file: text nodes plus Text="..." values."""
     tree = ET.parse(path)
@@ -387,7 +432,14 @@ def check_xml(rep, en_path, xx_path):
         return
     if len(xx) != len(en):
         rep.warn(f"{name}: {len(xx)} text nodes vs {len(en)} in English")
-    en_body = [s for s in en if len(s) > 25 and not is_boilerplate(s)]
+    else:
+        left = [a for a, b in zip(en, xx)
+                if a == b and not is_markup(a) and not stays_identical(rep.lang, a)]
+        if left:
+            shown = ", ".join(repr(s) for s in sorted(set(left))[:4])
+            rep.warn(f"{name}: {len(left)} string(s) left in English: {shown}")
+    en_body = [s for s in en if len(s) > 25 and not is_boilerplate(s)
+               and not stays_identical(rep.lang, s)]
     if en_body:
         same = sum(1 for s in en_body if s in xx)
         if same == len(en_body):

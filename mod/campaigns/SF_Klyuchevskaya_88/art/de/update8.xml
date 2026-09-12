@@ -94,7 +94,7 @@
 					<Run Text="KOMMANDANT"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="KOPIE"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10. OPERATIVE STAFFEL"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="55. MARINEINFANTERIEDIVISION"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14. LANDUNGSSCHIFF-BRIGADE"/>
@@ -136,7 +136,7 @@
 				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">
 					4. (S) LAGE VERBÜNDETER / REGIONALE LAGE: Der Armee gelangen in den letzten 72 Stunden bedeutende Erfolge. Der Kessel Hakodate-Sapporo ist nun vernichtet, die verbleibenden japanischen Kräfte sind auf einen 50 km tiefen Kessel um Kushiro reduziert.
 					<LineBreak/>
-					Vor 20 Stunden nutzte die Armee die Lage, um einen 50 km tiefen Landekopf am Südufer der Tsugaru-Straße zu erobern. Die UdSSR ist nun in der Lage, die japanischen Hauptinseln zu invadieren.
+					Vor 20 Stunden nutzte die Armee die Lage, um einen 50 km tiefen Landekopf am Südufer der Tsugaru-Straße zu erobern. Die UdSSR ist nun in der Lage, in die japanischen Hauptinseln einzufallen.
 					<LineBreak/>
 					Der Angriff der VVS gegen die CONSTELLATION-Kampfgruppe am 22. FEB 88 schlug fehl, der Angriffsverband wurde von F-14 und F-15 hart getroffen. Die Fähigkeiten der Langstreckenfliegerkräfte der VVS sind erheblich verringert, bis Verstärkungen von der Rotbanner-Nordflotte verlegt werden.
 					<LineBreak/>

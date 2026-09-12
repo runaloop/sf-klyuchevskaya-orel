@@ -21,26 +21,26 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		紧急
 		<LineBreak/>
 		O 06 0600Z MAR 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="发报"/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="红旗太平洋舰队"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收报"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指挥官"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		第10作战支队
 		<LineBreak/>
 		第11作战支队
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主题"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作战命令"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		机密
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName}必须护送"人民"特遣舰队前往离场区域。敌方已知我方行动，无需保持无线电静默。
@@ -55,7 +55,7 @@
 		4. (S) 敌方水面威胁中等，那霸驻有一支小型驻军，包括2艘以上导弹驱逐舰。
 		<LineBreak/>
 		<LineBreak/>
-		5. (S) 新田原原日军机场可供友军飞机使用。
+		5. (S) 新田原日军机场可供友军飞机使用。
 		<LineBreak/>
 		<LineBreak/>
 		6. (S) 任务结束后，{TaskForceName}将在佐世保补给。"人民"特遣舰队的部分舰船将在本任务结束后加入你部。祝你好运，同志。
@@ -66,7 +66,7 @@
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		机密
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

@@ -91,8 +91,8 @@
 				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="红旗太平洋舰队"/>
 				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="收报"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
-					<Run Text="指挥官"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="指挥官"/>
 				</TextBlock>
 				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="抄送"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="第10作战支队"/>
@@ -128,7 +128,7 @@
 					3. (S) 我情：
 				</TextBlock>
 				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
-					- 克柳切夫斯卡亚特遣舰队位于勇士战区，将在尼米兹补给部队进入尼米兹号航母战斗群空中掩护范围前对其实施拦截。
+					- 克柳切夫斯卡亚特遣舰队位于"勇士"作战区，将在尼米兹补给部队进入尼米兹号航母战斗群空中掩护范围前对其实施拦截。
 					<LineBreak/>
 					- 第55海军步兵师现已加入向东京的推进。
 					<LineBreak/>
@@ -140,7 +140,7 @@
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
-					5. (S) 指挥官评语：克格勃报告其保安分队已清剿北海道及日本本岛的游击队。他们声称当地抵抗已基本被压制；看来这不会成为第二个阿富汗。现在的问题是，我们能否围歼美国海军剩余的航母战斗群。红旗太平洋舰队发。
+					5. (S) 指挥官评语：克格勃报告其保安分队已肃清北海道及日本本岛的游击队。他们声称当地抵抗已基本被压制；看来这不会成为第二个阿富汗。现在的问题是，我们能否围歼美国海军剩余的航母战斗群。红旗太平洋舰队发。
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">

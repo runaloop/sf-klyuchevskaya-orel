@@ -26,8 +26,8 @@
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
 
-			<TextBlock Grid.Row="0" Grid.Column="0" Text="ĐIỆN HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
-			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******T O P S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="ĐIỆN VĂN HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******T Ố I   M Ậ T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
 			<TextBlock Grid.Row="0" Grid.Column="2" Text="BỘ HẢI QUÂN" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
 
 		</Grid>
@@ -79,7 +79,7 @@
 					<ColumnDefinition Width="Auto"/>
 				</Grid.ColumnDefinitions>
 				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
-					IMMEDIATE
+					THƯỢNG KHẨN
 					<LineBreak/>
 					O 08 0800Z FEB 88
 				</TextBlock>
@@ -87,24 +87,24 @@
 				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
 
 
-				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="TỪ"/>
 				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
-				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="GỬI"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
-					<Run Text="CHỈ HUY"/>
+					<Run Text="TƯ LỆNH"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
-					<Run Text="FOKINO PRIMORSKY KRAI"/>
+					<Run Text="FOKINO, VÙNG PRIMORSKY"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="SAO GỬI"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="LIÊN ĐỘI TÁC CHIẾN 10"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="SƯ ĐOÀN KHÔNG QUÂN TÊN LỬA HẢI QUÂN 143"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="SƯ ĐOÀN TÀU NGẦM 10"/>
-				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="CHỦ ĐỀ"/>
 				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="CONPLAN ORANGE 1-4"/>
 
 				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
 					<LineBreak/>
-					TOP SECRET - EYES ONLY
+					TỐI MẬT - CHỈ NGƯỜI NHẬN ĐƯỢC ĐỌC
 					<LineBreak/>
 					BT
 					<LineBreak/>
@@ -145,7 +145,7 @@
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
-					5. (TS) Ý ĐỊNH CỦA CHỈ HUY: Ý định của chiến dịch là nhanh chóng tiêu diệt các phương tiện hải quân của Nhật Bản và Hoa Kỳ trong khu vực, cho phép lực lượng tàu mặt nước và tàu ngầm phong tỏa Nhật Bản bằng cách phá hủy tuyến vận tải thương mại. Một nước Nhật Bản bị cô lập sẽ cho phép lực lượng lục quân của ta áp đảo tuyến phòng thủ của địch và chiếm toàn bộ đảo. Cần thận trọng để không giao chiến với các bên trung lập. Đây sẽ là một cuộc chiến khu vực, không lôi kéo NATO hay các quốc gia thân phương Tây khác vào. KTOF gửi.
+					5. (TS) Ý ĐỊNH CỦA TƯ LỆNH: Ý định của chiến dịch là nhanh chóng tiêu diệt các phương tiện hải quân của Nhật Bản và Hoa Kỳ trong khu vực, cho phép lực lượng tàu mặt nước và tàu ngầm phong tỏa Nhật Bản bằng cách phá hủy tuyến vận tải thương mại. Một nước Nhật Bản bị cô lập sẽ cho phép lực lượng lục quân của ta áp đảo tuyến phòng thủ của địch và chiếm toàn bộ đảo. Cần thận trọng để không giao chiến với các bên trung lập. Đây sẽ là một cuộc chiến khu vực, không lôi kéo NATO hay các quốc gia thân phương Tây khác vào. KTOF gửi.
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
@@ -156,7 +156,7 @@
 					<LineBreak/>
 					BT
 					<LineBreak/>
-					TOP SECRET - EYES ONLY DECL OADR
+					TỐI MẬT - CHỈ NGƯỜI NHẬN ĐƯỢC ĐỌC DECL OADR
 					<LineBreak/>
 				</TextBlock>
 			</Grid>

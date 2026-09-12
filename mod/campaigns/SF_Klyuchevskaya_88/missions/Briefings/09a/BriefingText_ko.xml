@@ -21,29 +21,29 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		긴급
 		<LineBreak/>
 		O 06 0600Z MAR 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="적기 태평양 함대"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="발신"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="붉은기 태평양 함대"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="수신"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="사령관 {TaskForceName}"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="참조"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		제10작전전대
 		<LineBreak/>
 		제11작전전대
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="제목"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="작전명령"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		비밀
 		<LineBreak/>
 		<LineBreak/>
-		1. (S) {TaskForceName}는 나로드 기동부대를 이탈구역까지 호위하라. 적은 이미 우리의 접근을 알고 있으므로 무선통제(EMCON)는 필요하지 않다.
+		1. (S) {TaskForceName}는 나로드 기동부대를 이탈구역까지 호위하라. 적은 이미 우리의 접근을 알고 있으므로 전자파 통제(EMCON)는 필요하지 않다.
 		<LineBreak/>
 		<LineBreak/>
 		2. (S) 이 구역의 잠수함 위협은 불명확하다. 미 해군 공격원잠은 여전히 종적을 파악하기 어렵다. 또한 다수의 일본 재래식 잠수함이 항복명령을 무시하고 아직 귀환하지 않았다.
@@ -66,7 +66,7 @@
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		비밀
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

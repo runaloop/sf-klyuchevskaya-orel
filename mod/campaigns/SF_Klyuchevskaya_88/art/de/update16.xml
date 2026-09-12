@@ -94,7 +94,7 @@
 					<Run Text="KOMMANDANT"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="KOPIE"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10. OPERATIVE STAFFEL"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="11. OPERATIVE STAFFEL"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="10. U-BOOT-DIVISION"/>

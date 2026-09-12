@@ -91,8 +91,8 @@
 				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="红旗太平洋舰队"/>
 				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="收报"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
-					<Run Text="指挥官"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="指挥官"/>
 				</TextBlock>
 				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="抄送"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="第10作战支队"/>
@@ -130,7 +130,7 @@
 				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
 					- 克柳切夫斯卡亚特遣舰队将驶离彼得罗巴甫洛夫斯克，转赴北海道以东执行登陆前作战。
 					<LineBreak/>
-					- 第14登陆舰旅将搭载第55海军步兵师部分兵力，转赴极光战区执行登陆行动。
+					- 第14登陆舰旅将搭载第55海军步兵师部分兵力，转赴"极光"作战区执行登陆行动。
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap">

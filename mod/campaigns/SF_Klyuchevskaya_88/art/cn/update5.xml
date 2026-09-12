@@ -19,7 +19,7 @@
 
         <Grid Margin="0,8,0,12">
           <Rectangle Fill="#9B1C1C" Height="16" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
-          <TextBlock Text="最新消息" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
+          <TextBlock Text="突发新闻" TextAlignment="Center" FontSize="72" FontWeight="Bold"/>
         </Grid>
         <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="#111111"/>
 
@@ -47,7 +47,7 @@
               <LineBreak/><LineBreak/>
               札幌北部遍布数十辆被烧毁的苏军装甲车残骸，日本陆上自卫队正进行顽强的阻击行动。
               <LineBreak/><LineBreak/>
-              日本陆军官员称，苏军坦克盲目冲入伏击圈，步兵进攻毫无协同。
+              日本陆上自卫队官员称，苏军坦克盲目冲入伏击圈，步兵进攻毫无协同。
             </TextBlock>
           </StackPanel>
 

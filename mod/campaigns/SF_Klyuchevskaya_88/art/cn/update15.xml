@@ -91,8 +91,8 @@
 				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="红旗太平洋舰队"/>
 				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="收报"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
-					<Run Text="指挥官"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="指挥官"/>
 				</TextBlock>
 				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="抄送"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="第10作战支队"/>
@@ -126,7 +126,7 @@
 					3. (S) 我情：
 				</TextBlock>
 				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
-					- 克柳切夫斯卡亚特遣舰队位于波罗季诺战区，将在钓鱼岛以东150海里处与"人民"特遣舰队会合，并护送其前往东京湾。
+					- 克柳切夫斯卡亚特遣舰队位于"波罗季诺"作战区，将在钓鱼岛以东150海里处与"人民"特遣舰队会合，并护送其前往东京湾。
 					<LineBreak/>
 					- "人民"特遣舰队位于台湾以西150海里处，正驶向横须贺休整整备，预计3月8日2000Z抵达。
 					<LineBreak/>

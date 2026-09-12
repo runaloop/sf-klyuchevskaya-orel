@@ -65,7 +65,7 @@
 
         <Border BorderBrush="#111111" BorderThickness="2" Padding="12" Margin="0,0,0,16">
           <StackPanel>
-            <TextBlock Text="SOWJETISCHE OFFIZIELLE VERSPRECHEN BALDIGE FREIE UND FAIRE WAHLEN IN JAPAN" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock Text="SOWJETISCHE OFFIZIELLE BEHAUPTEN BALDIGE FREIE UND FAIRE WAHLEN IN JAPAN" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
             <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="23">
               In einer heutigen Rede erklärte der sowjetische Außenminister, demokratische Wahlen würden bald nach Japan zurückkehren, sobald zuvor verbotene sozialistische Parteien zu den Wahlen zugelassen seien.
 			  <LineBreak/><LineBreak/>

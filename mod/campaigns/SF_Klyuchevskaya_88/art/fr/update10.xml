@@ -94,7 +94,7 @@
 					<Run Text="COMMANDANT"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="COPIE"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10e ESCADRE OPÉRATIONNELLE"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="55e DIVISION D'INFANTERIE NAVALE"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14e BRIGADE DE NAVIRES DE DÉBARQUEMENT"/>
@@ -117,9 +117,9 @@
 				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
 					- La poche de Kushiro est repoussée à 10 km du centre-ville. Lourdes pertes du côté japonais, reddition de la poche attendue dans les 7 prochains jours.
 					<LineBreak/>
-					- CONSTELLATION localisé à 200 nq à l'est de Pearl Harbor le 26 2301Z FÉV 88, transit probable vers Pearl Harbor, ravitaillement vraisemblable.
+					- CONSTELLATION localisé à 200 nm à l'est de Pearl Harbor le 26 2301Z FÉV 88, transit probable vers Pearl Harbor, ravitaillement vraisemblable.
 					<LineBreak/>
-					- NIMITZ localisé à 300 nq au nord-est d'Iwo Jima le 26 2228Z FÉV 88, semble tenir sa position.
+					- NIMITZ localisé à 300 nm au nord-est d'Iwo Jima le 26 2228Z FÉV 88, semble tenir sa position.
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap">

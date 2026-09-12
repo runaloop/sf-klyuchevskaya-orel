@@ -43,7 +43,7 @@
               <ColumnDefinition Width="Auto"/>
               <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TOP SECRET" TextAlignment="Center"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="극비" TextAlignment="Center"/>
             <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
               정보총국(GRU)
               <LineBreak/>
@@ -56,7 +56,7 @@
             <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
               소련 해군 총사령부
               <LineBreak/>
-              적기 태평양 함대
+              붉은기 태평양 함대
               <LineBreak/>
               제10작전전대//J2//
               <LineBreak/>
@@ -97,7 +97,7 @@
             <LineBreak/>
                1부 - GRU 제12국
           </TextBlock>
-          <TextBlock Grid.Row="4" Text="TOP SECRET" TextAlignment="Center"/>
+          <TextBlock Grid.Row="4" Text="극비" TextAlignment="Center"/>
         </Grid>
       </Border>
     </Border>

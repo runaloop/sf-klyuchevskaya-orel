@@ -119,3 +119,60 @@ exactly the right case, against both the mod and the base game.
   every English key and file has a counterpart in every language, that briefings
   and slideshows are not untranslated copies, that placeholders survive, and
   that every referenced path resolves with the right case.
+
+## Localization review pass
+
+Every language was reviewed against the English original, file by file, after the
+chrome pass above. What the review changed:
+
+- **Naval-message chrome completed.** The briefings carried their message form in
+  English in French, Spanish, Chinese, Korean and Vietnamese: the FM / TO / INFO /
+  SUBJ field labels, the classification and precedence markers, the addressee line
+  and the unit designations. 808 strings. Each language now uses the vocabulary it
+  already used in its own slideshows, and, where the game defines one, the game's
+  own: `ClassificationSecret` is SECRETO in Spanish, MẬT in Vietnamese, 机密 in
+  Chinese. French and Spanish keep FLASH, which both languages use as the signal
+  word; German and Russian follow the developers' own campaign with BLITZ and
+  МОЛНИЯ.
+- **Korean**: "Red Banner" was 적기, which reads as 敵機, "enemy aircraft" — in the
+  sender line of every message, in all 13 award citations and in the flagship's own
+  description. Now 붉은기. The spaced-out classification banners lost their inserted
+  full-width space, which in Korean reads as two disconnected syllables rather than
+  emphasis.
+- **Spanish**: "KTOF sends" had become "KTOF saluda", KTOF sends greetings, in ten
+  situation reports; the mission files already had the correct "KTOF envía". One
+  intelligence assessment said our own aviation had taken the damage it had in fact
+  inflicted, and a division was "rebasada", overrun, where the English had it
+  rebased.
+- **French**: SSGN was rendered SNLE, a ballistic-missile submarine — a different
+  class of boat and of order. Distances read "nq" in thirteen places, which is not
+  a French abbreviation and invites reading knots for miles.
+- **Russian**: КУГ is feminine and was conjugated as neuter in six places; one
+  order stood in the dative; the FLASH precedence of briefing 10 had been flattened
+  into the same words as IMMEDIATE while the body of the same message read МОЛНИЯ
+  МОЛНИЯ МОЛНИЯ; the recurring SITREP headings had drifted into three wordings for
+  the same English one.
+- **Chinese**: one sentence about the enemy's compensating measures was garbled
+  into nonsense; the Kara and Udaloy carried SILEX-A where the English says
+  SILEX-B; the Kh-59 had been tagged with Gadfly, which belongs to the SA-N-7; the
+  addressee line put 指挥官 before the task force name in ten files; OPBOX had
+  become 战区, a theatre of war.
+- **Vietnamese**: the largest drift — the commander field alternated between TƯ
+  LỆNH and CHỈ HUY halfway through the campaign, the 55th Naval Infantry Division
+  and the 14th Landing Ship Brigade each had three different names, and three
+  briefings turned hedged intelligence ("not expected in area") into flat
+  assertions, one of them recasting a screening order as reconnaissance.
+- **Mission 04's title** was a copy of mission 03's in German and in Vietnamese,
+  both in `campaign.ini` and in the mission file, so two missions shared a name and
+  "happy times" was lost. An audit of all nine languages found no other duplicate.
+- **Typos in the original English**: `Febuary` (12 times, including the award
+  citations), `posiion`, `seperate`, `recieve`.
+
+`tools/loc_tools.py check` now compares every string of every localized XML,
+attribute values included, against its English counterpart and reports anything
+left identical that is not on an explicit list of things that stay (BT, DECL OADR,
+the routing line, document control numbers, the EO 13526 authorities, date-time
+groups, place names Latin-script languages spell the same way, and the words
+French and Spanish share with English). Before this it only compared passages
+longer than 25 characters and never looked at `Text="..."` attributes, which is
+how the entire message chrome stayed English without the check noticing.

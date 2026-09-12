@@ -50,7 +50,7 @@
               <LineBreak/>
               <Run FontSize="12">Moscow, 62665</Run>
             </TextBlock>
-            <TextBlock Grid.Row="4" Grid.Column="3" Text="17 Febuary 1988"/>
+            <TextBlock Grid.Row="4" Grid.Column="3" Text="17 February 1988"/>
             <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
             <TextBlock Grid.Row="7" Grid.Column="0" Text="MEMORANDUM FOR:   "/>
             <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">

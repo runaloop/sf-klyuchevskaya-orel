@@ -43,7 +43,7 @@
           <StackPanel Grid.Column="0">
             <TextBlock Text="TOKIO" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
             <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
-              El avance soviético se detiene en frío en Sapporo mientras se intensifican los combates urbanos.
+              El avance soviético se detiene en seco en Sapporo mientras se intensifican los combates urbanos.
               <LineBreak/><LineBreak/>
               El norte de Sapporo está cubierto por los restos calcinados de docenas de vehículos acorazados soviéticos, mientras las JGSDF libran una decidida acción de contención.
               <LineBreak/><LineBreak/>

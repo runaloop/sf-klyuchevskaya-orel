@@ -94,7 +94,7 @@
 					<Run Text="COMMANDANT"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="COPIE"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10e ESCADRE OPÉRATIONNELLE"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="55e DIVISION D'INFANTERIE NAVALE"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="14e BRIGADE DE NAVIRES DE DÉBARQUEMENT"/>
@@ -119,7 +119,7 @@
 					<LineBreak/>
 					- CONSTELLATION localisé à quai à Pearl Harbor le 27 2345Z FÉV 88. Les moyens techniques nationaux indiquent qu'il se ravitaille avec ses escortes, probablement pour reprendre la mer dans les 48 heures.
 					<LineBreak/>
-					- NIMITZ localisé à 500 nq au nord-est d'Iwo Jima le 24 2228Z FÉV 88, semble tenir sa position.
+					- NIMITZ localisé à 500 nm au nord-est d'Iwo Jima le 24 2228Z FÉV 88, semble tenir sa position.
 					<LineBreak/>
 					- Un important convoi a quitté Pearl Harbor vers le 27 1800Z FÉV 88. Ce groupe semble être sur une trajectoire d'interception avec le groupe aéronaval NIMITZ, ETA estimée au 02 MARS 88. Le SIGINT évalue ce groupe comme force de ravitaillement pour le groupe aéronaval NIMITZ.
 					<LineBreak/>

@@ -43,7 +43,7 @@
               <ColumnDefinition Width="Auto"/>
               <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TOP SECRET" TextAlignment="Center"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TỐI MẬT" TextAlignment="Center"/>
             <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
               Tổng cục Tình báo
               <LineBreak/>
@@ -58,9 +58,9 @@
               <LineBreak/>
               HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ
               <LineBreak/>
-              LIÊN ĐỘI TÁC CHIẾN SỐ 10//J2//
+              LIÊN ĐỘI TÁC CHIẾN 10//J2//
               <LineBreak/>
-              SƯ ĐOÀN HẢI QUÂN ĐÁNH BỘ SỐ 55//J2//
+              SƯ ĐOÀN HẢI QUÂN ĐÁNH BỘ 55//J2//
             </TextBlock>
             <TextBlock Grid.Row="7" Grid.Column="3" TextWrapping="Wrap">
               EO 13526 3.3(b)(1)&gt;25Yrs
@@ -97,7 +97,7 @@
             <LineBreak/>
                1 - Cục 12 GRU
           </TextBlock>
-          <TextBlock Grid.Row="4" Text="TOP SECRET" TextAlignment="Center"/>
+          <TextBlock Grid.Row="4" Text="TỐI MẬT" TextAlignment="Center"/>
         </Grid>
       </Border>
     </Border>

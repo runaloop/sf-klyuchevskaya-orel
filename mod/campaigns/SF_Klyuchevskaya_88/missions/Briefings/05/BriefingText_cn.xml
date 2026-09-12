@@ -21,24 +21,24 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		紧急
 		<LineBreak/>
 		O 21 1900Z FEB 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="发报"/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="红旗太平洋舰队"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收报"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指挥官"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		第10作战支队
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主题"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作战命令"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		机密
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName}将消灭三泽空军基地。该基地虽多次遭受AS-4B"厨房"导弹打击却仍未瘫痪，绝不能让其飞机干扰即将展开的登陆行动。
@@ -53,7 +53,7 @@
 		4. (S) 你部南侧可能有美国海军水面行动群。该行动群预计包含1艘导弹巡洋舰、1艘导弹驱逐舰和1艘驱逐舰。摧毁该力量将消除对即将展开登陆行动的所有主要水面威胁。
 		<LineBreak/>
 		<LineBreak/>
-		5. (S) {TaskForceName}将向北转移至极光战区，在任务结束后与登陆部队会合。祝你好运，同志。
+		5. (S) {TaskForceName}将向北转移至"极光"作战区，在任务结束后与登陆部队会合。祝你好运，同志。
 		<LineBreak/>
 		<LineBreak/>
 		SIGNED: 赫瓦托夫
@@ -61,7 +61,7 @@
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		机密
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

@@ -21,17 +21,17 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		FLASH
+		特急
 		<LineBreak/>
 		O 10 0400Z MAR 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="发报"/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="红旗太平洋舰队"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收报"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指挥官"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		第10作战支队
 		<LineBreak/>
@@ -39,13 +39,13 @@
 		<LineBreak/>
 		第143海军导弹航空兵师
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主题"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作战命令"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		机密
 		<LineBreak/>
 		<LineBreak/>
-		FLASH FLASH FLASH
+		特急 特急 特急
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName}改变任务，阻止星座号逃离东京湾。
@@ -57,7 +57,7 @@
 		3. (S) 敌方空中威胁很高，1个以上A-7中队和2个以上A-6中队参与了东京空袭。A-6的反舰打击很可能因回收和再武装周期而延迟。后续打击很可能来自关岛的轰炸机联队。
 		<LineBreak/>
 		<LineBreak/>
-		4. (S) 敌方水面威胁很高，星座号航母战斗群包括2艘巡洋舰、2艘以上驱逐舰和2艘以上护卫舰。
+		4. (S) 敌方水面威胁很高，星座号航母战斗群包括2艘导弹巡洋舰、2艘以上驱逐舰和2艘以上护卫舰。
 		<LineBreak/>
 		<LineBreak/>
 		5. (S) 滨松空军基地在首轮打击中未受损，友军飞机可从此基地出动。厚木海军航空基地目前受损情况不明，预计该机场无法出动友军打击力量。
@@ -66,7 +66,7 @@
 		6. (S) 敌人出现在了对我方极为有利的位置，这样的机会我们很可能再也不会遇到。让美国人为他们的狂妄付出代价。祝你好运，同志。
 		<LineBreak/>
 		<LineBreak/>
-		FLASH FLASH FLASH
+		特急 特急 特急
 		<LineBreak/>
 		<LineBreak/>
 		SIGNED: 赫瓦托夫
@@ -74,7 +74,7 @@
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		机密
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

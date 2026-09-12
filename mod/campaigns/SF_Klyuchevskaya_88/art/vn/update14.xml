@@ -54,11 +54,11 @@
           <StackPanel Grid.Column="2">
             <TextBlock Text="PARIS" FontSize="21" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
             <TextBlock TextWrapping="Wrap" TextAlignment="Justify" LineHeight="24">
-              Các quan chức Liên Xô và châu Âu kết thúc đàm phán năng lượng khi Moscow hứa cung cấp dầu và khí đốt Siberia để đổi lấy quan hệ kinh tế chặt chẽ hơn với Tây Âu.
+              Các quan chức Liên Xô và châu Âu kết thúc đàm phán năng lượng khi Moskva hứa cung cấp dầu và khí đốt Siberia để đổi lấy quan hệ kinh tế chặt chẽ hơn với Tây Âu.
               <LineBreak/><LineBreak/>
               Thị trường năng lượng trên toàn Tây Âu ổn định trở lại sau 3 tuần bất định.
               <LineBreak/><LineBreak/>
-              Moscow đảm bảo các đường ống dẫn dầu mới qua Baltic sẽ được xây dựng, kết nối châu Âu với nguồn dầu khí Liên Xô.
+              Moskva đảm bảo các đường ống dẫn dầu mới qua Baltic sẽ được xây dựng, kết nối châu Âu với nguồn dầu khí Liên Xô.
             </TextBlock>
           </StackPanel>
         </Grid>

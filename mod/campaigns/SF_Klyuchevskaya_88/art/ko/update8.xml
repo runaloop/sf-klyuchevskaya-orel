@@ -27,7 +27,7 @@
 			</Grid.ColumnDefinitions>
 
 			<TextBlock Grid.Row="0" Grid.Column="0" Text="해군 통신문" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
-			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******S E C R E T*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******비밀*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
 			<TextBlock Grid.Row="0" Grid.Column="2" Text="해군성" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
 
 		</Grid>
@@ -79,7 +79,7 @@
 					<ColumnDefinition Width="Auto"/>
 				</Grid.ColumnDefinitions>
 				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
-					IMMEDIATE
+					긴급
 					<LineBreak/>
 					O 24 0200Z FEB 88
 				</TextBlock>
@@ -87,23 +87,23 @@
 				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 0808100"/>
 
 
-				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="FM"/>
-				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="적기 태평양 함대"/>
-				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="TO"/>
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="발신"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="붉은기 태평양 함대"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="수신"/>
 				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
 					<Run Text="지휘관"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="참조"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="제10작전전대"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="제55해군보병사단"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="제14상륙함여단"/>
-				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="SUBJ"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="제목"/>
 				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="일일 상황보고"/>
 
 				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
 					<LineBreak/>
-					SECRET
+					비밀
 					<LineBreak/>
 					BT
 					<LineBreak/>
@@ -138,11 +138,11 @@
 					<LineBreak/>
 					20시간 전, 육군은 상황을 이용해 쓰가루 해협 남쪽 기슭에 50km 깊이의 교두보를 확보함. 이제 소련은 일본 본토를 침공할 수 있는 위치에 있음.
 					<LineBreak/>
-					VVS는 22 FEB 88 컨스텔레이션 전투단에 대한 공격에 실패했으며, 습격 전력은 F-14 및 F-15에 큰 타격을 입음. VVS 장거리 항공대의 전력은 적기 북방 함대로부터 증원이 이루어지기까지 크게 저하된 상태임.
+					VVS는 22 FEB 88 컨스텔레이션 전투단에 대한 공격에 실패했으며, 습격 전력은 F-14 및 F-15에 큰 타격을 입음. VVS 장거리 항공대의 전력은 붉은기 북방 함대로부터 증원이 이루어지기까지 크게 저하된 상태임.
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
-					5. (S) 지휘관 의견: 마침내 일정대로 진행되고 있음. 육군의 최근 해협 횡단 상륙과 구시로 포위망의 임박한 섬멸로, 우리는 곧 미국과 평화 조건을 좌우할 수 있는 위치에 서게 될 것임. 역내 미 항모 전력의 재출현은 우려스럽지만, 적기 태평양 함대는 실패하지 않을 것임. KTOF 발신.
+					5. (S) 지휘관 의견: 마침내 일정대로 진행되고 있음. 육군의 최근 해협 횡단 상륙과 구시로 포위망의 임박한 섬멸로, 우리는 곧 미국과 평화 조건을 좌우할 수 있는 위치에 서게 될 것임. 역내 미 항모 전력의 재출현은 우려스럽지만, 붉은기 태평양 함대는 실패하지 않을 것임. KTOF 발신.
 					<LineBreak/>
 				</TextBlock>
 				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
@@ -153,7 +153,7 @@
 					<LineBreak/>
 					BT
 					<LineBreak/>
-					SECRET DECL OADR
+					비밀 DECL OADR
 					<LineBreak/>
 				</TextBlock>
 			</Grid>

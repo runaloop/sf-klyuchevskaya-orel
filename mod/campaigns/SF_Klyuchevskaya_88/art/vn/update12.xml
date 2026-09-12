@@ -43,18 +43,18 @@
               <ColumnDefinition Width="Auto"/>
               <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TOP SECRET" TextAlignment="Center"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TỐI MẬT" TextAlignment="Center"/>
             <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" TextAlignment="Center" FontFamily="Times New Roman">
               Tổng cục Tình báo
               <LineBreak/>
               <LineBreak/>
-              <Run FontSize="12">Moscow, 62665</Run>
+              <Run FontSize="12">Moskva, 62665</Run>
             </TextBlock>
             <TextBlock Grid.Row="4" Grid.Column="3" Text="17 Tháng 2, 1988"/>
             <TextBlock Grid.Row="6" Grid.Column="3" Text="222X1"/>
             <TextBlock Grid.Row="7" Grid.Column="0" Text="GỬI ĐẾN:   "/>
             <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
-              BỘ TƯ LỆNH CẤP CAO VMF
+              BỘ TƯ LỆNH TỐI CAO VMF
               <LineBreak/>
               HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ
               <LineBreak/>
@@ -97,7 +97,7 @@
             <LineBreak/>
                1 - Cục 12 GRU
           </TextBlock>
-          <TextBlock Grid.Row="4" Text="TOP SECRET" TextAlignment="Center"/>
+          <TextBlock Grid.Row="4" Text="TỐI MẬT" TextAlignment="Center"/>
         </Grid>
       </Border>
     </Border>

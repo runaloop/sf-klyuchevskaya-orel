@@ -21,26 +21,26 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		紧急
 		<LineBreak/>
 		O 01 0700Z MAR 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="发报"/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="红旗太平洋舰队"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收报"/>
     <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceName}指挥官"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
 		第10作战支队
 		<LineBreak/>
 		第10潜艇支队
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主题"/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="作战命令"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		机密
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName}将摧毁尼米兹号补给部队。
@@ -58,7 +58,7 @@
 		5. (S) K-175可能正在该区域活动，但由于潜航深度原因失去联系。若你能定位K-175，她可协助你完成本任务。
 		<LineBreak/>
 		<LineBreak/>
-		6. (S) 任务完成后，{TaskForceName}将向东转移至勇士战区。祝你好运，同志。
+		6. (S) 任务完成后，{TaskForceName}将向东转移至"勇士"作战区。祝你好运，同志。
 		<LineBreak/>
 		<LineBreak/>
 		SIGNED: 赫瓦托夫
@@ -66,7 +66,7 @@
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		机密
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

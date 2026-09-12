@@ -21,26 +21,26 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		IMMEDIATE
+		THƯỢNG KHẨN
 		<LineBreak/>
 		O 06 0600Z MAR 88
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RED BANNER PACIFIC FLEET"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO {TaskForceName}"/>
-	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TỪ"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="HẠM ĐỘI THÁI BÌNH DƯƠNG CỜ ĐỎ"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="GỬI"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CHỈ HUY TRƯỞNG {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SAO GỬI"/>
     <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
-		10th OPERATIONAL SQN
+		LIÊN ĐỘI TÁC CHIẾN 10
 		<LineBreak/>
-		11th OPERATIONAL SQN
+		LIÊN ĐỘI TÁC CHIẾN 11
 	</TextBlock>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
-    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION ORDER"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="CHỦ ĐỀ"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="MỆNH LỆNH TÁC CHIẾN"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		SECRET
+		MẬT
 		<LineBreak/>
 		<LineBreak/>
 		1. (S) {TaskForceName} phải hộ tống SF Narod đến Exit Area. Đối phương đã biết chúng ta đang đến, không cần áp dụng kiểm soát phát xạ điện tử (EMCON).
@@ -61,12 +61,12 @@
 		6. (S) {TaskForceName} sẽ tiếp tế tại Sasebo sau nhiệm vụ này. Một số đơn vị của SF Narod sẽ gia nhập lực lượng của bạn khi nhiệm vụ này kết thúc. Chúc may mắn, Đồng chí.
 		<LineBreak/>
 		<LineBreak/>
-		SIGNED: Khvatov
+		KÝ: Khvatov
 		<LineBreak/>
 		KTOF
 		<LineBreak/>
 		<LineBreak/>
-		SECRET
+		MẬT
 		<LineBreak/>
 		DECL OADR BT
 	  </TextBlock>

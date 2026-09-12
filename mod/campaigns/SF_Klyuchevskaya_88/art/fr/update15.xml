@@ -94,7 +94,7 @@
 					<Run Text="COMMANDANT"/>
 					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
 				</TextBlock>
-				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="INFO"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="COPIE"/>
 				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="10e ESCADRE OPÉRATIONNELLE"/>
 				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="11e ESCADRE OPÉRATIONNELLE"/>
 				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="10e DIVISION SOUS-MARINE"/>
@@ -126,9 +126,9 @@
 					3. (S) SITUATION AMIE :
 				</TextBlock>
 				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
-					- SF Klyuchevskaya en ZONE OP BORODINO, rejoindra SF Narod à 150 nq à l'est des îles Senkaku et l'escortera jusqu'à la baie de Tokyo.
+					- SF Klyuchevskaya en ZONE OP BORODINO, rejoindra SF Narod à 150 nm à l'est des îles Senkaku et l'escortera jusqu'à la baie de Tokyo.
 					<LineBreak/>
-					- SF Narod à 150 nq à l'ouest de Taïwan, en transit vers Yokosuka pour repos et remise en état, ETA le 08 2000Z MARS 88.
+					- SF Narod à 150 nm à l'ouest de Taïwan, en transit vers Yokosuka pour repos et remise en état, ETA le 08 2000Z MARS 88.
 					<LineBreak/>
 					- La 143e Division d'aviation maritime de missiles en alerte renforcée en prévision d'un raid de porte-avions ennemi contre Petropavlovsk ou le nord du Japon.
 					<LineBreak/>
