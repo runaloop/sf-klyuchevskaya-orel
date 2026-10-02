@@ -37,15 +37,17 @@ SF Klyuchevskaya '88 if you have that one subscribed too.
 ## Repository layout
 
     mod/                 the mod itself, exactly as it is published
-    mod/patches/         loadout changes to base-game aircraft
     tools/               scripts that produce the edition
+    tools/patches/       the mod's changes to base-game units, key by key
     CHANGES.md           every change against the original mod
     CREDITS.md           attribution
 
 ## Tools
 
     tools/apply_orel.py            swap the flagship and regenerate the air wing
-    tools/make_language_files.py   build language_<xx>/aircraft_names/sf_klyuchevskaya_orel.ini
+    tools/make_unit_files.py       apply tools/patches/ to the game's unit files
+    tools/make_language_files.py   build language_<xx>/aircraft_names.ini
+    tools/make_ammunition_names.py build language_<xx>/ammunition_names/sf_klyuchevskaya_orel.ini
     tools/loc_tools.py             extract / merge / check translations
     tools/rename_campaign.sh       rename the campaign folder id
 
@@ -53,14 +55,26 @@ SF Klyuchevskaya '88 if you have that one subscribed too.
 entries are declared at the top of the file, so changing the composition is a
 matter of editing those tables and re-running it. It is idempotent.
 
-The mod ships no copies of base-game files. Changes to base-game aircraft are
-`#!extend` files in `mod/patches/`: the game reads such a file before the one it
-extends and keeps the first value of every key, so a patch overrides only the
-keys it names and every other value, including whatever a game update changes,
-comes from the game. Callsigns work the same way: the game merges every file in
-`language_<xx>/aircraft_names/` into its own list key by key, and the
-`#!extend` header covers the one reader that opens `aircraft_names.ini`
-directly.
+Base-game files the mod touches are generated from the game's own files, so
+**re-run the generators after every game update**:
+
+    tools/make_unit_files.py
+    tools/make_language_files.py
+    tools/make_ammunition_names.py
+
+`make_unit_files.py` writes `mod/aircraft/*.ini` as the game's current file with
+the keys from `tools/patches/` applied, and checks that the result reads as
+exactly that. `make_language_files.py` writes `language_<xx>/aircraft_names.ini`
+with nothing but a `Callsigns=` line per aircraft: the game merges that file into
+its own list key by key, so names, NATO names and new aircraft still come from
+the game. `make_ammunition_names.py` fills in weapon names the game has not
+translated yet, from `tools/translations/ammunition_names/`, and drops each one
+once the game has its own.
+
+The game's `#!extend` directive would make the aircraft copies unnecessary, but
+0.8.3 does not apply it reliably: its startup preloader opens files in parallel
+while the extend registry is still being built, and a file opened in that window
+is cached without its extension until the mod list changes.
 
 `loc_tools.py check` verifies that every English key and every referenced file
 has a counterpart in each language, that placeholders such as

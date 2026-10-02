@@ -59,33 +59,36 @@ edition extended to the eight other languages. A full copy replaces the game's
 file in every mission while the mod is enabled. Sea Power 0.8.3 changed all of
 them, so the copies hid the update game-wide: the new gun and bomb sights,
 numeric RCS and silhouette areas, the new chaff types, the split NATO names and
-the callsigns of aircraft added since. This edition ships no copies:
+the callsigns of aircraft added since. This edition generates them from the
+game's current files instead (re-run after every game update, see README):
 
-- `patches/wp_yak-38_gun_loadout.ini`, `patches/wp_tu-95rt_aew_loadout.ini`:
-  `#!extend` files. The game reads them before its own file and keeps the first
-  value of every key, so they change only the keys they name and everything
-  else follows the game. The Yak-38 gets the original mod's gun-only loadout,
-  which mission 06A uses; the Tu-95RT gets its AEW loadout, the only one
-  offered, ready in 20 minutes instead of 60, which missions 06 to 10 use.
-- `patches/wp_mig-23a_loadouts.ini`: the standard air-to-air loadouts keep the
-  original mod's R-24: AirToAir and AirToAirIntercept two R-24R, Default two
-  R-24T. The game's own file would give them R-27ER and R-27ET from 1987. Every
-  other MiG-23A value, the N019K radar included, now follows the game.
+- `aircraft/wp_yak-38.ini`, `aircraft/wp_tu-95rt.ini`, `aircraft/wp_mig-23a.ini`:
+  written by `tools/make_unit_files.py` as the game's own file with the keys of
+  `tools/patches/aircraft/<unit>.ini` applied; nothing else differs. The Yak-38
+  gets the original mod's gun-only loadout, which mission 06A uses; the Tu-95RT
+  gets its AEW loadout, the only one offered, ready in 20 minutes instead of 60,
+  which missions 06 to 10 use.
+- MiG-23A: the standard air-to-air loadouts keep the original mod's R-24:
+  AirToAir and AirToAirIntercept two R-24R, Default two R-24T. The game's own
+  file would give them R-27ER and R-27ET from 1987. Every other MiG-23A value,
+  the N019K radar included, follows the game.
 - Two experimental loadouts are appended to the MiG-23A, `AirToAirR27SARH` and
   `AirToAirR27IR`: two R-27 and two R-73 each, radar-guided or infrared. They
-  pick the missile by mission year from a copy of the game's own table, kept in
-  the patch so it also works over another mod's older copy of the MiG-23A file:
-  R-27ER and R-27ET from 1987, which in this campaign is always; in other
-  missions R-27R and R-27T in 1985-86 and R-24 before. An AI-run MiG-23A deck elsewhere in the game (never the player's
-  carrier) picks the longest-ranged air-to-air loadout for CAP, so it takes
-  these; in the game's 1985 missions that means the R-27R and R-27T the game's
-  own AirToAir carries then. The four CAP rules of the task force air tasking in `campaign.ini` allow
-  them too, with AirToAir still the default. In-mission CAP zones accept only
-  the three standard air-to-air loadout names, a rule of the game.
-  `language_<xx>/sf_klyuchevskaya_orel_loadouts.ini` names them in all nine
-  languages.
-- Callsigns: `language_<xx>/aircraft_names/sf_klyuchevskaya_orel.ini`, see
+  pick the missile by mission year from a copy of the game's own table: R-27ER
+  and R-27ET from 1987, which in this campaign is always; in other missions
+  R-27R and R-27T in 1985-86 and R-24 before. An AI-run MiG-23A deck elsewhere
+  in the game (never the player's carrier) picks the longest-ranged air-to-air
+  loadout for CAP, so it takes these; in the game's 1985 missions that means the
+  R-27R and R-27T the game's own AirToAir carries then. The four CAP rules of the
+  task force air tasking in `campaign.ini` allow them too, with AirToAir still
+  the default. In-mission CAP zones accept only the three standard air-to-air
+  loadout names, a rule of the game. `language_<xx>/sf_klyuchevskaya_orel_loadouts.ini`
+  names them in all nine languages.
+- Callsigns: `language_<xx>/aircraft_names.ini` now holds only callsigns, see
   Localization.
+- The game's `#!extend` directive was tried first and dropped: 0.8.3's startup
+  preloader opens files in parallel while the extend registry is still being
+  built, so a file opened in that window is cached without its extension.
 
 ## Bugs fixed in the original campaign
 
@@ -94,8 +97,8 @@ Found while localizing; all of them are in the original mod.
 - `commander_settings.ini`: all 13 award images were referenced as
   `art/medals/m1.png` while the files are named `M1.png`. Case matters on
   Linux, so every medal image failed to load there. References corrected.
-- Base game, Russian callsigns (still present in 0.8.3, fixed in
-  `language_ru/aircraft_names/sf_klyuchevskaya_orel.ini`): the
+- Base game, Russian callsigns (still present in 0.8.3, fixed in our
+  `language_ru/aircraft_names.ini`): the
   MiG-23A callsign list numbered the Tbilisi squadrons 3 and 4 a second time
   instead of 5 and 6. The duplicates overwrote the Riga callsigns and left the
   Tbilisi ones undefined, so the campaign's own fighters showed up as
@@ -141,13 +144,27 @@ exactly the right case, against both the mod and the base game.
 
 ## Localization
 
-- `language_<xx>/aircraft_names/sf_klyuchevskaya_orel.ini` for all nine
-  languages: generated by `tools/make_language_files.py` from the game's own
-  files. Each holds only the `Callsigns=` lines that differ from the game's:
-  the original mod's Soviet callsigns (Cyrillic for Russian) and every callsign
-  the language is missing from the English list. The game merges the files in
-  that folder into its own list key by key; the `#!extend` header covers the
-  one reader that opens `aircraft_names.ini` directly.
+- `language_<xx>/aircraft_names.ini` for all nine languages: generated by
+  `tools/make_language_files.py` from the game's own files, with nothing but a
+  `Callsigns=` line for every aircraft that has callsigns. The game's lines are
+  kept as they are; changed are the original mod's Soviet callsigns (Cyrillic
+  for Russian) and every callsign a language is missing from the English list.
+  Most of the game merges this file into its own list key by key, so names,
+  NATO names and aircraft added later still come from the game; the one reader
+  that opens the file whole (mission aircraft with `CallsignIndex`) finds every
+  callsign here.
+- Base game, weapon names: Sea Power 0.8.3 added weapons its translations do
+  not cover yet, and where the selected language has no entry the game shows
+  the internal id (`wp_sa-n-10` for the shipborne Igla) rather than English.
+  Russian lacked 30 names, Japanese 32, Spanish 28, French 19, Korean 13,
+  Chinese 7, Vietnamese 84; among them the R-27 family, Osa-MA2, Shtorm-N,
+  Volna-N, Moskit-M, Igla and the new chaff types. `tools/make_ammunition_names.py`
+  writes `language_<xx>/ammunition_names/sf_klyuchevskaya_orel.ini` with only the
+  entries the game's file lacks, from `tools/translations/ammunition_names/`, so
+  a later game translation takes over once the script is re-run. Russian was
+  translated by hand; the others by machine, each following the conventions of
+  that language's own game file, then checked for keys, field counts and line
+  breaks. German needed nothing.
 - Campaign, missions, briefings, slideshows, unit roster descriptions and
   award citations translated into the eight other game languages: Chinese,
   French, German, Japanese, Korean, Russian, Spanish, Vietnamese. Each language

@@ -585,8 +585,8 @@ def check(langs, locdir=None):
             check_xml(rep, d / "BriefingText_en.xml", d / f"BriefingText_{lang}.xml")
         for p in sorted(CAMP.glob("art/update*.xml")):
             check_xml(rep, p, CAMP / "art" / lang / p.name)
-        if not (ROOT / f"language_{lang}" / "aircraft_names" / "sf_klyuchevskaya_orel.ini").exists():
-            rep.warn(f"language_{lang}/aircraft_names/sf_klyuchevskaya_orel.ini missing")
+        if not (ROOT / f"language_{lang}" / "aircraft_names.ini").exists():
+            rep.warn(f"language_{lang}/aircraft_names.ini missing")
 
         print(f"== {lang}: {len(rep.errors)} errors, {len(rep.warnings)} warnings")
         for m in rep.errors:
