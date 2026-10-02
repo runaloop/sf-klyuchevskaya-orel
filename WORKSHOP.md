@@ -5,6 +5,8 @@ window, or into the Workshop page editor. Steam accepts BBCode, which the game's
 upload dialog passes through unchanged.
 
 - **Title:** SF Klyuchevskaya '88: Orel Edition
+- **Workshop item:** 3800243486 —
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3800243486
 - **Preview image:** `mod/workshop_preview.jpg` (800×800, 112 KB)
 - **Visibility:** public
 - **Required items:** none
@@ -16,7 +18,7 @@ upload dialog passes through unchanged.
 [h1]SF Klyuchevskaya '88: Orel Edition[/h1]
 
 A modified edition of [b]SF Klyuchevskaya '88[/b] by [b]StickHeroes[/b]. The
-campaign is his; two things are different here.
+campaign is his; three things are different here.
 
 [h2]The flagship is a real carrier[/h2]
 
@@ -41,9 +43,23 @@ strike package, not two.
 [h2]The escort is thin[/h2]
 
 You start with 635 points at moderate difficulty. That buys one Project 1164
-Atlant and one Project 956 Sarych, and then you are done. The carrier is the most
-valuable hull in the Pacific Fleet and she has almost nothing around her. Ten
-main missions and four side missions later you will know whether that was enough.
+Atlant, one Project 956 Sarych and one or two small escorts, and then you are
+done. The carrier is the most valuable hull in the Pacific Fleet and she has
+almost nothing around her. Ten main missions and four side missions later you
+will know whether that was enough.
+
+[h2]Experimental R-27 loadouts[/h2]
+
+Sea Power 0.8.3 added the R-27 to the game. The MiG-23A keeps its standard
+air-to-air loadouts with the R-24 and gets two experimental ones on top:
+[list]
+[*][b]two R-27ER and two R-73[/b], radar-guided
+[*][b]two R-27ET and two R-73[/b], infrared
+[/list]
+Pick them on the flight deck or for a CAP slot in the task force air tasking.
+They are optional: if the new missiles let you down, the R-24 loadouts are still
+there. CAP zones drawn during a mission accept only the standard loadouts; that
+is the game's rule, so send R-27 flights out by hand.
 
 [h2]Nine languages[/h2]
 
@@ -74,7 +90,8 @@ own fighters showing as "DEFAULT".
 Subscribe, enable it, play. If you are also subscribed to the original
 SF Klyuchevskaya '88, both campaigns appear side by side and you can play either;
 put [b]Orel Edition above the original[/b] in the Mod Manager, because this one
-ships a more complete callsign file for every language.
+carries more complete callsigns for every language. The same goes for
+SF Klyuchevskaya 88' Advanced Edition.
 
 [h2]Credits[/h2]
 
@@ -90,22 +107,24 @@ Source and a full list of every change:
 
 ---
 
-## Before publishing
+## Publishing checklist
 
 In this order. Mission sheet 04 keeps the original Kiev-class screenshot on
 purpose: the Kiev-class is still purchasable in this edition, and there is no
 second Tbilisi shot that would not duplicate the cover.
 
-1. [ ] Play a new campaign through the first few missions. The current balance
-       has never been played: a save started before it cannot show the new
-       starting budget or the trimmed air wing.
+1. [x] Play a new campaign through the first few missions — played, the
+       campaign holds together with the new starting budget and the trimmed
+       air wing.
 2. [x] `tools/rename_campaign.sh SF_Klyuchevskaya_88_Orel` — done, the campaign
        folder is `SF_Klyuchevskaya_88_Orel` and nothing references the old id.
 3. [x] Pushed to github.com/runaloop/sf-klyuchevskaya-orel; the link is in the
        description above.
-4. [ ] Upload: Mod Manager → Create Mod → pick the mod folder, title and
+4. [x] Upload: Mod Manager → Create Mod → pick the mod folder, title and
        description from this file, preview image `mod/workshop_preview.jpg`,
-       visibility public, no required items.
+       visibility public, no required items. Uploaded 2026-09-12 as item
+       3800243486 and set to public; `GetPublishedFileDetails` reports
+       `visibility: 0`, and the page opens for a signed-out visitor.
 
 Settled: the naval message headers are now translated in all nine languages.
 Each language uses the vocabulary it already used elsewhere in the campaign, and
