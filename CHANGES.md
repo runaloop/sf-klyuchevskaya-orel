@@ -138,6 +138,30 @@ exactly the right case, against both the mod and the base game.
 - `ShipIncludesAirwing` forced to True on every preset. The difficult preset
   used to make the player buy the air wing, which is impossible here: bought
   separately this wing costs about 2000 points.
+- `missions/05 SUDDEN STRIKE.ini`: `Weather=Fog` removed. The game keeps fog
+  on for the whole mission, with no change by time of day, and treats it like
+  darkness for TV seekers. The Ko-45's Kh-59 (AntiShipPrecision) and Kh-29T
+  (StrikePrecision) therefore could not lock on at any hour. The loadout's
+  daylight-only warning ignores fog and clears at dawn, which made this look
+  like a game bug. The 1988 records show no fog either:
+  - Misawa and Hachinohe report visibility of 7 miles or more through the
+    morning of 22 February.
+  - No ship between 37–44°N and 140–150°E reported fog from 21 February 09Z to
+    22 February 12Z.
+
+  `SeaState` raised from 2 to 4 (about 1.9 m waves in the game's table). Ships
+  off the Tohoku coast reported northwesterly winds of 6–17 m/s, 1–2 m wind
+  waves near the coast (up to 3.5 m farther out) and a 2–3.5 m swell through
+  the mission hours.
+
+  Sources, all from NOAA's National Centers for Environmental Information:
+  - Hourly shore reports, Integrated Surface Database (ISD), 1988:
+    [Misawa AB, station 475800-99999](https://www.ncei.noaa.gov/data/global-hourly/access/1988/47580099999.csv)
+    and
+    [Hachinohe, station 475150-99999](https://www.ncei.noaa.gov/data/global-hourly/access/1988/47515099999.csv).
+  - Ship reports, International Comprehensive Ocean-Atmosphere Data Set
+    (ICOADS) Release 3.1, IMMA1 file for
+    [February 1988](https://www.ncei.noaa.gov/data/international-comprehensive-ocean-atmosphere/v3/archive/final-untrim/IMMA1_R3.1.0_1988-02.gz).
 - Cover art, mission sheet 01 and mission sheet 03 replaced with screenshots of
   TAVKR Tbilisi; the old ones showed the Minsk. The cover tagline no longer
   refers to the Yak-38. `mod/workshop_preview.jpg` added for the Workshop tile.

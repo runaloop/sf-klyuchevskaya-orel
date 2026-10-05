@@ -135,6 +135,30 @@ own campaign.
 
 ---
 
+## Change notes for the 2026-10-05 update
+
+Mission 05 "Sudden Strike":
+- Fog removed. The game keeps fog on for the whole mission and treats it like
+  night for TV-guided weapons. The Ko-45's Kh-59 (AntiShip Precision) and
+  Kh-29T (Strike Precision) therefore reported "Can't See Target" all mission
+  long, even after the daylight warning cleared at dawn. Weather records for
+  21–22 February 1988 show no fog off Misawa either. TV-guided weapons now work
+  once the game's night ends, at about 05:50 on the game clock.
+- Sea state raised from 2 to 4, to match the recorded northwesterly wind and
+  swell off the Tohoku coast. Sonar and radar conditions get a little worse for
+  both sides.
+- Weather sources (NOAA NCEI):
+  - hourly shore reports from Misawa and Hachinohe in the
+    [url=https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database]Integrated Surface Database[/url];
+  - ship reports off the Tohoku coast in
+    [url=https://www.ncei.noaa.gov/products/international-comprehensive-ocean-atmosphere-data-set]ICOADS Release 3.1[/url].
+- A save made inside mission 05 keeps the old weather; restart the mission to
+  get the change.
+
+Checked against Sea Power 0.8.4; nothing else needed changing.
+
+Thanks to marseu for the report.
+
 ## Change notes for the first upload
 
 First release. Flagship swapped from the Kiev-class Minsk to the Project 1160
