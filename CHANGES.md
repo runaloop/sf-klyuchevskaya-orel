@@ -3,6 +3,53 @@
 Every entry names the file and what was replaced. The unchanged import of the
 original mod is the root commit of this repository.
 
+## Sea Power 0.9.3 compatibility update (unpublished)
+
+- Added an optional MiG-23A loadout of two R-27ER and four R-73 to the deck
+  and the four campaign CAP rules from 1987. Its display positions are
+  specific to this preset. The Yak-38 uses a separate visual offset for its
+  inner R-73 pair. Both configurations are fictional campaign options.
+- The Yak-38 now defaults to four R-73. Its former mixed bomb and missile
+  loadout remains selectable. On the MiG-23A the date-based radar R-27
+  loadout is the default. The flight deck lists the radar and infrared
+  R-27 options first and the R-24 options last among the combat loadouts.
+- Regenerated the three aircraft INIs from 0.9.3 Build 261116 (public Steam
+  build 26712472) with the existing loadout patches. The Tu-95RT now uses
+  the updated stock gun system definitions.
+- Regenerated callsigns and ammunition-name supplements. The Russian entries
+  use more stock translations. The new Iowa-class AP and ICM rounds use English
+  names where stock translations are missing.
+- Set `ApproximateVersion=0.9.3`, which requires patch 3 or later in the 0.9
+  series. Static checks passed. In-game checks covered mission 01, carrier launches in mission 02 and the search area in mission 03.
+- The campaign introductions and scenario descriptions for missions 03 and 07
+  now explain that slow-moving submarines can pass close to a sonobuoy
+  undetected. Each description also names the destination for the transit or
+  escort objective. The hints are available in all nine languages.
+- Mission 03 now sends a flagship message at 45 minutes and marks a search area
+  10 nautical miles in diameter. Mission 07 sends a Fleet HQ update at 75 minutes
+  and marks an area 40 nautical miles in diameter. Both scenarios cancel their
+  hint on first submarine contact and clear the area on mission completion.
+- Mission 07 awards victory when either replenishment ship reaches Tsugaru
+  Strait. Destroying both American SSNs remains an alternate victory condition.
+- Added a note to the campaign description covering slow torpedo drops, MiGs ignoring descent orders during missile evasion, stuck Yak-38s and a P-42RLDN flying with folded wings. If a Yak gets stuck at the elevator, send it back to the hangar and launch it again.
+
+## Sea Power 0.9.1 compatibility checkpoint (unpublished, superseded by 0.9.3)
+
+- Regenerated the three aircraft INIs from 0.9.1 Build 261112 with the existing
+  patches unchanged. This restores 19 changed stock data keys, including the
+  MiG-23A model, LOD and damage settings, aircraft pitch rates, minimum takeoff
+  distances, volume and the Yak-38's lowest performance altitude.
+- Regenerated callsigns for all nine languages and the missing-ammunition-name
+  supplements. Official translations now take over where available; the Chinese
+  ammunition supplement is no longer needed. Remaining gaps use English names,
+  including four ammunition entries in Russian and 18 callsigns without a
+  Cyrillic mapping. Those translation gaps remain a separate follow-up.
+- This checkpoint set `ApproximateVersion=0.9.1` in `mod/_info.ini` and updated
+  the requirements in README and the Workshop draft.
+- Generator and localization/path checks passed. In-game checks on 0.9.1 are
+  pending; this update is not yet verified for release. The separate unpublished
+  mission 07 patch below was preserved byte-for-byte.
+
 ## Names
 
 - `mod/_info.ini`, `campaign.ini`: display names changed to
@@ -162,6 +209,31 @@ exactly the right case, against both the mod and the base game.
   - Ship reports, International Comprehensive Ocean-Atmosphere Data Set
     (ICOADS) Release 3.1, IMMA1 file for
     [February 1988](https://www.ncei.noaa.gov/data/international-comprehensive-ocean-atmosphere/v3/archive/final-untrim/IMMA1_R3.1.0_1988-02.gz).
+- `missions/07 APEX PREDATORS.ini`: the mission could only be won by sinking
+  both Los Angeles-class SSNs. The start message and the briefing say it ends
+  at the Tsugaru Strait, but no trigger checked the strait, so a player who
+  missed the SSNs sailed there and nothing happened.
+  - Trigger16: a replenishment ship entering the Tsugaru Strait area wins the
+    mission and completes ReachTsugaru, FlagshipSurvive and ProtectAOR. It
+    also disables Trigger5, so losing both ships after the win can no longer
+    fail ProtectAOR and turn the result into a Pyrrhic Victory. Sinking both SSNs still wins at once (Trigger4), and it stays the only way
+    to win once both replenishment ships are lost.
+    KillSSN is left open at the strait, not failed: its −1000 points would turn
+    the result into a Pyrrhic Victory, which does not advance the campaign.
+  - The DATUM circles A01 and A02 now hold their SSNs. Before, each SSN spawned
+    up to 35 nm from its circle and followed a fixed track toward the convoy,
+    at 15 kn or faster: on waypoints without a telegraph setting the AI picks
+    its own speed, up to 20 kn for a Los Angeles. An hour after a circle was
+    plotted the SSN had left it in about one case in five, after three hours
+    in every case. Now each SSN spawns inside its circle and patrols a random
+    loop there at 5 kn. When the flagship or a replenishment ship comes within
+    about 70 nm (Trigger14, Trigger15), the SSN leaves at 15 kn for a point on
+    the convoy route ahead of it and patrols there; its circle is removed and
+    a message reports the DATUM expired.
+  - The second DATUM popup was titled "Possible SSN Location 1" like the
+    first; now "2". Both popups say the SSN is holding station. Three new
+    messages: two for an expired DATUM, one for the strait victory. All nine
+    languages.
 - Cover art, mission sheet 01 and mission sheet 03 replaced with screenshots of
   TAVKR Tbilisi; the old ones showed the Minsk. The cover tagline no longer
   refers to the Yak-38. `mod/workshop_preview.jpg` added for the Workshop tile.
