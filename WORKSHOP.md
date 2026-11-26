@@ -120,60 +120,35 @@ Source and a full list of every change:
 
 ---
 
-## Publishing checklist
+## Как обновить существующий мод в Steam Workshop
 
-In this order. Mission sheet 04 keeps the original Kiev-class screenshot on
-purpose: the Kiev-class is still purchasable in this edition, and there is no
-second Tbilisi shot that would not duplicate the cover.
+1. Запусти Sea Power из Steam под аккаунтом владельца публикации. В главном меню открой **Моды → Создать мод**. Это окно используется и для обновлений.
+2. Включи режим обновления существующего мода и в списке своих публикаций выбери **SF Klyuchevskaya '88: Orel Edition** (ID **3800243486**). После выбора игра подставит текущее описание, теги и видимость. Выбирай публикацию до редактирования полей. При пустом выборе игра может создать новую страницу.
+3. В поле папки укажи **`Sea Power_Data/StreamingAssets/SF_Klyuchevskaya_88_Orel`**. В этой установке это ссылка на `mod/` репозитория. Внутри выбранной папки сразу видны `_info.ini`, `aircraft/`, `campaigns/` и `workshop_preview.jpg`. Для обложки выбери этот JPG.
+4. В **«Описание мода»** вставь текст из раздела **Description** выше, от `[h1]` до закрывающего `[/url]` включительно. В **«История изменений»** вставь английский текст из блока **Change notes for 0.9.3** ниже. Сохрани название и теги выбранного мода, проверь публичную видимость и оставь зависимости пустыми.
+5. Нажми **«Загрузить мод в мастерскую»**. После отправки открой историю изменений и проверь, что у публикации **3800243486** появилась запись с заголовком **Orel Edition for Sea Power 0.9.3**. [Страница мода](https://steamcommunity.com/sharedfiles/filedetails/?id=3800243486) · [История изменений](https://steamcommunity.com/sharedfiles/filedetails/changelog/3800243486)
 
-1. [x] Play a new campaign through the first few missions — played, the
-       campaign holds together with the new starting budget and the trimmed
-       air wing.
-2. [x] `tools/rename_campaign.sh SF_Klyuchevskaya_88_Orel` — done, the campaign
-       folder is `SF_Klyuchevskaya_88_Orel` and nothing references the old id.
-3. [x] Pushed to github.com/runaloop/sf-klyuchevskaya-orel; the link is in the
-       description above.
-4. [x] Upload: Mod Manager → Create Mod → pick the mod folder, title and
-       description from this file, preview image `mod/workshop_preview.jpg`,
-       visibility public, no required items. Uploaded 2026-09-12 as item
-       3800243486 and set to public; `GetPublishedFileDetails` reports
-       `visibility: 0`, and the page opens for a signed-out visitor.
+## Change notes for 0.9.3
 
-Settled: the naval message headers are now translated in all nine languages.
-Each language uses the vocabulary it already used elsewhere in the campaign, and
-where the game itself defines the term, the game's own: SECRETO in Spanish, MẬT
-in Vietnamese, 机密 in Chinese. French and Spanish keep FLASH, which both use as
-the signal word; German has BLITZ and Russian МОЛНИЯ, following the developers'
-own campaign.
+```text
+Orel Edition for Sea Power 0.9.3
 
----
+Campaign
+- Mission 03 marks a search area 10 nautical miles across after 45 minutes without submarine contact. Bring the flagship to Open Ocean to complete the transit.
+- Mission 07 marks an area 40 nautical miles across after 75 minutes without submarine contact. Bringing either replenishment ship into Tsugaru Strait now awards victory. Sinking both American SSNs still gives an early victory. The A01 and A02 reports and patrol areas have also been updated.
+- The search hints and revised briefings are available in all nine campaign languages. To get the new triggers in an existing campaign, start the affected mission from the campaign map. An in-mission save retains its original triggers.
 
-## Change notes for the next update
+Aircraft and loadouts
+- The Yak-38 now defaults to four R-73s. The R-60, mixed strike and gun loadouts remain available.
+- In 1988 the MiG-23A defaults to two R-27ERs and two R-73s. The R-27ET option is second, with the R-24 options lower in the list. An optional experimental loadout adds two R-27ERs and four R-73s from 1987.
+- Aircraft definitions, callsigns and ammunition names have been refreshed for 0.9.3, including the stock Tu-95RT gun system changes.
 
-Sea Power 0.9.3 compatibility
-
-Mission 01 was completed on this build. Carrier launches were checked in mission 02, and a mission 03 campaign save confirmed the revised 10 NM search-area diameter.
-- Aircraft definitions regenerated from 0.9.3 Build 261116, retaining the mod's
-  loadouts and picking up the updated stock Tu-95RT gun system definitions.
-- Callsigns and missing weapon names refreshed. Official translations take
-  over where available. The two new Iowa-class rounds use English names in
-  languages that lack their own entries. Russian still uses English for 18
-  callsigns without a Cyrillic mapping.
-- Compatibility metadata now requires Sea Power 0.9.3 or later in the 0.9
-  series. Static checks passed.
-
-Mission 07 "Apex Predators":
-- The mission now ends when a replenishment ship reaches the Tsugaru Strait, as
-  the briefing says. Before, it ended only when both American SSNs were sunk,
-  and reaching the strait did nothing. Sinking both SSNs still ends it early,
-  and it is still the only way to win if both replenishment ships are lost.
-- The SSNs now wait inside their DATUM circles until your force comes within
-  about 70 nm. Then they leave to intercept you, and the circle disappears with
-  a message. Before, they started outside the circles and ran through them, so
-  a circle was usually out of date within an hour or two.
-- The second DATUM message no longer says "Location 1".
-- A save made inside mission 07 keeps the old version. Exit to the campaign map
-  and start the mission again from there.
+Aircraft issues observed during testing on 0.9.3
+- Il-38s and P-42s can circle a submarine for a long time before releasing a torpedo. One pair of P-42s released a single torpedo in about half an hour.
+- With advanced missile evasion enabled, a MiG-23A may climb despite a manual order to descend.
+- If a Yak-38 stops beside a deck elevator on Tbilisi, return it to the hangar and launch it again. This worked for both aircraft in our test.
+- A P-42RLDN radar aircraft can appear to fly with its wings still folded after takeoff.
+```
 
 ## Change notes for the 2026-10-05 update
 

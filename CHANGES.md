@@ -25,10 +25,18 @@ original mod is the root commit of this repository.
   now explain that slow-moving submarines can pass close to a sonobuoy
   undetected. Each description also names the destination for the transit or
   escort objective. The hints are available in all nine languages.
-- In missions 03 and 07, Fleet HQ now sends one follow-up after 45 and 75
-  minutes respectively if the player has had no submarine contact. The report
-  adds an estimated area to the player's map. First contact or the end of the
-  mission clears the area and cancels any pending report.
+- Mission 03 now sends a flagship message at 45 minutes and marks a search area
+  10 nautical miles in diameter. Mission 07 sends a Fleet HQ update at 75 minutes
+  and marks an area 40 nautical miles in diameter. Both scenarios cancel their
+  hint on first submarine contact and clear the area on mission completion.
+- Mission 07 awards victory when either replenishment ship reaches Tsugaru
+  Strait. Destroying both American SSNs remains an alternate victory condition.
+- The campaign description now lists four aircraft issues observed on 0.9.3.
+  Il-38s and P-42s may circle before releasing a torpedo. A MiG-23A using
+  advanced missile evasion may climb through a manual descent order. A Yak-38
+  may stop beside a deck elevator on Tbilisi. Returning it to the hangar and
+  launching it again freed both aircraft in testing. A P-42RLDN may appear to
+  keep its wings folded in flight.
 
 ## Sea Power 0.9.1 compatibility checkpoint (unpublished, superseded by 0.9.3)
 
