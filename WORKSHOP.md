@@ -61,13 +61,13 @@ The R-24 options are at the end of the combat loadout list. The Yak-38 now
 defaults to four R-73 and retains its R-60, mixed strike and gun options. CAP zones drawn during a mission accept only the standard loadouts; that
 is the game's rule, so send R-27 flights out by hand.
 
-[h2]Aircraft behaviour observed in Sea Power 0.9.3[/h2]
+[h2]Aircraft bugs we ran into in Sea Power 0.9.3[/h2]
 
 [list]
-[*]Il-38s and P-42s may circle a submarine for a long time before releasing a torpedo. In one playthrough a pair of P-42s dropped just one torpedo in about half an hour.
-[*]With advanced missile evasion enabled, a MiG-23A may climb despite a manual order to descend.
-[*]If a Yak-38 stops beside a deck elevator on Tbilisi, return it to the hangar and launch it again. This freed both aircraft in our test.
-[*]The P-42RLDN radar aircraft may appear to fly with its wings still folded after takeoff.
+[*]Two Il-38s circled a sub for half an hour without dropping a torpedo. Two P-42s managed one torpedo between them in about the same time.
+[*]With advanced missile evasion on, our MiG-23A ignored an order to descend and kept climbing.
+[*]Two Yak-38s got stuck at the deck elevators on Tbilisi. If this happens, send them back to the hangar and launch them again. That got both of ours airborne.
+[*]Our P-42RLDN took off with its wings folded. They stayed folded in flight.
 [/list]
 
 [h2]Nine languages[/h2]
@@ -143,11 +143,12 @@ Aircraft and loadouts
 - In 1988 the MiG-23A defaults to two R-27ERs and two R-73s. The R-27ET option is second, with the R-24 options lower in the list. An optional experimental loadout adds two R-27ERs and four R-73s from 1987.
 - Aircraft definitions, callsigns and ammunition names have been refreshed for 0.9.3, including the stock Tu-95RT gun system changes.
 
-Aircraft issues observed during testing on 0.9.3
-- Il-38s and P-42s can circle a submarine for a long time before releasing a torpedo. One pair of P-42s released a single torpedo in about half an hour.
-- With advanced missile evasion enabled, a MiG-23A may climb despite a manual order to descend.
-- If a Yak-38 stops beside a deck elevator on Tbilisi, return it to the hangar and launch it again. This worked for both aircraft in our test.
-- A P-42RLDN radar aircraft can appear to fly with its wings still folded after takeoff.
+Aircraft bugs we ran into in Sea Power 0.9.3
+
+- Two Il-38s circled a sub for half an hour without dropping a torpedo. Two P-42s managed one torpedo between them in about the same time.
+- With advanced missile evasion on, our MiG-23A ignored an order to descend and kept climbing.
+- Two Yak-38s got stuck at the deck elevators on Tbilisi. If this happens, send them back to the hangar and launch them again. That got both of ours airborne.
+- Our P-42RLDN took off with its wings folded. They stayed folded in flight.
 ```
 
 ## Change notes for the 2026-10-05 update

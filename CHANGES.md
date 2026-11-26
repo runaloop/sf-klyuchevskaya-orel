@@ -31,12 +31,7 @@ original mod is the root commit of this repository.
   hint on first submarine contact and clear the area on mission completion.
 - Mission 07 awards victory when either replenishment ship reaches Tsugaru
   Strait. Destroying both American SSNs remains an alternate victory condition.
-- The campaign description now lists four aircraft issues observed on 0.9.3.
-  Il-38s and P-42s may circle before releasing a torpedo. A MiG-23A using
-  advanced missile evasion may climb through a manual descent order. A Yak-38
-  may stop beside a deck elevator on Tbilisi. Returning it to the hangar and
-  launching it again freed both aircraft in testing. A P-42RLDN may appear to
-  keep its wings folded in flight.
+- Added a note to the campaign description covering slow torpedo drops, MiGs ignoring descent orders during missile evasion, stuck Yak-38s and a P-42RLDN flying with folded wings. If a Yak gets stuck at the elevator, send it back to the hangar and launch it again.
 
 ## Sea Power 0.9.1 compatibility checkpoint (unpublished, superseded by 0.9.3)
 
