@@ -8,8 +8,10 @@ A modified edition of the Sea Power campaign **SF Klyuchevskaya '88** by
   her Yak-38s. Missions, roster, prices and texts follow.
 - The campaign is localized into **all nine game languages**: Chinese, English,
   French, German, Japanese, Korean, Russian, Spanish, Vietnamese.
-- The MiG-23A gets two **experimental R-27 loadouts** on top of its standard
-  R-24 ones: two R-27ER and two R-73, or two R-27ET and two R-73.
+- In 1988 the MiG-23A defaults to two R-27ER and two R-73. The infrared
+  R-27ET option is second on the flight deck, and the R-24 options are at the
+  bottom of the combat loadout list. A separate experimental option carries
+  two R-27ER and four R-73 from 1987. The Yak-38 defaults to four R-73.
 
 Everything else is the original campaign: 10 main missions, 4 side missions,
 its artwork, briefings, slideshows and awards.
@@ -23,7 +25,9 @@ repository, so `git diff` against it shows exactly what this edition does.
 
 ## Requirements
 
-Sea Power 0.8.3 or newer. No other mods needed.
+Sea Power 0.9.3 or later in the 0.9 series. No other mods needed. The local
+update was regenerated from Sea Power 0.9.3 Build 261116 (public Steam build
+26712472) and passed static checks. Mission 01 was completed in this build. Carrier launches were checked in mission 02 and the revised search area was verified in a mission 03 campaign save.
 
 ## Install
 

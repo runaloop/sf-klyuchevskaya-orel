@@ -50,16 +50,25 @@ will know whether that was enough.
 
 [h2]Experimental R-27 loadouts[/h2]
 
-Sea Power 0.8.3 added the R-27 to the game. The MiG-23A keeps its standard
-air-to-air loadouts with the R-24 and gets two experimental ones on top:
+In the 1988 campaign the first two MiG-23A flight deck options are
 [list]
-[*][b]two R-27ER and two R-73[/b], radar-guided
-[*][b]two R-27ET and two R-73[/b], infrared
+[*][b]two R-27ER and two R-73[/b] (default)
+[*][b]two R-27ET and two R-73[/b]
 [/list]
-Pick them on the flight deck or for a CAP slot in the task force air tasking.
-They are optional: if the new missiles let you down, the R-24 loadouts are still
-there. CAP zones drawn during a mission accept only the standard loadouts; that
+A separate experimental option carries two R-27ER and four R-73 from 1987.
+All three R-27 options are available on the flight deck and in campaign CAP slots.
+The R-24 options are at the end of the combat loadout list. The Yak-38 now
+defaults to four R-73 and retains its R-60, mixed strike and gun options. CAP zones drawn during a mission accept only the standard loadouts; that
 is the game's rule, so send R-27 flights out by hand.
+
+[h2]Aircraft behaviour observed in Sea Power 0.9.3[/h2]
+
+[list]
+[*]Il-38s and P-42s may circle a submarine for a long time before releasing a torpedo. In one playthrough a pair of P-42s dropped just one torpedo in about half an hour.
+[*]With advanced missile evasion enabled, a MiG-23A may climb despite a manual order to descend.
+[*]If a Yak-38 stops beside a deck elevator on Tbilisi, return it to the hangar and launch it again. This freed both aircraft in our test.
+[*]The P-42RLDN radar aircraft may appear to fly with its wings still folded after takeoff.
+[/list]
 
 [h2]Nine languages[/h2]
 
@@ -84,6 +93,10 @@ Russian callsign list that numbered two squadrons twice and left the campaign's
 own fighters showing as "DEFAULT".
 
 [h2]Load order[/h2]
+
+[b]Requires Sea Power 0.9.3 or later in the 0.9 series.[/b] The files were
+regenerated from public release 0.9.3 Build 261116 (Steam build 26712472) and
+passed static checks. In-game verification is in progress.
 
 [b]This mod needs nothing else. Do not subscribe to anything for it.[/b]
 
@@ -134,6 +147,33 @@ the signal word; German has BLITZ and Russian МОЛНИЯ, following the develo
 own campaign.
 
 ---
+
+## Change notes for the next update
+
+Sea Power 0.9.3 compatibility
+
+Mission 01 was completed on this build. Carrier launches were checked in mission 02, and a mission 03 campaign save confirmed the revised 10 NM search-area diameter.
+- Aircraft definitions regenerated from 0.9.3 Build 261116, retaining the mod's
+  loadouts and picking up the updated stock Tu-95RT gun system definitions.
+- Callsigns and missing weapon names refreshed. Official translations take
+  over where available. The two new Iowa-class rounds use English names in
+  languages that lack their own entries. Russian still uses English for 18
+  callsigns without a Cyrillic mapping.
+- Compatibility metadata now requires Sea Power 0.9.3 or later in the 0.9
+  series. Static checks passed.
+
+Mission 07 "Apex Predators":
+- The mission now ends when a replenishment ship reaches the Tsugaru Strait, as
+  the briefing says. Before, it ended only when both American SSNs were sunk,
+  and reaching the strait did nothing. Sinking both SSNs still ends it early,
+  and it is still the only way to win if both replenishment ships are lost.
+- The SSNs now wait inside their DATUM circles until your force comes within
+  about 70 nm. Then they leave to intercept you, and the circle disappears with
+  a message. Before, they started outside the circles and ran through them, so
+  a circle was usually out of date within an hour or two.
+- The second DATUM message no longer says "Location 1".
+- A save made inside mission 07 keeps the old version. Exit to the campaign map
+  and start the mission again from there.
 
 ## Change notes for the 2026-10-05 update
 
